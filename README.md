@@ -3,7 +3,7 @@
 Official Manco Cápac club web page!
 
 Welcome to the official repository for the **Club Deportivo Manco Cápac** website! This project is designed to provide the most important information to players, players' relatives, and club members with an intuitive and comprehensive platform.
-hello your Percy
+
 ---
 
 ## 🗺️ User Navigation Map
