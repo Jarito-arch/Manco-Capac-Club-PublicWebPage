@@ -145,13 +145,14 @@ main{
     
 }
 .categorias .boton-categoria{
-    backface-visibility: transparent;
+    backface-visibility: transparent;   
     font-size: 2rem;
     padding: 20px 40px;
     background: white;
     color: #000000;
     transition: 0.4s ease;
 }
+
 
 .categorias .boton-categoria:hover{
     background: #e0b218;
@@ -172,8 +173,60 @@ main{
     color: white;
     text-transform: uppercase;
     font-size: 2.6rem;
-    
+}
 
+.teamContainer2{
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:60px;
+}
+
+.container1{
+    border: solid 1px rgb(12, 0, 0);
+    width: 310px;
 
 }
 
+.container-grid{
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.container-grid:hover{
+    transform: scale(1.13);
+}
+
+.tarjeta-jugador{
+    background: rgb(180, 180, 180);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foto-gris{
+    display: flex;
+    justify-content: center;
+}
+
+.click{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+}
+
+button{
+    background: aliceblue;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #e0b218;
+    color: white;
+}
