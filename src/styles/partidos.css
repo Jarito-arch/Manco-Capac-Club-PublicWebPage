@@ -383,3 +383,14 @@ h3 {
     letter-spacing: 1.5px;
 }
 
+/* 1400px */
+@media (min-width: 1400px) {
+    .meses button {
+        font-size: 18.8px;
+    }
+
+    .ContenedorMeses {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+}
