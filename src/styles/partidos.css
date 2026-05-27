@@ -86,3 +86,20 @@ img {
 a.active {
     color: #d8b13f;
 }
+
+/*SECTION BANNER*/
+.bannerPartidos {
+    background-image: linear-gradient(#15357480), url('../assets/Images/ft\ coliseo\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    height: 218px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #d8b13f;
+}
+
+.bannerPartidos h2 {
+    font-size: 64px;
+    color: #ffffff;
+}
