@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Bebas Neue", sans-serif;
+}
+
+header {
+    width: 100%;
+    
+}
+
+.top-header {
+    background-color: #163D7A;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #d8b13f;
+    
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 194px;
+    transform: translateY(24px) translateX(-200px);
+    z-index: 100;
+}
+
+.brand-text h1 {
+    color: #d8b13f;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    position: relative;
+    left: -129px;
+    margin-top: 25px;
+}
+
+.brand-text p {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 5px;
+    font-size: 26px;
+    position: relative;
+    left: -129px;
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: #112758;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #d8b13f;
+    border-left: 2px solid #d8b13f;
+    border-top: 2px solid #d8b13f;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav a {
+    
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+
+.active,
+nav a:hover {
+    color: #d8b13f;
+}
+
+.banner {
+    background-image: url("./recursos/ft coliseo (1).png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 3px solid #d8b13f;
+    height: 218px;
+    
+}
+
+.overlay {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section {
+    background: linear-gradient(to bottom, #05256a, #4b7bd9);
+    padding: 60px 0;
+    width: 100%;
+    border-left: 3px solid #d8b13f;
+}
+
+.container.-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 131px;
+    row-gap: 70px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    min-height: 245px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-placeholder {
+    width: 100%;
+    height: 170px;
+    background-color: #e0e0e0;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.date {
+    color: #f1c40f;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.button-zone {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-view-more {
+    background-color: #1a3a8a;
+    color: white;
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-view-more:hover {
+    background-color: #0d265c;
+    
+}
+
+.custom-footer {
+    background-color: #2853A8;
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-left: 3px solid #d8b13f;
+     border-bottom: 3px solid #d8b13f;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-top: -95px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 220px;
+    height: auto;
+}
+
