@@ -292,3 +292,43 @@ button:hover{
     letter-spacing: 1.5px;
     transition: color 0.3s;
 }
+
+
+
+
+
+
+@media (min-width: 1400px) {
+    
+
+    .brandText h1 {
+        font-size: 60px;
+    }
+
+    .brandText p {
+        font-size: 30px;
+    }
+
+    .floatingLogo {
+        width: 220px;
+    }
+
+    .headerContent {
+        padding-left: 240px;
+    }
+
+    .inf-jugadores {
+        font-size: 3.2rem;
+    }
+
+    .categorias{
+        padding: 15px 60px;
+    }
+
+    .teamContainer2 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 80px;
+        padding: 0 80px;
+    }
+
+}
