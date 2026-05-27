@@ -185,3 +185,70 @@ main{
     text-transform: uppercase;
     font-size: 2.6rem;
 }
+
+
+
+
+.teamContainer2{
+    margin-top: 60px;
+    display: grid;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding:  0 40px;
+}
+
+.container1{
+    border: solid 1px rgb(66, 65, 0);
+    width: 100%;
+
+}
+
+.container-grid{
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.container-grid:hover{
+    transform: scale(1.08);
+}
+
+.tarjeta-jugador{
+    background: rgb(180, 180, 180);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foto-gris{
+    display: flex;
+    justify-content: center;
+}
+
+.click{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    
+}
+
+button{
+    font-family:"Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    background: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #e0b218;
+    color: white;
+}
