@@ -180,6 +180,42 @@ nav a:hover {
     background-color: #0d265c;
     
 }
+.custom-footer {
+    background-color: #2853A8;
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-left: 3px solid #d8b13f;
+     border-bottom: 3px solid #d8b13f;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-top: -95px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 220px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
 
 
 
