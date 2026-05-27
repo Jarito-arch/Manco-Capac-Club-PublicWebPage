@@ -449,3 +449,100 @@ h3 {
         font-size: 15px;
     }
 }
+
+/* 768px */
+@media (max-width: 768px) {
+    .topHeader {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .floatingLogo {
+        width: 140px;
+        transform: none;
+        position: static;
+    }
+
+    .brandText h1, 
+    .brandText p {
+        left: 0;
+        text-align: center;
+    }
+
+    .brandText h1 {
+        font-size: 32px;
+    }
+
+    .brandText p {
+        font-size: 20px;
+    }
+
+    .navPrincipal ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .bannerPartidos h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        padding: 8px 25px;
+    }
+
+    
+    .tablaCalendario td {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .cal_dia {
+        font-size: 16px;
+    }
+
+    .tablaCalendario td:nth-child(2),
+    .tablaCalendario td:nth-child(3) {
+        display: none;
+    }
+
+    .tablaDePosiciones th:nth-child(4), .tablaDePosiciones td:nth-child(4),
+    .tablaDePosiciones th:nth-child(5), .tablaDePosiciones td:nth-child(5),
+    .tablaDePosiciones th:nth-child(6), .tablaDePosiciones td:nth-child(6),
+    .tablaDePosiciones th:nth-child(7), .tablaDePosiciones td:nth-child(7),
+    .tablaDePosiciones th:nth-child(8), .tablaDePosiciones td:nth-child(8)  {
+        display: none;
+    }
+
+    .tablaDePosiciones th, 
+    .tablaDePosiciones td {
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+
+    .tablaDePosiciones table {
+        margin-bottom: 60px;
+    }
+
+    .footer-logo-wrapper {
+        margin-top: -65px;
+    }
+
+    .footer-logo {
+        width: 160px;
+    }
+
+    .footer-info {
+        font-size: 18px;
+    }
+}
