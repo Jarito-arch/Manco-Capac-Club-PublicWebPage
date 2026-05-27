@@ -118,3 +118,70 @@ main{
     font-weight: 550;
 
 }
+
+
+
+.teamContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    
+    
+}
+
+.categoria{
+    color: #000000;
+    font-size: 2.1rem;
+    background-color: aliceblue;
+    padding: 14px 100px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.categoria h2{
+    color: black;
+}
+
+.teamContainer nav{
+    background: transparent;
+    border: none;
+}
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 90px;
+    gap: 15px;
+}
+
+.categorias .boton-categoria{
+    font-size: 2rem;
+    padding: 20px 50px;
+    background: white;
+    color: #000000;
+    transition: 0.4s ease;
+}
+
+
+.categorias .boton-categoria:hover{
+    background: #e0b218;
+    color: white
+}
+
+
+/*Section*/
+.jugadores{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+
+}
+
+
+.inf-jugadores{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
