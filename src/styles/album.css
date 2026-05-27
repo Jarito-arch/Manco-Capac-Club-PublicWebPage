@@ -90,6 +90,7 @@ nav a:hover {
     background-position: center;
     position: relative;
     border-bottom: 3px solid #d8b13f;
+    
     height: 218px;
     
 }
@@ -114,6 +115,7 @@ nav a:hover {
     padding: 60px 0;
     width: 100%;
     border-left: 3px solid #d8b13f;
+    padding-bottom: 300px;
 }
 
 .container.-grid {
