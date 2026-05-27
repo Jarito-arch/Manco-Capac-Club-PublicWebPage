@@ -60,6 +60,7 @@ nav {
     border-bottom: 2px solid #d8b13f;
     border-left: 2px solid #d8b13f;
     border-top: 2px solid #d8b13f;
+    text-decoration: none;
 
 }
 
@@ -75,6 +76,7 @@ nav a {
     
     color: white;
     font-family: "Bebas Neue", sans-serif;
+     text-decoration: none;
     font-size: 1.3rem;
     transition: 0.3s ease;
 }
@@ -85,7 +87,7 @@ nav a:hover {
 }
 
 .banner {
-    background-image: url("./recursos/ft coliseo (1).png");
+    background-image: url('../assets/Images/ft\ coliseo\ \(1\).png');
     background-size: cover;
     background-position: center;
     position: relative;
