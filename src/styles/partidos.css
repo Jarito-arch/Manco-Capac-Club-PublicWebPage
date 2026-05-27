@@ -252,3 +252,96 @@ h3 {
 
     gap: 10px;
 }
+
+/* TABLA DE POSICIONES */
+.tablaDePosiciones {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.tablaDePosiciones table {
+
+    width: 1423px;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    margin-bottom: 123px;
+}
+
+.tablaDePosiciones thead {
+
+    background-color: white;
+}
+
+.tablaDePosiciones th {
+
+    color: #1a2b5e;
+
+    padding: 25px 10px;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+.tablaDePosiciones tbody tr {
+
+    height: 85px;
+}
+
+.tablaDePosiciones tbody tr:nth-child(odd) {
+
+    background-color: #d8e1f0;
+}
+
+
+.select_MancoCapac {
+
+    background-color: #d8b13f;
+
+    color: white;
+
+    font-weight: normal;
+}
+
+.tablaDePosiciones td {
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #1a2b5e;
+
+    font-size: 22px;
+}
+
+.select_MancoCapac td {
+
+    color: white;
+}
+
+.tablaDePosiciones td:nth-child(2) {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.tablaDePosiciones img {
+
+    width: 45px;
+
+    height: 45px;
+
+    object-fit: contain;
+}
