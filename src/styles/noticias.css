@@ -216,6 +216,35 @@ nav a:hover {
     }
 }
 
+@media (max-width: 1024px) {
+
+    .logo {
+        width: 160px;
+        transform: translateY(20px) translateX(-120px);
+    }
+
+    .brand-text h1 {
+        font-size: 40px;
+        left: -80px;
+    }
+
+    .brand-text p {
+        font-size: 22px;
+        left: -80px;
+    }
+
+    nav ul {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .container.news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+}
+
+
 
 
 
