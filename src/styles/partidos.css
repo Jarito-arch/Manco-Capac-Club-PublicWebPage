@@ -546,3 +546,69 @@ h3 {
         font-size: 18px;
     }
 }
+
+/* 480px */
+@media (max-width: 480px) {
+    .meses button,
+    .meses .monthActive {
+        padding: 10px 12px;
+        font-size: 13px;
+        flex: 1 1 30%; 
+    }
+
+    .brandText h1 {
+        font-size: 24px;
+    }
+
+    .brandText p {
+        font-size: 16px;
+    }
+
+    .navPrincipal a {
+        font-size: 1rem;
+    }
+
+    .tablaCalendario td {
+        font-size: 13px;
+        padding: 8px 4px;
+    }
+
+    .cal_dia {
+        font-size: 14px;
+    }
+
+    .cal_hora {
+        font-size: 12px;
+    }
+
+    .tablaCalendario img {
+        width: 35px; 
+    }
+
+    .tablaDePosiciones th, 
+    .tablaDePosiciones td {
+        font-size: 13px;
+        padding: 8px 4px;
+    }
+
+    .tablaDePosiciones img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-logo-wrapper {
+        margin-top: -50px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-info {
+        font-size: 14px;
+    }
+
+    .footer-info h2 {
+        font-size: 18px;
+    }
+}
