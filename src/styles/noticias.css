@@ -209,6 +209,13 @@ nav a:hover {
     height: auto;
 }
 
+@media (min-width: 1400px) {
+    .container.news-grid {
+        max-width: 1300px;
+        column-gap: 140px;
+    }
+}
+
 
 
 
