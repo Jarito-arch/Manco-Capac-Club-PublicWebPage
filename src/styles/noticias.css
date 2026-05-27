@@ -243,6 +243,45 @@ nav a:hover {
         column-gap: 40px;
     }
 }
+@media (max-width: 768px) {
+
+    .top-header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 130px;
+        transform: none;
+    }
+
+    .brand-text h1,
+    .brand-text p {
+        left: 0;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .container.news-grid {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+}
+
 
 
 
