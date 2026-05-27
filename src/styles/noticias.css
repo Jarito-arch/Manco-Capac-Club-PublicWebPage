@@ -11,7 +11,7 @@ header {
 }
 
 .top-header {
-    background-color: #163D7A;
+    background-color: #153574;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ header {
 
 .logo {
     width: 194px;
-    transform: translateY(24px) translateX(-200px);
+    transform: translateY(30px) translateX(-150px);
     z-index: 100;
 }
 
