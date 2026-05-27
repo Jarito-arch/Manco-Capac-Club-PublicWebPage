@@ -82,6 +82,34 @@ nav a {
 nav a:hover {
     color: #d8b13f;
 }
+.news-banner {
+    background-image: url('../assets/Images/ft\ coliseo\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 3px solid #d8b13f;
+    height: 218px;
+    
+}
+
+.overlay {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.
+
+
 
 
 
