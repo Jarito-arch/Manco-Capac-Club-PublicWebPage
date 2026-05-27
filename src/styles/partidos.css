@@ -394,3 +394,58 @@ h3 {
         padding-right: 27px;
     }
 }
+
+/* 1024px */
+
+@media (max-width: 1024px) {
+    .topHeader {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .floatingLogo {
+        width: 140px;
+        transform: none; 
+        position: static;
+    }
+
+    .brandText h1, 
+    .brandText p {
+        left: 0; 
+        text-align: center;
+    }
+
+    .brandText h1 {
+        font-size: 32px;
+    }
+
+    .brandText p {
+        font-size: 20px;
+    }
+
+    .tablaCalendario, 
+    .tablaDePosiciones table,
+    .meses {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .meses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .meses button,
+    .meses .monthActive {
+        width: auto;
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+}
