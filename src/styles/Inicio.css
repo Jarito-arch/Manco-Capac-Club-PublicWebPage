@@ -4,3 +4,210 @@
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
 }
+header{
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+}
+.Topheader{
+    background-color: #153574;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerContent{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.floatingLogo{
+    width: 194px;
+    transform: translateY(30px) translateX(-150px);
+    z-index: 100;
+}
+.brandText h1{
+    color: #d8b13f;
+    font-size: 48px;
+    line-height: 1;
+    position: relative;
+    left: -129px;  
+    margin-top: 25px;
+}
+.brandText p{
+    color: white;
+    margin-top: 5px;
+    font-size: 26px;
+    position: relative;
+    left: -129px;
+    margin-bottom: 15px;
+}
+.navPrincipal{
+    background-color: #112758;
+    border-top: 3px solid #d8b13f;
+    border-bottom: 3px solid #d8b13f;
+    display: flex;
+    justify-content: center;
+}
+.navPrincipal ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 15px 0;
+}
+.navPrincipal a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+.active, .navPrincipal a:hover{
+    color: #d8b13f;
+}
+a.active{
+    color: #d8b13f;
+}
+.TeamPanel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.TeamPanel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.TeamPanelOverlayDesign {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(26, 68, 142, 0.7), rgba(26, 68, 142, 0.3));
+    padding: 30px 80px;
+}
+.TeamPanelOverlayDesign p{
+    color: #d8b13f;
+    font-size: 20px;
+}
+.TeamPanelOverlayDesign h2{
+    color: white;
+    font-size: 55px;
+}
+.matches {
+    background-color: #21468d; 
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 50px 80px 50px; 
+}
+.TeamInfo{
+    width: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.TeamInfo h2 {
+    color: #d8b13f;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+.TeamInfo .category {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.TeamInfo .divider {
+    border: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    margin-bottom: 25px;
+}
+.informationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+    margin-bottom: 30px;
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    text-align: center;
+}
+.teamLogo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+.teamName {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.matchDetail {
+    color: #b0c2e3;
+    font-size: 11px;
+    line-height: 1.4;
+}
+.scoreDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-top: 20px; 
+}
+.scoreDisplay h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.scoreDisplay .hyphen {
+    font-size: 28px;
+    margin: 0 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.scoreDisplay .vsText {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.scoreDisplay .matchDetail{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+.matchBtn {
+    display: block;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border: none;
+    background-color: #d8b13f;
+    color: white;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transform: scaleY(1.15); 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.matchBtn:hover {
+    background-color: #c49f33;
+}
+
