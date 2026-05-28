@@ -243,3 +243,74 @@ main {
     font-size: 24px;
     letter-spacing: 1.5px;
 }
+
+@media(max-width: 768px) {
+
+    .topHeader {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .floatingLogo {
+        width: 140px;
+        transform: none;
+        position: static;
+    }
+
+    .brandText h1, 
+    .brandText p {
+        left: 0;
+        text-align: center;
+    }
+
+    .brandText h1 {
+        font-size: 32px;
+    }
+
+    .brandText p {
+        font-size: 20px;
+    }
+
+    .navPrincipal ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .bannerPartidos h2 {
+        font-size: 45px;
+    }
+
+    
+
+    .item-historia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagen {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .contenido h3 {
+        font-size: 40px;
+    }
+
+    .contenido h4 {
+        font-size: 24px;
+    }
+
+
+}
