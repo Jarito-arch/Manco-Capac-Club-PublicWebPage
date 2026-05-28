@@ -253,8 +253,18 @@ button:hover{
     color: white;
 }
 
+.comandoTecnico{
+    margin-top: 90px;
+}
 
-
+.grid-comando{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 190px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
 .custom-footer {
     background-color: #2853A8;
     padding-bottom: 40px;
@@ -391,6 +401,7 @@ button:hover{
     .inf-jugadores {
         font-size: 2.2rem;
     }
+    
 
 }
 
