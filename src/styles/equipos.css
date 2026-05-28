@@ -332,3 +332,64 @@ button:hover{
     }
 
 }
+
+
+
+@media (max-width: 1024px) {
+
+    .floatingLogo {
+        width: 135px;
+        bottom: -20px;
+    }
+
+    .headerContent {
+        padding-left: 170px;
+    }
+
+    .brandText h1 {
+        font-size: 38px;
+    }
+
+    .brandText p {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 12px 0 12px 160px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .categorias{
+        padding: 15px 40px;
+
+    }
+
+    .categorias .boton-categoria {
+        font-size: 1.4rem;
+        padding: 15px 30px;
+        background: white;
+        color: #000000;
+        transition: 0.4s ease;
+
+    }
+
+    .teamContainer2 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0 40px;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .inf-jugadores {
+        font-size: 2.2rem;
+    }
+
+}
