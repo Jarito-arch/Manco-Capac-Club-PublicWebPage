@@ -56,3 +56,34 @@ img {
     left: -129px;
     margin-bottom: 15px;
 }
+
+/*NAV*/
+
+.navPrincipal {
+    background-color: #112758;
+    border-top: 3px solid #d8b13f;
+    border-bottom: 3px solid #d8b13f;
+    display: flex;
+    justify-content: center;
+}
+
+.navPrincipal ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+.navPrincipal a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navPrincipal a:hover {
+    color: #d8b13f;
+}
+
+a.active {
+    color: #d8b13f;
+}
