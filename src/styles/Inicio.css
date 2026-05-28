@@ -211,3 +211,57 @@ a.active{
     background-color: #c49f33;
 }
 
+body{
+    background: linear-gradient(to bottom, #dfe7ff, #5c86e8);
+}
+
+.blueContainer{
+    width: 78%;
+    margin: auto;
+    background: linear-gradient(
+        to bottom,
+        #21468d,
+        #5c86e8
+    );
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.matches{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 50px 80px;
+}
+
+.institutionalInfo{
+    color: white;
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.infoBlock{
+    margin-bottom: 100px;
+}
+
+.infoBlock h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.infoBlock hr{
+    border: none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.4);
+    margin-bottom: 30px;
+}
+
+.infoBlock p{
+    max-width: 850px;
+    margin: auto;
+    line-height: 2;
+    font-size: 18px;
+}
+
+
