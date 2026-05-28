@@ -117,3 +117,129 @@ main {
     padding: 0 20px 190px 20px;
 }
 
+/*Main*/
+
+.contenedor-historia {
+    width: 100%;
+}
+
+.titulo-historia {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+.titulo-historia h2 {
+    margin-top: 70px;
+    margin-bottom: 82px;
+    background-color: white;
+    color: #1a2b5e;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 36px;
+    font-weight: 500;
+    width: 369px;
+    text-align: center;
+
+}
+
+.linea-tiempo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.item-historia {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.imagen {
+    width: 350px;
+    height: 220px;
+    background: #d9d9d9;
+    flex-shrink: 0;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: relative;
+    border-left: 2px solid #D4AF37;
+    padding-left: 30px;
+    color: white;
+}
+
+.estrella {
+    position: absolute;
+    left: -11px;
+    top: 0;
+    color: #D4AF37;
+    font-size: 18px;
+}
+
+.contenido h3 {
+    font-size: 52px;
+    line-height: 1;
+}
+
+.contenido h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #F5F5F5;
+}
+
+.contenido p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Arial, sans-serif;
+    color: #EAEAEA;
+}
+
+
+.custom-footer {
+    background-color: #2853A8;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* Logo que sobresale */
+.footer-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-top: -95px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 220px;
+    height: auto;
+    display: block;
+}
+
+
+.footer-info {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
