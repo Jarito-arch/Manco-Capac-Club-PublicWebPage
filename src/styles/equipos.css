@@ -393,3 +393,119 @@ button:hover{
     }
 
 }
+
+
+
+
+@media (max-width: 768px) {
+
+    .topHeader {
+        height: auto;
+        padding: 14px 12px;
+    }
+
+    .headerContent{
+        justify-content: center;
+        padding-left: 0;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .floatingLogo {
+        position: static;
+        width: 85px;
+        transform: none;
+    }
+
+
+    .brandText h1 {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .brandText p {
+        font-size: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .asideContent {
+        height: 140px;
+    }
+
+    .asideContent h2 {
+        font-size: 1.6rem;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .categorias .boton-categoria {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .categoria {
+        font-size: 1.2rem;
+        padding: 10px 30px;
+    }
+
+    .inf-jugadores {
+        font-size: 1.8rem;
+    }
+
+    .teamContainer2 {
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        padding: 0 30px;
+        margin-top: 40px;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+
+    .custom-footer{
+        padding-bottom: 25px;
+    }
+    .footer-logo-wrapper {
+        margin-top: -60px;
+        margin-bottom: 15px;
+    }
+    .footer-logo {
+        width: 160px;
+    }
+
+    .footer-info {
+        font-size: 18px;
+    }
+
+    .footer-info h2 {
+        font-size: 18px;
+    }
+
+    .footer-info .fundado {
+        font-size: 14px;
+    }
+
+    .footer-info .footer-copyright {
+        font-size: 13px;
+    }
+}
