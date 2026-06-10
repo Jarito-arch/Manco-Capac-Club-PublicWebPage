@@ -5,33 +5,6 @@
      font-family: "Bebas Neue", sans-serif;
 }
 
-header {
-    width: 100%;
-    
-}
-
-.top-header {
-    background-color: #153574;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 3px solid #d8b13f;
-    
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-}
-
-.logo {
-    width: 194px;
-    transform: translateY(20px) translateX(-200px);
-    z-index: 100;
-}
 
 .brand-text h1 {
     color: #d8b13f;
@@ -59,6 +32,7 @@ nav {
     border-bottom: 2px solid #d8b13f;
     border-left: 2px solid #d8b13f;
     border-top: 2px solid #d8b13f;
+    
 
 }
 
@@ -113,6 +87,7 @@ nav a:hover {
     padding: 60px 0;
     width: 100%;
     border-left: 3px solid #d8b13f;
+    border-right: 3px solid #d8b13f;
 }
 
 .container.news-grid {
@@ -219,6 +194,8 @@ nav a:hover {
 
 @media (max-width: 1024px) {
 
+    
+
     .logo {
         width: 160px;
         transform: translateY(20px) translateX(-120px);
@@ -238,6 +215,7 @@ nav a:hover {
         gap: 25px;
         flex-wrap: wrap;
     }
+
 
     .container.news-grid {
         grid-template-columns: repeat(2, 1fr);
