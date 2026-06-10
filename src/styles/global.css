@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* PARTE SUPERIOR */
+.topHeader {
+    background-color: #153574;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENIDO DEL HEADER */
+.headerContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* LOGO */
+.floatingLogo {
+    width: 194px;
+    transform: translateY(30px) translateX(-150px);
+    z-index: 100;
+}
+
+/* TEXTO */
+.brandText h1 {
+    color: #d8b13f;
+    font-size: 48px;
+    line-height: 1;
+    position: relative;
+    left: -129px;
+    margin-top: 25px;
+}
+
+.brandText p {
+    color: white;
+    margin-top: 5px;
+    font-size: 26px;
+    position: relative;
+    left: -129px;
+    margin-bottom: 15px;
+}
+
+/* NAV */
+.navPrincipal {
+    background-color: #112758;
+    border-top: 3px solid #d8b13f;
+    border-bottom: 3px solid #d8b13f;
+    display: flex;
+    justify-content: center;
+}
+
+.navPrincipal ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+.navPrincipal a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.navPrincipal a:hover {
+    color: #d8b13f;
+}
+
+a.active {
+    color: #d8b13f;
+}
+
+/* TABLAS */
+main {
+
+    background: linear-gradient(to bottom, #153574, #2764DA);
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 0 20px 90px 20px;
+
+
+}
+
+.custom-footer {
+    background-color: #2853A8;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* Logo que sobresale */
+.footer-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-top: -95px;
+    /* Ajusta este valor si el logo queda muy arriba o abajo */
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 220px;
+    /* Un poco más grande para que luzca */
+    height: auto;
+    display: block;
+}
+
+
+/* Estilo de los enlaces del footer */
+.footer-info {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
