@@ -5,7 +5,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-/* HEADER */
+
 header {
     width: 100%;
 }
@@ -18,7 +18,7 @@ img {
     max-width: 100%;
 }
 
-/* PARTE SUPERIOR */
+
 .topHeader {
     background-color: #153574;
     height: 120px;
@@ -27,7 +27,6 @@ img {
     align-items: center;
 }
 
-/* CONTENIDO DEL HEADER */
 .headerContent {
     display: flex;
     align-items: center;
@@ -35,33 +34,28 @@ img {
     position: relative;
 }
 
-/* LOGO */
 .floatingLogo {
-    width: 194px;
-    transform: translateY(30px) translateX(-150px);
+    width: 170px;
+    position: absolute;
+    left: -150px;
+    top: -4px;
     z-index: 100;
 }
 
-/* TEXTO */
 .brandText h1 {
     color: #d8b13f;
     font-size: 48px;
     line-height: 1;
-    position: relative;
-    left: -129px;
-    margin-top: 25px;
+    margin: 0;
 }
 
 .brandText p {
     color: white;
-    margin-top: 5px;
     font-size: 26px;
-    position: relative;
-    left: -129px;
-    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
-/* NAV */
+
 .navPrincipal {
     background-color: #112758;
     border-top: 3px solid #d8b13f;
