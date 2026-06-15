@@ -274,6 +274,32 @@ nav a:hover {
         grid-template-columns: 1fr;
         row-gap: 40px;
     }
+
+   .custom-footer .footer-logo-wrapper {
+        margin-top: -60px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .custom-footer .footer-logo {
+        width: 120px; 
+        height: auto;
+    }
+
+    .custom-footer .footer-info h2 {
+        font-size: 22px; 
+        margin-bottom: 8px;
+    }
+
+    .custom-footer .footer-info .founded {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .custom-footer .footer-info .footer-copyright {
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 
@@ -301,6 +327,33 @@ nav a:hover {
     .btn-view-more {
         width: 90%;
     }
+    .custom-footer .footer-logo-wrapper {
+        margin-top: -45px; 
+        margin-bottom: 10px;
+    }
+
+    .custom-footer .footer-logo {
+        width: 95px; 
+    }
+
+    
+    .custom-footer .footer-info h2 {
+        font-size: 18px;
+    }
+
+    .custom-footer .footer-info .founded {
+        font-size: 13px;
+    }
+
+    .custom-footer .footer-info .footer-copyright {
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+
+
+
 }
 
 
