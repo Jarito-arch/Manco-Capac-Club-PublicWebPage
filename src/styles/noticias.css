@@ -129,15 +129,14 @@
 }
 
 
-@media   (max-width: 1400px) {
+
+
+@media (max-width: 1400px) {
     .container.news-grid {
         column-gap: 60px; 
         max-width: 95%;
     }
 }
-
-
-
 
 @media (max-width: 1024px) {
     .brandText h1 {
@@ -153,12 +152,7 @@
     }
 }
 
-   
-
-
 @media (max-width: 768px) {
-    
-   
     header .Topheader {
         height: auto;
         padding: 30px 10px;
@@ -167,7 +161,6 @@
         align-items: center;
     }
 
-    
     header .headerContent {
         display: flex;
         flex-direction: column; 
@@ -180,7 +173,6 @@
         margin: 0 auto;
     }
 
-   
     header .headerContent a.logoLink {
         display: block;
         position: static;
@@ -188,7 +180,6 @@
         margin: 0 auto;
     }
 
-    
     header .floatingLogo {
         position: static;
         width: 110px;
@@ -199,7 +190,6 @@
         transform: none;
     }
 
-    
     header .brandText {
         width: 100%;
         text-align: center;
@@ -209,7 +199,6 @@
         padding: 0;
     }
 
-   
     header .brandText h1 {
         position: static;
         font-size: 26px;
@@ -219,7 +208,6 @@
         left: 0;
     }
 
-    
     header .brandText p {
         position: static;
         font-size: 15px;
@@ -247,30 +235,31 @@
     header .navPrincipal ul li {
         width: 100%;
         text-align: center;    
+    }
 
     header .navPrincipal a {
         font-size: 1.2rem;     
         padding: 6px 20px;
     }
 
-    
+ 
     main .container.news-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        max-width: 400px;
+        grid-template-columns: 1fr; 
+        row-gap: 35px;              
+        max-width: 450px;           
         margin: 0 auto;
         width: 90%;
     }
 
-    .news-banner {
-        height: 135px;
+    main .news-card {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .overlay h2 {
         font-size: 28px;
     }
 }
-
 
 @media (max-width: 480px) {
     header .brandText h1 {
@@ -288,4 +277,10 @@
     header .navPrincipal a {
         font-size: 1.1rem;
     }
-}}
+    
+    
+    main .container.news-grid {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+}
