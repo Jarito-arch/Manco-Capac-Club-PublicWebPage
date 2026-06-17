@@ -28,8 +28,10 @@ img{
 }
 .floatingLogo{
     width: 194px;
-    transform: translateY(30px) translateX(-150px);
-    z-index: 100;
+   position: relative;
+    top: 30px;
+   left: -150px;
+   z-index: 100;
 }
 .brandText h1{
     color: #d8b13f;
