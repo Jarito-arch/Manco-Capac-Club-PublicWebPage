@@ -1,62 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     font-family: "Bebas Neue", sans-serif;
-}
 
 
-.brand-text h1 {
-    color: #d8b13f;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 48px;
-    line-height: 1;
-    position: relative;
-   
-    margin-top: 25px;
-}
-
-.brand-text p {
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    margin-top: 5px;
-    font-size: 26px;
-    position: relative;
-   
-    margin-bottom: 15px;
-}
-nav {
-    background-color: #112758;
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid #d8b13f;
-    border-left: 2px solid #d8b13f;
-    border-top: 2px solid #d8b13f;
-    
-
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    padding: 15px 0;
-    margin: 0;
-}
-
-nav a {
-    
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.active,
-nav a:hover {
-    color: #d8b13f;
-}
 .news-banner {
     background-image: url('../assets/Images/ft\ coliseo\ \(1\).png');
     background-size: cover;
@@ -200,8 +143,9 @@ nav a:hover {
     }
 
     .floatingLogo {
-        width: 140px;
-        left: -120px;
+         width: 140px;
+        transform: none; 
+        position: relative;
     }
 
     .navPrincipal ul {
