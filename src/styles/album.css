@@ -1,7 +1,7 @@
 
 
 .banner {
-    background-image: url('../assets/Images/ft\ coliseo\ \(1\).png');
+    background-image: linear-gradient(#15357480),url('../assets/Images/ft\ coliseo\ \(1\).png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -131,182 +131,156 @@
     height: auto;
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
     .container.-grid {
-      column-gap: 60px; 
+        column-gap: 60px; 
         max-width: 95%;
     }
 }
 
 @media (max-width: 1024px) {
-
     .brandText h1 {
-        font-size: 38px; 
+        font-size: 36px;
+        left: 0;
     }
-
-    .floatingLogo {
-        width: 140px;
-        left: -120px;
+    .brandText p, .floatingLogo {
+        left: 0;
     }
-
-    .navPrincipal ul {
-        gap: 20px; 
-    }
-
     .container.-grid {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
     }
 }
 
-
-
 @media (max-width: 768px) {
-
-   header .topHeader {
+    header .Topheader {
         height: auto;
-        padding: 20px 10px;
+        padding: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     header .headerContent {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; 
         align-items: center;
-        gap: 10px;
+        justify-content: center;
+        gap: 15px;
         width: 100%;
-    }
-
-    header .headerContent .floatingLogo {
         position: static;
-        width: 120px;
+        left: 0;
         margin: 0 auto;
     }
 
-    header .headerContent .brandText {
-        text-align: center;
-        width: 100%;
-    }
-
-    header .brandText h1 {
-        font-size: 32px;
-        line-height: 1.1;
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-
-    header .brandText p {
-        font-size: 20px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    .navPrincipal ul {
-        flex-direction: column;
-        gap: 0;
-        width: 100%;
-    }
-
-    .navPrincipal ul li {
-        width: 100%;
-        text-align: center;
-        border-bottom: none;
-    }
-
-    .navPrincipal a {
+    header .headerContent a.logoLink {
         display: block;
-    
-        width: 100%;
+        position: static;
+        left: 0;
+        margin: 0 auto;
     }
 
-    main .container.-grid {
-        grid-template-columns: 1fr;
-        row-gap: 40px;
-    }
-
-   .custom-footer .footer-logo-wrapper {
-        margin-top: -60px;
-        margin-bottom: 15px;
-        text-align: center;
-        transform:none;
-    }
-
-    .custom-footer .footer-logo {
-        width: 120px; 
+    header .floatingLogo {
+        position: static;
+        width: 110px;
         height: auto;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        transform: none;
     }
 
-    .custom-footer .footer-info h2 {
-        font-size: 22px; 
-        margin-bottom: 8px;
-    }
-
-    .custom-footer .footer-info .founded {
-        font-size: 15px;
-        margin-bottom: 8px;
-    }
-
-    .custom-footer .footer-info .footer-copyright {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-}
-
-
-
-@media (max-width: 480px) {
-
-   header .headerContent .floatingLogo {
-        width: 100px;
-        transform:none;
+    header .brandText {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        position: static;
+        margin: 0;
+        padding: 0;
     }
 
     header .brandText h1 {
+        position: static;
         font-size: 26px;
+        line-height: 1.2;
+        color: #d8b13f;
+        margin: 0 auto;
+        left: 0;
     }
 
     header .brandText p {
-        font-size: 16px;
+        position: static;
+        font-size: 15px;
+        color: white;
+        margin: 5px 0 0 0;
+        left: 0;
+    }
+
+    header .navPrincipal {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .navPrincipal ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        gap: 14px;              
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    header .navPrincipal ul li {
+        width: 100%;
+        text-align: center;    
+    }
+
+    header .navPrincipal a {
+        font-size: 1.2rem;     
+        padding: 6px 20px;
+    }
+
+ 
+    main .container.-grid {
+        grid-template-columns: 1fr; 
+        row-gap: 35px;              
+        max-width: 450px;           
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    main .-card {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .overlay h2 {
-        font-size: 30px;
-    }
-
-    .news-banner {
-        height: 150px;
-    }
-
-    .btn-view-more {
-        width: 90%;
-    }
-    .custom-footer .footer-logo-wrapper {
-        margin-top: -45px; 
-        margin-bottom: 10px;
-    }
-
-    .custom-footer .footer-logo {
-        width: 95px; 
-    }
-
-    
-    .custom-footer .footer-info h2 {
-        font-size: 18px;
-    }
-
-    .custom-footer .footer-info .founded {
-        font-size: 13px;
-    }
-
-    .custom-footer .footer-info .footer-copyright {
-        font-size: 12px;
-        line-height: 1.4;
-        padding: 0 10px;
+        font-size: 28px;
     }
 }
 
+@media (max-width: 480px) {
+    header .brandText h1 {
+        font-size: 22px;
+    }
 
+    header .brandText p {
+        font-size: 13px;
+    }
 
+    header .navPrincipal ul {
+        gap: 10px;          
+    }
 
-
-
-
-
+    header .navPrincipal a {
+        font-size: 1.1rem;
+    }
+    
+    
+    main .container.-grid {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+}
