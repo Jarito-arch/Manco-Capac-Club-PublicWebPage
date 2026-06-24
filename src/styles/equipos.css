@@ -1,13 +1,10 @@
-
-
 main{
+    font-family:"Bebas Neue", sans-serif;
     min-height: 100vh;
     background: linear-gradient(to bottom, #01015c, #4983ce);
-    padding-bottom: 180px;
+    padding: 0 5px 180px 0 !important;
     overflow-x: hidden;
-    
 }
-
 
 .asideContent{
     background: linear-gradient(to right, #00000080, #00000080), url('../assets/Images/ft\ coliseo\ \(1\).png');
@@ -36,12 +33,12 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-    
-    
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.categoria{
+.category{
     color: #000000;
     font-size: 2.1rem;
     background-color: aliceblue;
@@ -50,40 +47,61 @@ main{
     text-transform: uppercase;
     margin-top: 20px;
 }
-.categoria h2{
-    color: black;
-}
 
 .teamContainer nav{
     background: transparent;
     border: none;
 }
-.categorias{
+
+
+.categories{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px 90px;
+    padding: 15px 0;
     gap: 15px;
+    width: 100%;
 }
 
-.categorias .boton-categoria{
-    font-size: 2rem;
-    padding: 20px 50px;
+.categories ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.categories li{
+    display: flex;
+}
+
+
+li a{
+text-decoration: none;
+}
+
+
+.categories .category-button{
+    font-size: 1.8rem;
+    padding: 18px 50px;
     background: white;
     color: #000000;
     transition: 0.4s ease;
 }
 
 
-.categorias .boton-categoria:hover{
+.categories .category-button:hover{
     background: #e0b218;
     color: white
 }
 
 
 /*Section*/
-.jugadores{
+.players{
     display: flex;
     justify-content: center;
     margin-top: 65px;
@@ -91,7 +109,7 @@ main{
 }
 
 
-.inf-jugadores{
+.player-info{
     color: white;
     text-transform: uppercase;
     font-size: 2.6rem;
@@ -127,7 +145,7 @@ main{
     transform: scale(1.08);
 }
 
-.tarjeta-jugador{
+.playercard{
     background: rgb(180, 180, 180);
     height: 250px;
     display: flex;
@@ -136,7 +154,7 @@ main{
 }
 
 
-.foto-gris{
+.grayphoto{
     display: flex;
     justify-content: center;
 }
@@ -149,7 +167,6 @@ main{
 }
 
 button{
-    font-family:"Bebas Neue", sans-serif;
     font-size: 1.3rem;
     background: aliceblue;
     text-transform: uppercase;
@@ -164,11 +181,11 @@ button:hover{
     color: white;
 }
 
-.comandoTecnico{
+.TechnicalStaff{
     margin-top: 90px;
 }
 
-.grid-comando{
+.grid-command{
     display: grid;
     grid-template-columns: repeat(2, 300px);
     justify-content: center;
@@ -184,11 +201,7 @@ button:hover{
     
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
+
 
 .footer-logo-wrapper {
     position: relative;
@@ -214,17 +227,6 @@ button:hover{
     transition: color 0.3s;
 }
 
-
-
-
-
-
-
-    
-
-    
-
-
 @media (max-width: 1024px) {
 
     .floatingLogo {
@@ -244,29 +246,33 @@ button:hover{
         font-size: 20px;
     }
 
-    nav ul {
-        gap: 20px;
-        flex-wrap: wrap;
-        padding: 12px 0 12px 160px;
-    }
+    .navPrincipal ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 12px 0 12px 160px;
+}
 
     nav a {
         font-size: 1.1rem;
     }
 
-    .categorias{
-        padding: 15px 40px;
+    .categories{
+        padding: 15px 0;
 
     }
+    .categories ul{
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    .categorias .boton-categoria {
-        font-size: 1.4rem;
-        padding: 15px 30px;
-        background: white;
-        color: #000000;
-        transition: 0.4s ease;
-
-    }
+    .categories .category-button {
+    font-size: 1.7rem;
+    padding: 18px 45px;
+    background: white;
+    color: #000000;
+    transition: 0.4s ease;
+}
 
     .teamContainer2 {
         grid-template-columns: repeat(3, 1fr);
@@ -278,16 +284,32 @@ button:hover{
         width: 100%;
     }
 
-    .inf-jugadores {
+    .player-info {
         font-size: 2.2rem;
     }
-    .grid-comando {
+    .grid-command {
         gap: 40px;
     }
 
 }
 
 
+@media (max-width: 900px) {
+
+    .categories {
+        padding: 15px 30px;
+    }
+
+    .categories ul {
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .categories .category-button {
+        font-size: 1.5rem;
+        padding: 16px 34px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -339,23 +361,43 @@ button:hover{
         font-size: 1.6rem;
     }
 
-    .categorias {
+    .categories {
         flex-wrap: wrap;
         gap: 10px;
         padding: 0 20px;
     }
 
-    .categorias .boton-categoria {
+    .categories .category-button {
         font-size: 1rem;
         padding: 10px 18px;
     }
 
-    .categoria {
+    .category{
         font-size: 1.2rem;
         padding: 10px 30px;
     }
 
-    .inf-jugadores {
+    .categories ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    }
+
+    .categories li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories .category-button{
+        width: 250px;
+        text-align: center;
+    }
+    .player-info{
         font-size: 1.8rem;
     }
 
@@ -375,7 +417,7 @@ button:hover{
         padding: 14px;
     }
 
-    .grid-comando {
+    .grid-command {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 0 30px 30px;
@@ -454,17 +496,17 @@ button:hover{
     .asideContent h2 {
         font-size: 1.3rem;
     }
-    .categorias{
+    .categories{
         gap: 8px;
         padding: 8px 15px;
     }
 
-    .categorias .boton-categoria {
+    .categories .category-button {
         font-size: 0.9rem;
         padding: 8px 14px;
     }
 
-    .inf-jugadores {
+    .player-info {
         font-size: 1.5rem;
     }
 
@@ -482,7 +524,7 @@ button:hover{
         padding-bottom: 20px;
     }
 
-    .grid-comando {
+    .grid-command {
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 0 15px 20px;
