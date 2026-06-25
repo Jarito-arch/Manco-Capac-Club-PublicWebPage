@@ -458,44 +458,56 @@ button:hover{
 
 @media (max-width: 768px) {
 
-    .topHeader {
+    header .Topheader {
         height: auto;
-        padding: 14px 12px;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .headerContent{
+    header .headerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        padding-left: 0;
-        gap: 14px;
+        gap: 10px;
         width: 100%;
     }
 
-    .floatingLogo {
+    header .floatingLogo {
         position: static;
-        width: 85px;
+        width: 90px;
+        margin: 0 auto;
         transform: none;
     }
 
-
-    .brandText h1 {
-        font-size: 24px;
-        margin-top: 0;
+    header .brandText {
+        text-align: center;
     }
 
-    .brandText p {
-        font-size: 15px;
+    header .brandText h1 {
+        font-size: 20px;
     }
 
-    nav ul {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 15px;
+    header .brandText p {
+        font-size: 12px;
     }
 
-    nav a {
-        font-size: 0.95rem;
+    header .navPrincipal ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 10px;
     }
+
+    header .navPrincipal a {
+        font-size: 1.1rem;
+    }
+
+
+
+
 
     
 
@@ -596,38 +608,51 @@ button:hover{
 
 @media (max-width: 480px) {
 
-    .topHeader {
-        padding: 10px 8px;
+    header .Topheader {
+        height: auto;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .floatingLogo {
-        position: static;
-        width: 70px;
-        flex-shrink: 0;
-    }
-
-    .headerContent {
+    header .headerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
+        width: 100%;
     }
 
-    .brandText h1 {
-        font-size: 17px;
-        margin-top: 10px;
+    header .floatingLogo {
+        position: static;
+        width: 90px;
+        margin: 0 auto;
+        transform: none;
     }
 
-    .brandText p {
+    header .brandText {
+        text-align: center;
+    }
+
+    header .brandText h1 {
+        font-size: 20px;
+    }
+
+    header .brandText p {
         font-size: 12px;
     }
 
-    nav ul {
-        gap: 8px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 8px 10px;
+    header .navPrincipal ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 10px;
     }
 
-    nav a {
-        font-size: 0.85rem;
+    header .navPrincipal a {
+        font-size: 1.1rem;
     }
 
 
