@@ -7,23 +7,21 @@ main{
 }
 
 .asideContent{
-    background: linear-gradient(to right, #00000080, #00000080), url('../assets/Images/ft\ coliseo\ \(1\).png');
-    width: calc(100% + 5px);
-    margin-right: -5px;
-    height: clamp(120px, 20vw, 200px);
+      background-image: linear-gradient(#15357480), url('../assets/Images/ft\ coliseo\ \(1\).png');
     background-size: cover;
     background-position: center;
-    display:flex;
+    height: 218px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+    border-bottom: 3px solid #d8b13f;
 }
 
 
 
 .asideContent h2{
     color: white;
-    font-size: 3rem;
+    font-size: 64px;
     font-weight: 550;
 
 }
