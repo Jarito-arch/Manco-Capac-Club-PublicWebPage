@@ -211,7 +211,9 @@ h3 {
 
     background-color: #d8e1f0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 .select_MancoCapac {
 
