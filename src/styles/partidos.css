@@ -295,8 +295,9 @@ h3 {
     letter-spacing: 1.5px;
 }
 
-/* 1400px */
-@media (min-width: 1400px) {
+
+@media (max-width: 1400px) {
+
     .meses button {
         font-size: 18.8px;
     }
@@ -305,7 +306,9 @@ h3 {
         padding-left: 27px;
         padding-right: 27px;
     }
+
 }
+
 
 /* 1024px */
 
