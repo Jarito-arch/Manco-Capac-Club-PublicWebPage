@@ -43,10 +43,12 @@ h3 {
 
 
 
-.meses button {
+
+
+.meses #month {
     background-color: white;
 
-    padding: 20px 34px;
+    padding: 26.6px;
 
     color: #1a2b5e;
 
@@ -59,6 +61,8 @@ h3 {
     line-height: 1;
 }
 
+
+
 .ContenedorMeses {
 
     display: flex;
@@ -66,6 +70,7 @@ h3 {
     flex-wrap: wrap;
 
 }
+
 
 .meses {
 
@@ -77,12 +82,12 @@ h3 {
 
 }
 
-.meses .monthActive {
+.meses .Active {
     background-color: #e0a500;
     color: white;
 }
 
-.meses button:hover {
+.meses #month:hover {
 
     background-color: #e0a500;
 
@@ -304,10 +309,7 @@ html{
         font-size: 18.8px;
     }
 
-    .ContenedorMeses {
-        padding-left: 27px;
-        padding-right: 27px;
-    }
+    
 
 }
 
