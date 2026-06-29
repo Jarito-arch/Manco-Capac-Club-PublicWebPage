@@ -164,13 +164,19 @@ body{
 }
 
 .institutionalInfo{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
     color: white;
     text-align: center;
-    padding: 60px 80px;
+    padding: 60px 0;
 }
 
 .infoBlock{
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
 }
 
 .infoBlock h2{
@@ -186,10 +192,11 @@ body{
 }
 
 .infoBlock p{
-    max-width: 850px;
-    margin: auto;
-    line-height: 2;
-    font-size: 18px;
+    max-width: 800px;
+    width: 100%;
+    text-align: justify;   
+    line-height: 1.9;
+    font-size: 18px; 
 }
 
 .custom-footer {
@@ -344,6 +351,94 @@ body{
     .footer-info{
         font-size:20px;
     }
+    header .Topheader {
+        height: auto;
+        padding: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .headerContent {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        position: static;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    header .headerContent a.logoLink {
+        display: block;
+        position: static;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    header .floatingLogo {
+        position: static;
+        width: 110px;
+        height: auto;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    header .brandText {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .brandText h1 {
+        position: static;
+        font-size: 26px;
+        line-height: 1.2;
+        color: #d8b13f;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    header .brandText p {
+        position: static;
+        font-size: 15px;
+        color: white;
+        margin: 5px 0 0 0;
+        left: 0;
+    }
+
+    header .navPrincipal {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .navPrincipal ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        gap: 14px;              
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    header .navPrincipal ul li {
+        width: 100%;
+        text-align: center;    
+    }
+
+    header .navPrincipal a {
+        font-size: 1.2rem;     
+        padding: 6px 20px;
+    }
 
 }
 
@@ -426,6 +521,94 @@ body{
 
     .footer-info{
         font-size:17px;
+    }
+    header .Topheader {
+        height: auto;
+        padding: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .headerContent {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        position: static;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    header .headerContent a.logoLink {
+        display: block;
+        position: static;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    header .floatingLogo {
+        position: static;
+        width: 110px;
+        height: auto;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    header .brandText {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .brandText h1 {
+        position: static;
+        font-size: 26px;
+        line-height: 1.2;
+        color: #d8b13f;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    header .brandText p {
+        position: static;
+        font-size: 15px;
+        color: white;
+        margin: 5px 0 0 0;
+        left: 0;
+    }
+
+    header .navPrincipal {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .navPrincipal ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        gap: 14px;              
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    header .navPrincipal ul li {
+        width: 100%;
+        text-align: center;    
+    }
+
+    header .navPrincipal a {
+        font-size: 1.2rem;     
+        padding: 6px 20px;
     }
 
 }
