@@ -48,18 +48,28 @@ h3 {
 .meses #month {
     background-color: white;
 
-    padding: 26.6px;
+    padding: clamp(30px, 1vw, 12px);
 
     color: #1a2b5e;
 
-    font-size: 20px;
+    font-size: clamp(25px, 1.5vw, 90px);
 
     border: none;
 
     cursor: pointer;
 
     line-height: 1;
+
+    display: flex;
+
+    align-content: center;
+    
+    justify-content: center;
+
+    overflow: hidden;
+    
 }
+
 
 
 
@@ -305,12 +315,27 @@ html{
 
 
 @media (max-width: 1400px) {
-
-    .meses button {
-        font-size: 18.8px;
+    main{
+        padding: 0 20px;
     }
 
-    
+    .meses #month {
+        background-color: white;
+
+        padding: 27.7px;
+
+        color: #1a2b5e;
+
+        font-size: clamp(20px, 1.8vw, 80px);
+
+        border: none;
+
+        cursor: pointer;
+
+        line-height: 1;
+        
+        min-width: 0;
+    }   
 
 }
 
@@ -360,6 +385,24 @@ html{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .meses #month {
+        background-color: white;
+
+        padding: 19px;
+
+        color: #1a2b5e;
+
+        font-size: 24px;
+
+        border: none;
+
+        cursor: pointer;
+
+        line-height: 1;
+
+        min-width: 0;
     }
 
     .meses button,
