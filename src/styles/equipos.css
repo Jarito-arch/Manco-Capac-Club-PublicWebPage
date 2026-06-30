@@ -392,6 +392,7 @@ button:hover{
     flex-wrap: wrap;
 }
 
+
     .categories .category-button {
     font-size: 1.5rem;
     padding: 14px 0;
@@ -458,46 +459,108 @@ button:hover{
 
 @media (max-width: 768px) {
 
-    .topHeader {
+    /* ==========================================================================
+       1. CORE: HEADER & ESTRUCTURA SUPERIOR (Logo, Texto y Hamburguesa)
+       ========================================================================== */
+
+    header .Topheader {
         height: auto;
-        padding: 14px 12px;
-    }
-
-    .headerContent{
+        padding: 20px 10px;
+        display: flex;
         justify-content: center;
-        padding-left: 0;
-        gap: 14px;
-        width: 100%;
+        align-items: center;
     }
 
-    .floatingLogo {
-        position: static;
-        width: 85px;
+    header .headerContent {
+        display: flex !important;
+        flex-direction: row;            /* Uno al lado del otro */
+        align-items: center;            /* Centrados verticalmente */
+        justify-content: space-between; /* Distribuye espacio: Logo/Texto izquierda, Botón derecha */
+        gap: 15px;                      /* Espacio limpio de separación */
+        width: 100%;
+        position: relative;             /* Contexto para el botón absoluto */
+    }
+
+    header .floatingLogo {
+        position: static;               /* Fuerza la anulación de posiciones relativas de PC */
+        top: 0;
+        left: 0;
+        width: 90px;
+        margin: 0;
+        height: auto;
         transform: none;
     }
 
-
-    .brandText h1 {
-        font-size: 24px;
-        margin-top: 0;
+    header .brandText {
+        text-align: left;               /* Alineación más limpia al estar al lado del logo */
+        flex-grow: 1;                   /* Permite que el texto use el espacio central */
     }
 
-    .brandText p {
-        font-size: 15px;
+    header .brandText h1 {
+        position: static;               /* Anula el left negativo que causaba la superposición */
+        left: 0;
+        font-size: 20px;
+        margin: 0;
     }
 
-    nav ul {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 15px;
+    header .brandText p {
+        display: none;                  /* Mantiene tu decisión de ocultar el subtítulo en móvil */
     }
 
-    nav a {
-        font-size: 0.95rem;
+    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
+    header .headerContent .hamburger {
+        display: block !important;       /* Se hace visible en celulares */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.3rem;               /* Tamaño óptimo para la interacción táctil */
+        cursor: pointer;
+        padding: 5px;
     }
 
-    
+    /* ==========================================================================
+       2. NAVEGACIÓN PRINCIPAL (Menú Desplegable Absoluto)
+       ========================================================================== */
+
+    header .navPrincipal {
+        position: relative;             /* Permite anclar el menú absoluto justo debajo */
+    }
+
+    header .navPrincipal ul {
+        display: none;                  /* Oculto por defecto en móvil */
+        flex-direction: column;         /* Enlaces en vertical */
+        align-items: center;
+        gap: 0;                         /* Reseteo para control total del padding del enlace */
+        padding: 0;                     /* Reseteo de espaciados */
+        position: absolute;             /* Flota sobre el contenido sin desplazar el resto de la web */
+        top: 100%;                      /* Nace exactamente al terminar la barra de navegación */
+        left: 0;
+        width: 100%;
+        background-color: #112758;      /* Mantiene consistencia de color institucional */
+        border-bottom: 3px solid #d8b13f;
+        z-index: 1000;                  /* Capa superior ante grids o tablas */
+    }
+
+    /* ESTADO ACTIVO: Cuando JS inyecta la clase, el menú se despliega */
+    header .navPrincipal ul.is-active {
+        display: flex;
+    }
+
+    header .navPrincipal ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navPrincipal a {
+        display: block;                 /* Área interactiva expandida al 100% */
+        font-size: 1.1rem;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(216, 177, 63, 0.2); /* Separador sutil */
+    }
+
+    /* ==========================================================================
+       3. SECCIONES INTERNAS Y CONTENIDO COMPARTIDO
+       ========================================================================== */
 
     .asideContent h2 {
         font-size: 1.6rem;
@@ -509,41 +572,38 @@ button:hover{
         padding: 0 20px;
     }
 
-    
-
-    .category{
-    font-size: 1.2rem;
-    padding: 10px 30px;
-}
-
-    .categories ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
+    .category {
+        font-size: 1.2rem;
+        padding: 10px 30px;
     }
 
-    .categories li{
-    display: flex;
+    .categories ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
     }
 
-
-    .categories .category-button{
-    font-size: 1rem;
-    padding: 12px 0;
-    width: 120px;
-    text-align: center;
+    .categories li {
+        display: flex;
     }
 
-    .player-info{
+    .categories .category-button {
+        font-size: 1rem;
+        padding: 12px 0;
+        width: 120px;
+        text-align: center;
+    }
+
+    .player-info {
         font-size: 1.8rem;
     }
 
     .teamContainer2 {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         padding: 0 40px;
         margin-top: 40px;
@@ -564,13 +624,19 @@ button:hover{
         padding: 0 30px 30px;
     }
 
+    /* ==========================================================================
+       4. FOOTER INSTITUCIONAL
+       ========================================================================== */
+
     .custom-footer {
         padding-bottom: 25px;
     }
+
     .footer-logo-wrapper {
         margin-top: -60px;
         margin-bottom: 15px;
     }
+
     .footer-logo {
         width: 160px;
     }
@@ -593,41 +659,52 @@ button:hover{
 }
 
 
-
 @media (max-width: 480px) {
 
-    .topHeader {
-        padding: 10px 8px;
-    }
-
-    .floatingLogo {
-        position: static;
-        width: 70px;
-        flex-shrink: 0;
-    }
-
-    .headerContent {
-        gap: 10px;
-    }
-
-    .brandText h1 {
-        font-size: 17px;
-        margin-top: 10px;
-    }
-
-    .brandText p {
-        font-size: 12px;
-    }
-
-    nav ul {
-        gap: 8px;
-        flex-wrap: wrap;
+    header .Topheader {
+        height: auto;
+        padding: 20px 10px;
+        display: flex;
         justify-content: center;
-        padding: 8px 10px;
+        align-items: center;
     }
 
-    nav a {
-        font-size: 0.85rem;
+    header .headerContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header .floatingLogo {
+        position: static;
+        width: 90px;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    header .brandText {
+        text-align: center;
+    }
+
+    header .brandText h1 {
+        font-size: 20px;
+    }
+
+    header .brandText p {
+        display: none;
+    }
+
+    header .navPrincipal ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    header .navPrincipal a {
+        font-size: 1.1rem;
     }
 
 

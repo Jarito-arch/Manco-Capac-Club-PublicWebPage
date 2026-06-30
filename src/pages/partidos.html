@@ -1,23 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Deportivo Manco Cápac</title>
 
-    <link rel="icon" type="image/x-icon" href="../assets/Images/Logo/logoMancoCapac.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
-        rel="stylesheet">
-    
-    <link rel="stylesheet" href="../styles/partidos.css">
-     <link rel="stylesheet" href="../styles/global.css">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/Images/Logo/logoMancoCapac.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-   <header>
+    <link rel="stylesheet" href="../styles/partidos.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+
+  <body>
+    <header>
       <div class="Topheader">
         <div class="headerContent">
           <a href="Inicio.html">
@@ -31,12 +36,21 @@
             <p>SITIO WEB OFICIAL</p>
           </div>
         </div>
+        <button class="hamburger-btn" id="hamburger-menu" aria-label="hamburger menu">
+                ☰
+            </button>
       </div>
       <nav class="navPrincipal">
         <ul>
+<<<<<<< HEAD
           <li><a href="Inicio.html" >INICIO</a></li>
           <li><a href="noticias.html">NOTICIAS</a></li>
           <li><a href="partidos.html"class="active">PARTIDOS</a></li>
+=======
+          <li><a href="Inicio.html">INICIO</a></li>
+          <li><a href="noticias.html">NOTICIAS</a></li>
+          <li><a href="partidos.html" class="active">PARTIDOS</a></li>
+>>>>>>> 825432206da441503514dc278160bd88c9e507a5
           <li><a href="equipos.html">EQUIPO</a></li>
           <li><a href="el-club.html">EL CLUB</a></li>
           <li><a href="album.html">ÁLBUM</a></li>
@@ -45,203 +59,213 @@
     </header>
 
     <section class="bannerPartidos">
-        <h2>PARTIDOS</h2>
+      <h2>PARTIDOS</h2>
     </section>
 
     <main>
-        <h3>CALENDARIO</h3>
-        <section class="calendario">
-            <div class="ContenedorMeses">
-                <div class="meses">
+      <h3 id="calendario">CALENDARIO</h3>
+      <section  class="calendario">
+        <div class="ContenedorMeses">
+          <div class="meses">
+            <button id="month" data-month="enero">ENERO</button>
+            <button id="month" data-month="febrero">FEBRERO</button>
+            <button id="month" data-month="marzo">MARZO</button>
+            <button id="month" data-month="abril">ABRIL</button>
+            <button id="month" class="Active" data-month="mayo">MAYO</button>
+            <button id="month" data-month="junio">JUNIO</button>
+            <button id="month" data-month="julio">JULIO</button>
+            <button id="month" data-month="agosto">AGOSTO</button>
+            <button id="month" data-month="septiembre">SEPTIEMBRE</button>
+            <button id="month" data-month="octubre">OCTUBRE</button>
+            <button id="month" data-month="noviembre">NOVIEMBRE</button>
+            <button id="month" data-month="diciembre">DICIEMBRE</button>
+          </div>
+        </div>
 
-                    <button class="month" data-month="enero">ENERO</button>
-                    <button class="month" data-month="febrero">FEBRERO</button>
-                    <button class="month" data-month="marzo">MARZO</button>
-                    <button class="month" data-month="abril">ABRIL</button>
-                    <button class="monthActive" data-month="mayo">MAYO</button>
-                    <button class="month" data-month="junio">JUNIO</button>
-                    <button class="month" data-month="julio">JULIO</button>
-                    <button class="month" data-month="agosto">AGOSTO</button>
-                    <button class="month" data-month="septiembre">SEPTIEMBRE</button>
-                    <button class="month" data-month="octubre">OCTUBRE</button>
-                    <button class="month" data-month="noviembre">NOVIEMBRE</button>
-                    <button class="month" data-month="diciembre">DICIEMBRE</button>
+        <div class="tabla">
+          <table class="tablaCalendario">
+            <tbody>
+              <tr>
+                <td>
+                  <span class="cal_dia">VIE 15 MAY</span>
+                  <span class="cal_hora">21:30 HRS </span>
+                </td>
+                <td>
+                  <span>
+                    <img src="../assets/Images/Logo/logoLiga.png" />
+                  </span>
+                </td>
+                <td>
+                  <span class="nombreLiga"
+                    >Liga Deportiva Mixta de Basketball de Chiclayo - Rama
+                    A</span
+                  >
+                  <br />
+                  <span class="lugar">Coliseo Cerrado de Chiclayo</span>
+                </td>
+                <td>
+                  <p>Triple Doble B</p>
+                </td>
+                <td>
+                  <p>
+                    <span>
+                      <img
+                        src="../assets/Images/Logo/logoTripleDoble-ProximoPartido.png"
+                      />
+                    </span>
+                    <span>vs.</span>
+                    <span>
+                      <img src="../assets/Images/Logo/logoMancoCapac.png" />
+                    </span>
+                  </p>
+                </td>
+                <td>
+                  <p>Manco Cápac B</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="cal_dia">SAB 23 MAY</span>
+                  <span class="cal_hora">18:00 HRS </span>
+                </td>
+                <td>
+                  <span>
+                    <img src="../assets/Images/Logo/logoLiga.png" />
+                  </span>
+                </td>
+                <td>
+                  <span
+                    >Liga Deportiva Mixta de Basketball de Chiclayo - Rama
+                    B</span
+                  >
+                  <br />
+                  <span>Coliseo Cerrado de Chiclayo</span>
+                </td>
+                <td>
+                  <p>Manco Cápac A</p>
+                </td>
+                <td>
+                  <p>
+                    <span>
+                      <img src="../assets/Images/Logo/logoMancoCapac.png" />
+                    </span>
+                    <span>vs.</span>
+                    <span>
+                      <img
+                        src="../assets/Images/Logo/logoUnionChiclayo-UltimoPartido.png"
+                      />
+                    </span>
+                  </p>
+                </td>
+                <td>
+                  <p>Union Chiclayo</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-                </div>
-            </div>
-
-            <div class="tabla">
-                <table class="tablaCalendario">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <span class="cal_dia">VIE 15 MAY</span>
-                                <span class="cal_hora">21:30 HRS </span>
-                            </td>
-                            <td>
-                                <span>
-                                    <img src="../assets/Images/Logo/logoLiga.png">
-                                </span>
-                            </td>
-                            <td>
-                                <span class="nombreLiga">Liga Deportiva Mixta de Basketball de Chiclayo - Rama A</span>
-                                <br>
-                                <span class="lugar">Coliseo Cerrado de Chiclayo</span>
-                            </td>
-                            <td>
-                                <p>Triple Doble B</p>
-                            </td>
-                            <td>
-                                <p>
-                                    <span>
-                                        <img src="../assets/Images/Logo/logoTripleDoble-ProximoPartido.png">
-                                    </span>
-                                    <span>vs.</span>
-                                    <span>
-                                        <img src="../assets/Images/Logo/logoMancoCapac.png">
-                                    </span>
-                                </p>
-                            </td>
-                            <td>
-                                <p>Manco Cápac B</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="cal_dia">SAB 23 MAY</span>
-                                <span class="cal_hora">18:00 HRS </span>
-                            </td>
-                            <td>
-                                <span>
-                                    <img src="../assets/Images/Logo/logoLiga.png">
-                                </span>
-                            </td>
-                            <td>
-                                <span>Liga Deportiva Mixta de Basketball de Chiclayo - Rama B</span>
-                                <br>
-                                <span>Coliseo Cerrado de Chiclayo</span>
-                            </td>
-                            <td>
-                                <p>Manco Cápac A</p>
-                            </td>
-                            <td>
-                                <p>
-                                    <span>
-                                        <img src="../assets/Images/Logo/logoMancoCapac.png">
-                                    </span>
-                                    <span>vs.</span>
-                                    <span>
-                                        <img src="../assets/Images/Logo/logoUnionChiclayo-UltimoPartido.png">
-                                    </span>
-                                </p>
-                            </td>
-                            <td>
-                                <p>Union Chiclayo</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <h3>Tabla de Posiciones</h3>
-        <section class="tablaDePosicionesApartado">
-            <div class="tablaDePosiciones">
-                <table>
-                    <thead>
-                        <tr>
-                            <th width="10">POS</th>
-                            <th width="240">EQUIPOS</th>
-                            <th width="20">PJ</th>
-                            <th width="20">PG</th>
-                            <th width="20">PP</th>
-                            <th width="20">WO</th>
-                            <th width="20">PF</th>
-                            <th width="20">PC</th>
-                            <th width="20">DP</th>
-                            <th width="50">PUNTAJE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="select_MancoCapac">
-                            <td>1°</td>
-                            <td>
-                                <span>
-                                    <img src="../assets/Images/Logo/logoMancoCapac.png">
-                                </span>
-                                Manco Cápac
-                            </td>
-                            <td>7</td>
-                            <td>7</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>393</td>
-                            <td>189</td>
-                            <td>204</td>
-                            <td>14</td>
-                        </tr>
-                        <tr>
-                            <td>2°</td>
-                            <td>
-                                <span>
-                                    <img src="../assets/Images/Logo/logoUnionChiclayo-UltimoPartido.png">
-                                </span>
-                                Union Chiclayo
-                            </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>3°</td>
-                            <td>
-                                <span>
-                                    <img src="../assets/Images/Logo/logoTripleDoble-ProximoPartido.png">
-                                </span>
-                                Triple Doble A
-                            </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        </section>
+      <h3 id="tabla-posiciones">Tabla de Posiciones</h3>
+      <section  class="tablaDePosicionesApartado">
+        <div class="tablaDePosiciones">
+          <table>
+            <thead>
+              <tr>
+                <th width="10">POS</th>
+                <th width="240">EQUIPOS</th>
+                <th width="20">PJ</th>
+                <th width="20">PG</th>
+                <th width="20">PP</th>
+                <th width="20">WO</th>
+                <th width="20">PF</th>
+                <th width="20">PC</th>
+                <th width="20">DP</th>
+                <th width="50">PUNTAJE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="select_MancoCapac">
+                <td>1°</td>
+                <td>
+                  <span>
+                    <img src="../assets/Images/Logo/logoMancoCapac.png" />
+                  </span>
+                  Manco Cápac
+                </td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td>0</td>
+                <td>393</td>
+                <td>189</td>
+                <td>204</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>2°</td>
+                <td>
+                  <span>
+                    <img
+                      src="../assets/Images/Logo/logoUnionChiclayo-UltimoPartido.png"
+                    />
+                  </span>
+                  Union Chiclayo
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3°</td>
+                <td>
+                  <span>
+                    <img
+                      src="../assets/Images/Logo/logoTripleDoble-ProximoPartido.png"
+                    />
+                  </span>
+                  Triple Doble A
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
 
     <footer class="custom-footer">
-        <div class="footer-logo-wrapper">
+      <div class="footer-logo-wrapper">
+        <img
+          src="../assets/Images/Logo/logoMancoCapac.png"
+          class="footer-logo"
+        />
+      </div>
 
-            <img src="../assets/Images/Logo/logoMancoCapac.png" class="footer-logo">
+      <div class="footer-info">
+        <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
 
-        </div>
+        <p class="fundado">Fundado el 21 de Octubre de 1961</p>
 
-        <div class="footer-info">
-
-            <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
-
-            <p class="fundado">
-                Fundado el 21 de Octubre de 1961
-            </p>
-
-            <p class="footer-copyright">
-                Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos reservados
-            </p>
-
-        </div>
+        <p class="footer-copyright">
+          Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos
+          reservados
+        </p>
+      </div>
     </footer>
-</body>
-
+    <script src="../js/partidos.js"></script>
+    <script src="../js/global.js"></script>
+  </body>
 </html>

@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 3px solid #d8b13f;
     border-bottom: 3px solid #d8b13f;
 }
 
@@ -43,29 +44,45 @@ h3 {
 
 
 
-.meses button {
+
+
+.meses #month {
     background-color: white;
 
-    padding: 20px 34px;
+    padding: clamp(30px, 1vw, 12px);
 
     color: #1a2b5e;
 
-    font-size: 20px;
+    font-size: clamp(25px, 1.5vw, 90px);
 
     border: none;
 
     cursor: pointer;
 
     line-height: 1;
+
+    display: flex;
+
+    align-content: center;
+    
+    justify-content: center;
+
+    overflow: hidden;
+    
 }
+
+
+
 
 .ContenedorMeses {
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
+
 
 .meses {
 
@@ -77,12 +94,12 @@ h3 {
 
 }
 
-.meses .monthActive {
+.meses .Active {
     background-color: #e0a500;
     color: white;
 }
 
-.meses button:hover {
+.meses #month:hover {
 
     background-color: #e0a500;
 
@@ -211,7 +228,9 @@ h3 {
 
     background-color: #d8e1f0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 .select_MancoCapac {
 
@@ -295,51 +314,63 @@ h3 {
     letter-spacing: 1.5px;
 }
 
-/* 1400px */
-@media (min-width: 1400px) {
-    .meses button {
-        font-size: 18.8px;
+
+@media (max-width: 1400px) {
+    main{
+        padding: 0 20px;
     }
 
-    .ContenedorMeses {
-        padding-left: 27px;
-        padding-right: 27px;
-    }
+    .meses #month {
+        background-color: white;
+
+        padding: 27.7px;
+
+        color: #1a2b5e;
+
+        font-size: clamp(20px, 1.8vw, 80px);
+
+        border: none;
+
+        cursor: pointer;
+
+        line-height: 1;
+        
+        min-width: 0;
+    }   
+
 }
+
 
 /* 1024px */
 
 @media (max-width: 1024px) {
-    .topHeader {
-        height: auto;
-        padding: 20px 10px;
+    .floatingLogo {
+        width: 135px;
+        bottom: -20px;
     }
 
     .headerContent {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .floatingLogo {
-        width: 140px;
-        transform: none; 
-        position: static;
-    }
-
-    .brandText h1, 
-    .brandText p {
-        left: 0; 
-        text-align: center;
+        padding-left: 30px;
     }
 
     .brandText h1 {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .brandText p {
         font-size: 20px;
     }
+
+    .navPrincipal ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 12px 0 12px 160px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
 
     .tablaCalendario, 
     .tablaDePosiciones table,
@@ -354,6 +385,24 @@ h3 {
         justify-content: space-between;
     }
 
+    .meses #month {
+        background-color: white;
+
+        padding: 19px;
+
+        color: #1a2b5e;
+
+        font-size: 24px;
+
+        border: none;
+
+        cursor: pointer;
+
+        line-height: 1;
+
+        min-width: 0;
+    }
+
     .meses button,
     .meses .monthActive {
         width: auto;
@@ -364,35 +413,59 @@ h3 {
 
 /* 768px */
 @media (max-width: 768px) {
-    .topHeader {
+   header .Topheader {
         height: auto;
         padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .headerContent {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    header .headerContent {
+        display: flex !important;
+        flex-direction: row;            
+        align-items: center;           
+        justify-content: space-between; 
+        gap: 15px;                  
+        width: 100%;
+        position: relative;  
     }
 
-    .floatingLogo {
-        width: 140px;
-        transform: none;
-        position: static;
-    }
-
-    .brandText h1, 
-    .brandText p {
+    header .floatingLogo {
+        position: static;            
+        top: 0;
         left: 0;
-        text-align: center;
+        width: 90px;
+        margin: 0;
+        height: auto;
+        transform: none;
     }
 
-    .brandText h1 {
-        font-size: 32px;
+    header .brandText {
+        text-align: left;               
+        flex-grow: 1;                   
     }
 
-    .brandText p {
+    header .brandText h1 {
+        position: static;               
+        left: 0;
         font-size: 20px;
+        margin: 0;
+    }
+
+    header .brandText p {
+        display: none;                  
+    }
+
+    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
+    header .headerContent .hamburger {
+        display: block !important;      
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.3rem;              
+        cursor: pointer;
+        padding: 5px;
     }
 
     .navPrincipal ul {
