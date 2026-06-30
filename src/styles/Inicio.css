@@ -45,12 +45,14 @@
     margin-bottom: 5px;
     text-align: center;
     width: 100%;
+    letter-spacing: 1.5px;
 }
 .TeamInfo .category {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     text-align: center;
     margin-bottom: 12px;
+    leyter-spacing: 1px;
 }
 .TeamInfo .divider {
     border: 0;
@@ -87,7 +89,7 @@
 }
 .matchDetail {
     color: #b0c2e3;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.4;
 }
 .scoreDisplay {
@@ -130,7 +132,7 @@
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
     transform: scaleY(1.15); 
     cursor: pointer;
     transition: background-color 0.2s ease;
