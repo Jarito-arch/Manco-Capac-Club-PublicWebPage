@@ -158,36 +158,58 @@ main {
 }
 
 @media(max-width: 768px) {
-
-    .topHeader {
+    header .Topheader {
         height: auto;
         padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .headerContent {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    header .headerContent {
+        display: flex !important;
+        flex-direction: row;            
+        align-items: center;           
+        justify-content: space-between; 
+        gap: 15px;                  
+        width: 100%;
+        position: relative;  
     }
 
-    .floatingLogo {
-        width: 140px;
-        transform: none;
-        position: static;
-    }
-
-    .brandText h1, 
-    .brandText p {
+    header .floatingLogo {
+        position: static;            
+        top: 0;
         left: 0;
-        text-align: center;
+        width: 90px;
+        margin: 0;
+        height: auto;
+        transform: none;
     }
 
-    .brandText h1 {
-        font-size: 32px;
+    header .brandText {
+        text-align: left;               
+        flex-grow: 1;                   
     }
 
-    .brandText p {
+    header .brandText h1 {
+        position: static;               
+        left: 0;
         font-size: 20px;
+        margin: 0;
+    }
+
+    header .brandText p {
+        display: none;                  
+    }
+
+    header .headerContent .hamburger {
+        display: block !important;      
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.3rem;              
+        cursor: pointer;
+        padding: 5px;
     }
 
     .navPrincipal ul {

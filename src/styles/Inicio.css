@@ -23,7 +23,7 @@
     font-size: 20px;
 }
 .TeamPanelOverlayDesign h2{
-    color: white;
+    color: #ffff;
     font-size: 55px;
 }
 .matches {
@@ -41,75 +41,84 @@
 }
 .TeamInfo h2 {
     color: #d8b13f;
-    font-size: 28px;
+    font-size: 50px;
     margin-bottom: 5px;
     text-align: center;
     width: 100%;
+    letter-spacing: 2px; 
 }
 .TeamInfo .category {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 12px;
+    letter-spacing: 2px;
 }
 .TeamInfo .divider {
     border: 0;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.2);
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .informationContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    color: white;
-    margin-bottom: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
 }
 .team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
+    width: 33%;
     text-align: center;
 }
 .teamLogo {
-    width: 75px;
-    height: 75px;
+    width: 110px;
+    height: 110px;
     object-fit: contain;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 .teamName {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 .matchDetail {
     color: #b0c2e3;
-    font-size: 11px;
+    font-size: 14px; 
     line-height: 1.4;
 }
 .scoreDisplay {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 30%;
-    margin-top: 20px; 
+    width: 33%;
+    margin-top: 0px; 
 }
 .scoreDisplay h3 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
+    margin: 0; 
 }
 .scoreDisplay .hyphen {
-    font-size: 28px;
+    font-size: 36px;
     margin: 0 15px;
     color: rgba(255, 255, 255, 0.8);
 }
-
+.scoreDisplay .scoreRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .scoreDisplay .vsText {
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: bold;
     width: 100%;
     text-align: center;
     margin-bottom: 5px;
@@ -117,26 +126,31 @@
 .scoreDisplay .matchDetail{
     width: 100%;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 .matchBtn {
-    display: block;
-    width: 80%;
-    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto 0 auto;
     border: none;
     background-color: #d8b13f;
-    color: white;
-    padding: 6px 0;
-    font-size: 13px;
+    color: #ffffff; 
+    padding: 16px 0; 
+    font-size: 16px; 
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transform: scaleY(1.15); 
+    letter-spacing: 3px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease, transform 0.1s ease; 
 }
 .matchBtn:hover {
-    background-color: #c49f33;
+    background-color: #f0c541; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 body{
@@ -167,7 +181,7 @@ body{
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    color: white;
+    color: #ffff;
     text-align: center;
     padding: 60px 0;
 }
@@ -226,7 +240,7 @@ body{
 
 
 .footer-info  {
-    color: white;
+    color: #ffff;
     text-decoration: none;
     font-size: 24px;
     letter-spacing: 1.5px;
@@ -409,7 +423,7 @@ body{
     header .brandText p {
         position: static;
         font-size: 15px;
-        color: white;
+        color: #ffff    ;
         margin: 5px 0 0 0;
         left: 0;
     }
@@ -482,7 +496,6 @@ body{
     .scoreDisplay{
         width:100%;
         margin-top:0;
-        order:-1;
     }
 
     .scoreDisplay h3{
@@ -580,7 +593,7 @@ body{
     header .brandText p {
         position: static;
         font-size: 15px;
-        color: white;
+        color: #ffffff;
         margin: 5px 0 0 0;
         left: 0;
     }
