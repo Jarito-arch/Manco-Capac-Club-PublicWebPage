@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 3px solid #d8b13f;
     border-bottom: 3px solid #d8b13f;
 }
 
@@ -343,36 +344,33 @@ html{
 /* 1024px */
 
 @media (max-width: 1024px) {
-    .topHeader {
-        height: auto;
-        padding: 20px 10px;
+    .floatingLogo {
+        width: 135px;
+        bottom: -20px;
     }
 
     .headerContent {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .floatingLogo {
-        width: 140px;
-        transform: none; 
-        position: static;
-    }
-
-    .brandText h1, 
-    .brandText p {
-        left: 0; 
-        text-align: center;
+        padding-left: 30px;
     }
 
     .brandText h1 {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .brandText p {
         font-size: 20px;
     }
+
+    .navPrincipal ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 12px 0 12px 160px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
 
     .tablaCalendario, 
     .tablaDePosiciones table,
@@ -415,35 +413,59 @@ html{
 
 /* 768px */
 @media (max-width: 768px) {
-    .topHeader {
+   header .Topheader {
         height: auto;
         padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .headerContent {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    header .headerContent {
+        display: flex !important;
+        flex-direction: row;            
+        align-items: center;           
+        justify-content: space-between; 
+        gap: 15px;                  
+        width: 100%;
+        position: relative;  
     }
 
-    .floatingLogo {
-        width: 140px;
-        transform: none;
-        position: static;
-    }
-
-    .brandText h1, 
-    .brandText p {
+    header .floatingLogo {
+        position: static;            
+        top: 0;
         left: 0;
-        text-align: center;
+        width: 90px;
+        margin: 0;
+        height: auto;
+        transform: none;
     }
 
-    .brandText h1 {
-        font-size: 32px;
+    header .brandText {
+        text-align: left;               
+        flex-grow: 1;                   
     }
 
-    .brandText p {
+    header .brandText h1 {
+        position: static;               
+        left: 0;
         font-size: 20px;
+        margin: 0;
+    }
+
+    header .brandText p {
+        display: none;                  
+    }
+
+    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
+    header .headerContent .hamburger {
+        display: block !important;      
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.3rem;              
+        cursor: pointer;
+        padding: 5px;
     }
 
     .navPrincipal ul {
