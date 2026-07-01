@@ -11,6 +11,7 @@
         document.getElementById('modal').classList.remove('activo');
     }
 
+    
     document.getElementById('modal').addEventListener('click', function(e) {
         if (e.target === this) cerrarModal();
     });
