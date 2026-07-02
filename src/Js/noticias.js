@@ -130,7 +130,7 @@ const noticias = [
         id: 9,
         titulo: "Fotografías conservan la memoria del Club Deportivo Manco Cápac",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia9.jpg",
+        imagen: "../assets/equipo/imgCollageFotosMC.jpeg",
         contenido: `
             <p>Una colección de fotografías antiguas muestra diferentes momentos de la historia del Club Deportivo Manco Cápac.</p>
 
@@ -151,11 +151,11 @@ const noticias = [
             <p>El Club Deportivo Manco Cápac destacó algunos de los principales títulos obtenidos a lo largo de su historia.</p>
 
             <ul>
-                <li>🏆 Campeón Torneo Sergio Lecaros (1978).</li>
-                <li>🏆 Campeón Máster (1999).</li>
-                <li>🏆 Tricampeón de Básquet (1999, 2000 y 2001).</li>
-                <li>🏆 Campeón Juvenil (2015).</li>
-                <li>🏆 Campeón Superior (2019).</li>
+                <li> Campeón Torneo Sergio Lecaros (1978).</li>
+                <li> Campeón Máster (1999).</li>
+                <li>Tricampeón de Básquet (1999, 2000 y 2001).</li>
+                <li> Campeón Juvenil (2015).</li>
+                <li> Campeón Superior (2019).</li>
             </ul>
 
             <p>Estos logros reflejan la continuidad deportiva del club durante varias generaciones.</p>

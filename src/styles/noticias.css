@@ -55,9 +55,23 @@
 }
 
 .card-image-placeholder {
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 170px;
-    background-color: #e0e0e0;
+    height: 218px;
+    display: flex;
+    align-items: center;
+    background-image:url(../assets/equipo/imgCollageFotosMC.jpeg);
+}
+
+.card-image9-placeholder{
+   background-image:url(../assets/equipo/imgCollageFotosMC.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    align-items: center;
 }
 
 .card-info {
@@ -264,7 +278,7 @@
     }}
 
    
-    container.news-grid {
+    .container.news-grid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
         row-gap: 50px;}
