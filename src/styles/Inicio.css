@@ -1,4 +1,7 @@
-
+body{
+    background: linear-gradient(to bottom, #dfe7ff, #5c86e8);
+}
+/*Panel Principal*/
 .TeamPanel{
     position: relative;
     width: 100%;
@@ -21,23 +24,41 @@
 .TeamPanelOverlayDesign p{
     color: #d8b13f;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 .TeamPanelOverlayDesign h2{
     color: #ffff;
     font-size: 55px;
+    margin-top: 5px;
 }
+/*Proximo partido*/
+.blueContainer{
+    width: 78%;
+    margin: auto;
+    background: linear-gradient(
+        to bottom,
+        #21468d,
+        #5c86e8
+    );
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 .matches {
-    background-color: #21468d; 
+    background-color: transparent; 
     display: flex;
     justify-content: center;
     gap: 80px;
-    padding: 20px 50px 80px 50px; 
+    padding: 20px 50px 80px; 
 }
 .TeamInfo{
     width: 500px; 
     display: flex;
     flex-direction: column;
     align-items: center; 
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 25px 20px;
 }
 .TeamInfo h2 {
     color: #d8b13f;
@@ -62,34 +83,35 @@
     margin-bottom: 35px;
 }
 .informationContainer {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     width: 100%;
     color: #ffffff;
     margin-bottom: 40px;
+    gap: clamp(8px, 2vw, 20px);
 }
 .team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
+    min-width:0; 
     text-align: center;
 }
 .teamLogo {
-    width: 135px;
-    height: 135px;
+    width: clamp(55px, 11vw, 135px);
+    height: clamp(55px, 11vw, 135px);
     object-fit: contain;
     margin-bottom: 15px;
 }
 .teamName {
-    font-size: 20px;
+    font-size: clamp(13px, 1.8vw, 20px);
     font-weight: bold;
     margin-bottom: 8px;
 }
 .matchDetail {
-    color: #b0c2e3;
-    font-size: 20px; 
+   color: #b0c2e3;
+    font-size: clamp(12px, 1.6vw, 20px);
     line-height: 1.4;
 }
 .scoreDisplay {
@@ -98,26 +120,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 33%;
-    margin-top: 0px; 
+    min-width: 0;
+    margin-top: 0;
 }
 .scoreDisplay h3 {
-    font-size: 32px;
+    font-size: clamp(20px, 3.5vw, 32px);
     font-weight: bold;
-    margin: 0; 
+    margin: 0;
 }
 .scoreDisplay .hyphen {
-    font-size: 32px;
-    margin: 0 15px;
+     font-size: clamp(20px, 3.5vw, 32px);
+    margin: 0 clamp(6px, 1.5vw, 15px);
     color: rgba(255, 255, 255, 0.8);
 }
-.scoreDisplay .scoreRow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .scoreDisplay .vsText {
-    font-size: 40px;
+    font-size: clamp(22px, 4vw, 40px);
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -127,55 +144,32 @@
     width: 100%;
     text-align: center;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: clamp(12px, 1.6vw, 20px);
 }
 .matchBtn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 10px auto 0 auto;
+    margin: 20px auto 0 auto;
     border: none;
     background-color: #d8b13f;
-    color: #ffffff; 
-    padding: 16px 0; 
-    font-size: 16px; 
+    color: #ffffff;
+    padding: 16px 0;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
     cursor: pointer;
-    border-radius: 8px; 
+    border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.1s ease; 
 }
 .matchBtn:hover {
-    background-color: #f0c541; 
-    transform: translateY(-2px); 
+    background-color: #f0c541;
+    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-body{
-    background: linear-gradient(to bottom, #dfe7ff, #5c86e8);
-}
-
-.blueContainer{
-    width: 78%;
-    margin: auto;
-    background: linear-gradient(
-        to bottom,
-        #21468d,
-        #5c86e8
-    );
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.matches{
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding: 20px 50px 80px;
-}
+/*Informacion institucional*/
 
 .institutionalInfo{
     width: 90%;
@@ -192,10 +186,14 @@ body{
     align-items: center;
     margin-bottom: 80px;
 }
+.infoBlock:last-child{
+    margin-bottom: 0;
+}
 
 .infoBlock h2{
     font-size: 40px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .infoBlock hr{
@@ -203,6 +201,8 @@ body{
     height: 1px;
     background-color: rgba(255,255,255,0.4);
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .infoBlock p{
@@ -212,400 +212,110 @@ body{
     line-height: 1.9;
     font-size: 18px; 
 }
-
-.custom-footer {
-    background-color: #2853A8;
-    padding-bottom: 40px;
-    text-align: center;
-    position: relative;
-    
-}
-
-
-
-.footer-logo-wrapper {
-    position: relative;
-    display: inline-block;
-    z-index: 10;
-    margin-top: -95px;
-    margin-bottom: 20px;
-}
-
-.footer-logo {
-    width: 220px;
-
-    height: auto;
-    display: block;
-}
-
-
-.footer-info  {
-    color: #ffff;
-    text-decoration: none;
-    font-size: 24px;
-    letter-spacing: 1.5px;
-    transition: color 0.3s;
-}
-@media (max-width:1024px){
-
-    .TeamPanelOverlayDesign{
-        padding: 25px 60px;
-    }
-
-    .TeamPanelOverlayDesign h2{
-        font-size:45px;
-    }
-
-    .TeamPanelOverlayDesign p{
-        font-size:18px;
-    }
+@media (max-width: 1024px){
+    .TeamPanelOverlayDesign{ padding: 25px 60px; }
+    .TeamPanelOverlayDesign h2{ font-size: 45px; }
+    .TeamPanelOverlayDesign p{ font-size: 18px; }
 
     .matches{
-        gap:40px;
-        padding:20px 30px 60px;
+        gap:20px;
+        padding:20px 20px 50px;
+        justify-content:center;
     }
-
-    .TeamInfo{
-        width:420px;
-    }
-
-    .blueContainer{
-        width:90%;
-    }
-
-    .infoBlock h2{
-        font-size:36px;
-    }
-
-    .infoBlock p{
-        font-size:17px;
-    }
-}
-@media (max-width:950px){
-
-    .matches{
-        gap:25px;
-    }
-
-    .TeamInfo{
-        width:380px;
-    }
-
-    .teamLogo{
-        width:65px;
-        height:65px;
-    }
-
-    .scoreDisplay h3{
-        font-size:30px;
-    }
-
-    .scoreDisplay .vsText{
-        font-size:28px;
-    }
-
-    .TeamPanelOverlayDesign h2{
-        font-size:40px;
-    }
-
-}
-@media (max-width:900px){
-
-    .matches{
-        flex-direction:column;
-        align-items:center;
-        gap:60px;
-    }
-
-    .TeamInfo{
-        width:90%;
-        max-width:550px;
-    }
-
     .blueContainer{
         width:95%;
     }
-
-}
-@media (max-width:768px){
-
-    .TeamPanelOverlayDesign{
-        padding:20px 30px;
+    .TeamInfo{
+        width:390px;
+        padding:25px;
     }
-
-    .TeamPanelOverlayDesign h2{
-        font-size:32px;
-    }
-
-    .TeamPanelOverlayDesign p{
-        font-size:16px;
-    }
-
-    .institutionalInfo{
-        padding:40px 30px;
-    }
-
-    .infoBlock{
-        margin-bottom:60px;
-    }
-
     .infoBlock h2{
-        font-size:30px;
+        font-size:34px;
     }
-
     .infoBlock p{
         font-size:16px;
-        line-height:1.8;
     }
-
-    .footer-logo{
-        width:180px;
-    }
-
-    .footer-info{
-        font-size:20px;
-    }
-    header .Topheader {
-    height: auto;
-    padding: 20px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-header .headerContent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    width: 100%;
-    position: relative;
-}
-    header .headerContent a.logoLink {
-        display: block;
-        position: static;
-        left: 0;
-        margin: 0 auto;
+@media (max-width: 950px){
+     .matches{
+        gap:15px;
     }
-
-    header .floatingLogo {
-    position: static;
-    width: 95px;
-    height: auto;
-    transform: none;
-}
-
-  header .brandText {
-    text-align: left;
-    flex-grow: 1;
-}
- 
-    header .brandText h1 {
-        position: static;
-        font-size: 26px;
-        line-height: 1.2;
-        color: #d8b13f;
-        margin: 0 auto;
-        left: 0;
-    }
-
-    header .brandText p {
-        position: static;
-        font-size: 15px;
-        color: #ffff    ;
-        margin: 5px 0 0 0;
-        left: 0;
-    }
-
-    header .navPrincipal {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    header .navPrincipal ul {
-        align-items: center;    
-        gap: 14px;              
-        padding: 20px 10px;
-        width: 100%;
-    }
-
-    header .navPrincipal ul li {
-        width: 100%;
-        text-align: center;    
-    }
-
-    header .navPrincipal a {
-        font-size: 1.2rem;     
-        padding: 6px 20px;
-    }
-
-}
-
-@media (max-width:468px){
-
-    .TeamPanelOverlayDesign{
-        padding:15px;
-    }
-
-    .TeamPanelOverlayDesign h2{
-        font-size:24px;
-    }
-
-    .TeamPanelOverlayDesign p{
-        font-size:14px;
-    }
-
     .TeamInfo{
-        width:100%;
+        width:360px;
     }
+    .TeamPanelOverlayDesign h2{
+        font-size:38px;
+    }
+}
 
-    .informationContainer{
+@media (max-width: 900px){
+     .matches{
         flex-direction:column;
         align-items:center;
-        gap:20px;
+        gap:35px;
     }
+    .TeamInfo{
+        width:90%;
+        max-width:500px;
+    }
+}
 
-    .team{
-        width:100%;
-    }
+@media (max-width: 820px){
+    .TeamInfo{ padding: 20px 15px; }
+}
 
-    .teamLogo{
-        width:60px;
-        height:60px;
-    }
+@media (max-width: 768px){
+    .TeamPanelOverlayDesign{ padding: 20px 30px; }
+    .TeamPanelOverlayDesign h2{ font-size: 32px; }
+    .TeamPanelOverlayDesign p{ font-size: 16px; }
 
-    .teamName{
-        font-size:15px;
-    }
+    .institutionalInfo{ padding: 40px 30px; }
+    .infoBlock{ margin-bottom: 60px; }
+    .infoBlock h2{ font-size: 30px; }
+    .infoBlock p{ font-size: 16px; line-height: 1.8; }
+}
 
-    .scoreDisplay{
-        width:100%;
-        margin-top:0;
+@media (max-width: 560px){
+    .TeamPanelOverlayDesign{ padding: 18px 20px; }
+    .TeamPanelOverlayDesign h2{ font-size: 26px; }
+    .informationContainer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 22px;
     }
+    .teamLogo{ width: 90px; height: 90px; }
+    .teamName{ font-size: 19px; }
+    .matchDetail{ font-size: 17px; }
+    .scoreDisplay h3{ font-size: 30px; }
+    .scoreDisplay .hyphen{ font-size: 30px; }
+    .scoreDisplay .vsText{ font-size: 28px; }
+    .scoreDisplay .matchDetail{ font-size: 17px; }
+}
 
-    .scoreDisplay h3{
-        font-size:28px;
-    }
+@media (max-width: 480px){
+    .TeamPanelOverlayDesign{ padding: 15px; }
+    .TeamPanelOverlayDesign h2{ font-size: 24px; }
+    .TeamPanelOverlayDesign p{ font-size: 14px; }
 
-    .scoreDisplay .vsText{
-        font-size:24px;
-    }
+    .TeamInfo{ width: 100%; }
+    .matchBtn{ width: 100%; }
 
-    .matchBtn{
-        width:100%;
-    }
+    .teamLogo{ width: 80px; height: 80px; }
+    .teamName{ font-size: 17px; }
+    .matchDetail{ font-size: 16px; }
+    .scoreDisplay h3{ font-size: 26px; }
+    .scoreDisplay .hyphen{ font-size: 26px; }
+    .scoreDisplay .vsText{ font-size: 24px; }
+    .scoreDisplay .matchDetail{ font-size: 16px; }
 
     .blueContainer{
-        width:100%;
-        padding-top:40px;
-        padding-bottom:60px;
-    }
-
-    .institutionalInfo{
-        padding:30px 20px;
-    }
-
-    .infoBlock h2{
-        font-size:24px;
-    }
-
-    .infoBlock p{
-        font-size:15px;
-    }
-
-    .footer-logo{
-        width:150px;
-    }
-
-    .footer-info{
-        font-size:17px;
-    }
-    header .Topheader {
-        height: auto;
-        padding: 30px 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header .headerContent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
         width: 100%;
-        position: static;
-        left: 0;
-        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
 
-    header .headerContent a.logoLink {
-        display: block;
-        position: static;
-        left: 0;
-        margin: 0 auto;
-    }
-
-    header .floatingLogo {
-        position: static;
-        width: 110px;
-        height: auto;
-        margin: 0 auto;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
-
-    header .brandText {
-        width: 100%;
-        left: 0;
-        position: static;
-        margin: 0;
-        padding: 0;
-    }
-
-    header .brandText h1 {
-        position: static;
-        font-size: 26px;
-        line-height: 1.2;
-        color: #d8b13f;
-        margin: 0 auto;
-        left: 0;
-    }
-
-    header .brandText p {
-        position: static;
-        font-size: 15px;
-        color: #ffffff;
-        margin: 5px 0 0 0;
-        left: 0;
-    }
-
-    header .navPrincipal {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    header .navPrincipal ul {
-        align-items: center;    
-        gap: 14px;              
-        padding: 20px 10px;
-        width: 100%;
-    }
-
-    header .navPrincipal ul li {
-        width: 100%;
-        text-align: center;    
-    }
-
-    header .navPrincipal a {
-        font-size: 1.2rem;     
-        padding: 6px 20px;
-    }
-
+    .institutionalInfo{ padding: 30px 20px; }
+    .infoBlock h2{ font-size: 24px; }
+    .infoBlock p{ font-size: 15px; }
 }
