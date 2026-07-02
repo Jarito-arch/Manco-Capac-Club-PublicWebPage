@@ -28,7 +28,7 @@
 }
 
 .news-section {
-    background: linear-gradient(to bottom, #05256a, #4b7bd9);
+   
     padding: 60px 0;
     width: 100%;
     border-left: 3px solid #d8b13f;
@@ -40,7 +40,7 @@
     grid-template-columns: repeat(3, 1fr); 
     column-gap: 20px;
     row-gap: 70px;
-    max-width: 111111px;
+    max-width: 1111px;
     margin: 0 auto;
     padding: 0 20px;
    
@@ -215,14 +215,14 @@
 
 .close {
     position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: rgba(17, 17, 17, 0.5);
     color: white;
-    font-size: 22px;
+    font-size: 10px;
     cursor: pointer;
     transition: .3s;
 }
@@ -329,9 +329,7 @@
 }
 
 @media (max-width: 768px) {
-    
-    
-    header .Topheader {
+     header .Topheader {
         height: auto;
         padding: 20px 10px 20px 4px;
         display: flex;
@@ -381,44 +379,13 @@
     header .headerContent .hamburger-btn {
     margin-left: auto;
     }
+    
+    
+   
 
 
     
-    .navPrincipal {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #153574;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .35s ease;
-        z-index: 1500;
-    }
-
-    .navPrincipal.active {
-        max-height: 450px;
-    }
-
-    .navPrincipal ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-        padding: 25px 0;
-    }
-
-    .navPrincipal li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navPrincipal a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-        font-size: 18px;
-    }
+    
 
     
     .container.news-grid {
