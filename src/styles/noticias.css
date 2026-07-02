@@ -37,12 +37,13 @@
 
 .container.news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 131px;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 20px;
     row-gap: 70px;
-    max-width: 1100px;
+    max-width: 111111px;
     margin: 0 auto;
     padding: 0 20px;
+   
 }
 
 .news-card {
@@ -55,9 +56,23 @@
 }
 
 .card-image-placeholder {
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 170px;
-    background-color: #e0e0e0;
+    height: 218px;
+    display: flex;
+    align-items: center;
+    background-image:url(../assets/equipo/imgCollageFotosMC.jpeg);
+}
+
+.card-image9-placeholder{
+   background-image:url(../assets/equipo/imgCollageFotosMC.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    align-items: center;
 }
 
 .card-info {
@@ -88,7 +103,7 @@
 .btn-view-more {
     background-color: #1a3a8a;
     color: white;
-    padding: 15px 30px; /* Nota extra abajo sobre esto */
+    padding: 15px 30px; 
     font-size: 15px;
     font-weight: 600;
     border: none;
@@ -133,7 +148,6 @@
 .news-card{
     
     transform: translateY(40px);
-    transition: opacity .6s ease, transform .6s ease;
 }
 
 
@@ -199,33 +213,32 @@
     text-align: justify;
 }
 
-.close{
+.close {
     position: absolute;
     top: 15px;
     right: 20px;
     width: 40px;
     height: 40px;
-    border: none;
     border-radius: 50%;
-    background: #153574;
+    background: rgba(17, 17, 17, 0.5);
     color: white;
     font-size: 22px;
     cursor: pointer;
     transition: .3s;
 }
 
-.close:hover{
-    background: #d8b13f;
+.close:hover {
+    background: rgba(216, 177, 63, 0.3);
     color: #153574;
 }
 
 @keyframes appear{
     from{
-        opacity: 0;
+        opacity: 2;
         transform: scale(.8);
     }
     to{
-        opacity: 1;
+        opacity: 2;
         transform: scale(1);
     }
 }
@@ -236,77 +249,87 @@
 
 
 @media (max-width: 1024px) {
-    .floatingLogo {
-        width: 150px;
+    .floatingLogo{
+        width:150px;
     }
 
-    .headerContent {
+    .headerContent{
         padding-left: 25px;
     }
 
-    .brandText h1 {
-        font-size: 36px;
+    .brandText h1{
+        font-size:36px;
     }
 
-    .brandText p {
-        font-size: 20px;
+    .brandText p{
+        font-size:20px;
     }
 
-    .navPrincipal ul {
-        gap: 20px;
-        flex-wrap: wrap;
-        padding: 12px 0;
+
+    
+
+    .navPrincipal ul{
+        gap:20px;
+        flex-wrap:wrap;
+        padding:12px 0;
     }
 
     nav a {
         font-size: 1.1rem;
-    }
+    }}
 
    
-    .container.news-grid {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 40px;
-        row-gap: 50px;
-    }
-}
+    
+
 
 @media (max-width: 950px) {
     
 }
 
 @media (max-width: 900px) {
-    .floatingLogo {
-        width: 130px;
+      .floatingLogo{
+        width:130px;
     }
 
-    .brandText h1 {
-        font-size: 30px;
+    .brandText h1{
+        font-size:30px;
     }
 
-    .brandText p {
-        font-size: 17px;
+    .brandText p{
+        font-size:17px;
     }
 
     .overlay h2 {
         font-size: 48px;
     }
+    .asideContent h2{
+        font-size: 48px;
+    }
 }
 
 @media (max-width: 820px) {
-    .floatingLogo {
-        width: 125px;
+    .floatingLogo{
+        width:125px;
     }
 
-    .brandText h1 {
-        font-size: 25px;
+    .brandText h1{
+        font-size:25px;
     }
 
-    .brandText p {
-        font-size: 25px;
+    .brandText p{
+        font-size:25px;
     }
+
+    .asideContent h2{
+        font-size: 45px;
+    }
+    
+    
+
 }
 
 @media (max-width: 768px) {
+    
     
     header .Topheader {
         height: auto;
@@ -337,27 +360,28 @@
     }
 
     header .brandText {
-        text-align: left;
-        flex-grow: 1;
+        text-align: left;               /* Alineación más limpia al estar al lado del logo */
+        flex-grow: 1;                   /* Permite que el texto use el espacio central */
     }
 
     header .brandText h1 {
         display: flex;
         flex-direction: column;
-        position: static;
+        position: static;               /* Anula el left negativo que causaba la superposición */
         left: 0;
-        font-size: 32px;
+        font-size:  32px;
         margin: 0;
     }
 
     header .brandText p {
-        display: none;
+        display: none;                  /* Mantiene tu decisión de ocultar el subtítulo en móvil */
     }
 
+    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
     header .headerContent .hamburger-btn {
-        margin-left: auto;
-        display: block;
+    margin-left: auto;
     }
+
 
     
     .navPrincipal {
@@ -440,11 +464,15 @@
         width: 160px;
     }
 
+    .footer-info {
+        font-size: 18px;
+    }
+
     .footer-info h2 {
         font-size: 18px;
     }
 
-    .footer-info .founded {
+    .footer-info .fundado {
         font-size: 14px;
     }
 
