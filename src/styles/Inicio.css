@@ -274,7 +274,6 @@ button:hover{
         height: 95px;
     }
     .matches {
-        gap: 20px;
         padding: 20px;
     }
     .blueContainer {
@@ -287,11 +286,10 @@ button:hover{
     .infoBlock h2 { font-size: 34px; }
     .infoBlock p { font-size: 16px; }
     
-    .informationContainer { gap: 10px; }
+
 }
 
 @media (max-width: 950px) {
-    .matches { gap: 15px; }
     .TeamInfo { width: 390px; }
     .TeamPanelOverlayDesign h2 { font-size: 38px; }
     .informationContainer { gap: 8px; }
