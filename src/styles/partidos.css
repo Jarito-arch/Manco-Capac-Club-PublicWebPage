@@ -93,7 +93,7 @@ h3 {
 
 }
 
-.meses .Active {
+.meses .active {
     background-color: #e0a500;
     color: white;
 }
@@ -106,6 +106,22 @@ h3 {
 
     transition: 0.3s;
 }
+
+button{
+    font-size: 1.3rem;
+    background: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #e0b218;
+    color: white;
+}
+
 
 .tabla {
 
