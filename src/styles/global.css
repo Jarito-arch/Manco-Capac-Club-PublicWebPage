@@ -1,14 +1,14 @@
+header{
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
-}
-
-header{
-    width: 100%;
-    position: relative;
-    
 }
 body{
     overflow-x: hidden;
@@ -23,7 +23,7 @@ img{
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 100%;
+    z-index: 100;
 }
 .headerContent{
     display: flex;
@@ -168,6 +168,7 @@ main {
         width: 100%;
         background: #153574;
         border-top: 3px solid #d8b13f;
+        z-index: 9999;
     }
 
     .navPrincipal.active{
