@@ -1,32 +1,28 @@
-# Manco-Capac-Club-WebPage
+# CLUB DEPORTIVO MANCO CÁPAC
+Sitio Web Oficial
 
-Official Manco Cápac club web page!
-
-Welcome to the official repository for the **Club Deportivo Manco Cápac** website! This project is designed to provide the most important information to players, players' relatives, and club members with an intuitive and comprehensive platform.
-
----
-
-## 🗺️ User Navigation Map
-
-The website features a centralized layout where the Home page and the main navigation are interconnected. The user navigation is structured as follows:
-
-### 1. Home Page
-* **Main Content:** Upcoming matches, General Information, Mission and Vision statements.
-* **Interaction:** This is just the starting point, which helps to navigate throughout the whole page.
-
-### 2. The Lower Pages
-Each section features its own dedicated view and content:
-
-* **News (Noticias):** Recent news feed with scrolling functionality to explore past articles.
-* **Matches (Partidos):** Game schedules (Calendar) and the current standings table.
-* **Teams (Equipos):** Full player roster and technical/coaching staff details.
-* **The Club (El Club):** In-depth history, foundation details, and institutional journey.
-* **Album (Álbum):** Photo gallery showcasing games, training sessions, and official events.
+¡Bienvenidos al repositorio oficial del sitio web del **Club Deportivo Manco Cápac**! Este proyecto está diseñado para ofrecer la información más importante a jugadores, familiares y socios del club a través de una plataforma intuitiva y completa.
 
 ---
 
-## 🛠️ Technologies Used
+## 🎯Misión
 
-* **HTML:** Semantic structure for content accessibility and organization.
-* **CSS:** Custom layouts, styling, and grid/flexbox configurations for responsive design.
-* **JavaScript:** Basic script handling for interactive navigation, scrolling features, and UI transitions.
+Fomentar la práctica del baloncesto en la comunidad local, especialmente en jóvenes, promoviendo el desarrollo físico, social y emocional de sus integrantes. A través de entrenamientos estructurados, participación en competencias y actividades recreativas, la organización busca fortalecer valores como la disciplina, el trabajo en equipo, la responsabilidad y el respeto, contribuyendo así a la formación integral de los deportistas
+
+## 👁️Visión
+
+Ser una institución deportiva líder y reconocida a nivel regional y nacional en la promoción y desarrollo del básquet, destacándose por la formación integral de jóvenes talentos y el fortalecimiento de valores como la disciplina, el respeto, el trabajo en equipo y la responsabilidad social. El Club Deportivo “Manco Cápac” aspira a consolidarse como un referente no solo en el ámbito deportivo, sino también en la construcción de identidad y unión comunitaria en la ciudad de Chiclayo.
+
+---
+
+## 📖Acerca del Club
+
+El Club Deportivo Manco Cápac fue fundado oficialmente el 21 de octubre de 1961 en Chiclayo, gracias a la iniciativa de vecinos del barrio Manco Cápac que buscaban promover el básquet y representar a su comunidad. Bajo el liderazgo del Ing. César Marrache y su primera directiva, el club reunió a jóvenes deportistas que participaron en la Liga Chiclayana, defendiendo los colores blanco y azul con un distintivo perfil inca en honor a Manco Cápac. A lo largo de los años, el club se ha consolidado como una institución tradicional del básquet chiclayano, destacándose por fomentar el deporte, la unión y la identidad de su comunidad.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+* **HTML:** Estructura semántica del sitio web.
+* **CSS:** Diseño visual, estilos, animaciones, Flexbox y Grid.
+* **JavaScript:** Interactividad, navegación dinámica y efectos visuales.
