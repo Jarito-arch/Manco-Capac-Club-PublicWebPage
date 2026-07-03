@@ -2,7 +2,6 @@ body {
     background: linear-gradient(to bottom, #dfe7ff, #5c86e8);
 }
 
-/*Panel Principal*/
 .TeamPanel {
     position: relative;
     width: 100%;
@@ -38,7 +37,6 @@ body {
     margin-top: 5px;
 }
 
-/*Proximo partido*/
 .blueContainer {
     width: min(92%, 1400px);
     margin: auto;
@@ -194,7 +192,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*Informacion institucional*/
 
 .institutionalInfo {
     width: 90%;
