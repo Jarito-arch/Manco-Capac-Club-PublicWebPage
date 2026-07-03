@@ -1,4 +1,3 @@
-/*SECTION BANNER*/
 .bannerPartidos {
     background-image: linear-gradient(#15357480), url('../assets/Images/ft\ coliseo\ \(1\).png');
     background-size: cover;
@@ -29,7 +28,6 @@ main {
 
 }
 
-/* CALENDARIO */
 h3 {
     margin-top: 56px;
     margin-bottom: 82px;
@@ -197,7 +195,6 @@ button:hover{
     gap: 10px;
 }
 
-/* TABLA DE POSICIONES */
 .tablaDePosiciones {
 
     display: flex;
@@ -293,7 +290,6 @@ html {
     object-fit: contain;
 }
 
-/* FOOTER */
 .custom-footer {
     background-color: #2853A8;
     padding-bottom: 40px;
@@ -330,8 +326,6 @@ html {
     letter-spacing: 1.5px;
 }
 
-
-/* 1024px */
 
 @media (max-width: 1024px) {
     .floatingLogo {
@@ -436,8 +430,6 @@ html {
 }
 
 
-
-/* 768px */
 @media (max-width: 768px) {
     header .Topheader {
         height: auto;
@@ -586,7 +578,6 @@ html {
     }
 }
 
-/* 480px */
 @media (max-width: 480px) {
 
     header .Topheader {

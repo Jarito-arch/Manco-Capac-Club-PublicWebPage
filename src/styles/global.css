@@ -96,7 +96,6 @@ a.active{
     color: #d8b13f;
 }
 
-/* TABLAS */
 main {
 
     background: linear-gradient(to bottom, #153574, #2764DA);
@@ -131,19 +130,16 @@ main {
     display: inline-block;
     z-index: 10;
     margin-top: -95px;
-    /* Ajusta este valor si el logo queda muy arriba o abajo */
     margin-bottom: 20px;
 }
 
 .footer-logo {
     width: 220px;
-    /* Un poco más grande para que luzca */
     height: auto;
     display: block;
 }
 
 
-/* Estilo de los enlaces del footer */
 .footer-info {
     color: white;
     text-decoration: none;
@@ -163,7 +159,7 @@ main {
     .navPrincipal{
         display: none;
         position: absolute;
-        top: 120px;      /* Debajo del header */
+        top: 120px;     
         left: 0;
         width: 100%;
         background: #153574;

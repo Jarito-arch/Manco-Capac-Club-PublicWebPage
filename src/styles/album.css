@@ -1,5 +1,3 @@
-
-
 .banner {
     background-image: linear-gradient(#15357480), url('../assets/Images/ft\ coliseo\ \(1\).png');
     background-size: cover;
@@ -158,9 +156,7 @@
 
 }
 
-@media (max-width: 950px) {
-    /* Sin uso en álbum (no tiene .categories), igual que en equipos.css con clases que no aplican a otras páginas */
-}
+@media (max-width: 950px) {}
 
 @media (max-width: 900px) {
 
