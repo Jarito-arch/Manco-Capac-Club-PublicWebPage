@@ -258,6 +258,22 @@
     color: #153574;
 }
 
+button {
+    font-size: 1.3rem;
+    background: aliceblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0b218;
+    color: white;
+}
+
 @keyframes appear {
     from {
         opacity: 2;
@@ -386,16 +402,16 @@
 
     header .brandText {
         text-align: left;
-        /* Alineación más limpia al estar al lado del logo */
+        
         flex-grow: 1;
-        /* Permite que el texto use el espacio central */
+       
     }
 
     header .brandText h1 {
         display: flex;
         flex-direction: column;
         position: static;
-        /* Anula el left negativo que causaba la superposición */
+        
         left: 0;
         font-size: 32px;
         margin: 0;
@@ -403,10 +419,9 @@
 
     header .brandText p {
         display: none;
-        /* Mantiene tu decisión de ocultar el subtítulo en móvil */
+        
     }
 
-    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
     header .headerContent .hamburger-btn {
         margin-left: auto;
     }
@@ -436,9 +451,9 @@
         gap: 15px;
         padding: 20px;
         max-height: 90vh;
-        /* Evita que se salga de pantallas medianas */
+       
         overflow-y: auto;
-        /* Permite scroll si el texto es largo */
+        
     }
 
     #modal-image {
@@ -559,7 +574,7 @@
         font-size: 35px;
     }
 
-    /* ADECUACIÓN DEL MODAL EN MÓVILES PEQUEÑOS */
+    
     #modal-image {
         height: 220px;
     }
