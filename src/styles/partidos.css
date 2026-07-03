@@ -492,7 +492,6 @@ html {
         display: none;
     }
 
-    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
     header .headerContent .hamburger {
         display: block !important;
         background: none;

@@ -157,10 +157,69 @@ main {
     letter-spacing: 1.5px;
 }
 
+@media (max-width: 1024px) {
+    .floatingLogo {
+        width: 150px;
+    }
+
+    .headerContent {
+        padding-left: 25px;
+    }
+
+    .brandText h1 {
+        font-size: 36px;
+    }
+
+    .brandText p {
+        font-size: 20px;
+    }
+
+    .navPrincipal ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 950px) {}
+
+@media (max-width: 900px) {
+    .floatingLogo {
+        width: 130px;
+    }
+
+    .brandText h1 {
+        font-size: 30px;
+    }
+
+    .brandText p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 820px) {
+    .floatingLogo {
+        width: 125px;
+    }
+
+    .brandText h1 {
+        font-size: 25px;
+    }
+
+    .brandText p {
+        font-size: 25px;
+    }
+
+}
+
 @media(max-width: 768px) {
     header .Topheader {
         height: auto;
-        padding: 20px 10px;
+        padding: 20px 10px 20px 4px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -168,46 +227,55 @@ main {
 
     header .headerContent {
         display: flex !important;
-        flex-direction: row;            
-        align-items: center;           
-        justify-content: space-between; 
-        gap: 15px;                  
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
         width: 100%;
-        position: relative;  
+        position: relative;
+    }
+
+    header .headerContent a.logoLink {
+        display: block;
+        position: static;
+        left: 0;
+        margin: 0 auto;
     }
 
     header .floatingLogo {
-        position: static;            
+        position: static;
         top: 0;
         left: 0;
-        width: 90px;
+        width: 105px;
         margin: 0;
         height: auto;
         transform: none;
     }
 
     header .brandText {
-        text-align: left;               
-        flex-grow: 1;                   
+        text-align: left;
+        flex-grow: 1;
     }
 
     header .brandText h1 {
-        position: static;               
+        display: flex;
+        flex-direction: column;
+        position: static;
         left: 0;
-        font-size: 20px;
+        font-size: 32px;
         margin: 0;
     }
 
     header .brandText p {
-        display: none;                  
+        display: none;
     }
 
     header .headerContent .hamburger {
-        display: block !important;      
+        display: block !important;
         background: none;
         border: none;
         color: white;
-        font-size: 2.3rem;              
+        font-size: 2.3rem;
         cursor: pointer;
         padding: 5px;
     }
@@ -247,5 +315,89 @@ main {
         font-size: 24px;
     }
 
+    .footer-logo-wrapper {
+        margin-top: -65px;
+    }
 
+    .footer-logo {
+        width: 160px;
+    }
+
+    .footer-info {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    header .brandText{
+        flex:1;
+        min-width:0;
+        max-width:240px;
+    }
+
+    header .brandText h1{
+        font-size:26px;
+        line-height:1.1;
+        white-space:normal;
+        overflow-wrap:break-word;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header .Topheader {
+        height: auto;
+        padding: 20px 10px 20px 4px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    header .headerContent {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header .floatingLogo {
+        position: static;
+        width: 90px;
+        margin: 0;
+        transform: none;
+    }
+
+    header .brandText {
+        flex: 1;
+        min-width: 0;
+        max-width: 170px;
+    }
+
+    header .brandText h1 {
+        font-size: 22px;
+        line-height: 1.1;
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+    header .brandText p {
+        display: none;
+    }
+
+    .footer-logo-wrapper {
+        margin-top: -50px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-info {
+        font-size: 14px;
+    }
+
+    .footer-info h2 {
+        font-size: 18px;
+    }
 }
