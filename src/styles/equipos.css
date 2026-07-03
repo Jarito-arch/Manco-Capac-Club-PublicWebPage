@@ -100,7 +100,6 @@ text-decoration: none;
 }
 
 
-/*Section*/
 .players{
     display: flex;
     justify-content: center;
@@ -148,7 +147,6 @@ text-decoration: none;
 
 
 
-/* tarjeta de lso jugadores*/
 .playercard{
     background: rgb(180, 180, 180);
     height: 250px;
@@ -263,7 +261,6 @@ button:hover{
     display: flex;
 }
 
-/* wrapper para posicionar el botón */
 .modal-wrapper {
     position: relative;
     display: inline-block;
@@ -487,10 +484,6 @@ button:hover{
 
 @media (max-width: 768px) {
 
-    /* ==========================================================================
-       1. CORE: HEADER & ESTRUCTURA SUPERIOR (Logo, Texto y Hamburguesa)
-       ========================================================================== */
-
     header .Topheader {
         height: auto;
         padding: 20px 10px 20px 4px;
@@ -520,31 +513,27 @@ button:hover{
     }
 
     header .brandText {
-        text-align: left;               /* Alineación más limpia al estar al lado del logo */
-        flex-grow: 1;                   /* Permite que el texto use el espacio central */
+        text-align: left;
+        flex-grow: 1;
     }
 
     header .brandText h1 {
         display: flex;
         flex-direction: column;
-        position: static;               /* Anula el left negativo que causaba la superposición */
+        position: static;
         left: 0;
         font-size:  32px;
         margin: 0;
     }
 
     header .brandText p {
-        display: none;                  /* Mantiene tu decisión de ocultar el subtítulo en móvil */
+        display: none;
     }
 
-    /* ESTILO SÉNIOR PARA TU BOTÓN HAMBURGUESA */
     header .headerContent .hamburger-btn {
     margin-left: auto;
     }
 
-    /* ==========================================================================
-       2. NAVEGACIÓN PRINCIPAL (Menú Desplegable Absoluto)
-       ========================================================================== */
     .asideContent h2 {
         font-size: 42px;
     }
@@ -607,9 +596,6 @@ button:hover{
         padding: 0 30px 30px;
     }
 
-    /* ==========================================================================
-       4. FOOTER INSTITUCIONAL
-       ========================================================================== */
 
     .custom-footer {
         padding-bottom: 25px;
