@@ -263,14 +263,15 @@ button:hover{
 
 .modal-wrapper {
     position: relative;
-    display: inline-block;
+    width: 400px;
+    
 }
 
 .modal-contenido {
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    width: min(380px, 100%);
+    width: min(400px, 100%);
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -278,7 +279,7 @@ button:hover{
     box-shadow: 0 0 0 10px white, 0 0 0 12px #e0b218;
 }
 .modal-info-box {
-    padding: 16px 20px;
+    padding: 24px;
     background: white;
 }
 
@@ -349,6 +350,14 @@ button:hover{
         font-size:20px;
     }
 
+    .modal-wrapper {
+    position: relative;
+    width: 370px;
+}
+
+.modal-info-box {
+    padding: 20px;
+}
 
     
 
@@ -525,6 +534,19 @@ button:hover{
         font-size:  32px;
         margin: 0;
     }
+    .modal-wrapper {
+    position: relative;
+    width: 280px;
+}
+
+    .modal-imagen {
+        position: relative;
+        height: 300px;
+    }
+
+    .modal-info-box {
+        padding: 15px;
+    }
 
     header .brandText p {
         display: none;
@@ -700,9 +722,20 @@ button:hover{
         font-size: 1.1rem;
     }
 
-    .modal-imagen {
-        height: 220px;
-    }
+    .modal-wrapper {
+    position: relative;
+    width: 290px;
+    display:list-item;
+}
+
+.modal-imagen {
+    position: relative;
+    height: 320px;
+}
+
+.modal-info-box {
+    padding: 15px;
+}
 
     .modal-info-box h4 {
         font-size: 1.2rem;
