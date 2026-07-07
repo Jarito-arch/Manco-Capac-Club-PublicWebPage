@@ -55,3 +55,70 @@ export class Calendario {
         return this.getPartidosxMes(mes)?.data || [];
     }
 }
+
+const calendario = new Calendario(dataPartidos);
+
+const tablaPartidos = document.getElementById("tablaPartidos");
+
+const botonesMes = document.querySelectorAll(".month");
+
+function mostrarPartidos(mes){
+
+    const mesSeleccionado = calendario.getPartidosxMes(mes);
+
+    tablaPartidos.innerHTML = "";
+
+    if(!mesSeleccionado) return;
+
+    mesSeleccionado.data.forEach(partido=>{
+
+        tablaPartidos.innerHTML += `
+            <tr>
+                <td>
+                    <span>${partido.dia}</span><br>
+                    <span>${partido.hora}</span>
+                </td>
+                <td>
+                    <img src="../assets/Images/Logo/${partido.logoLiga}">
+                </td>
+                <td>
+                    <span>${partido.nombreLiga}</span><br>
+                    <span>${partido.lugar}</span>
+                </td>
+                <td>
+                    <p>${partido.equipoLocal}</p>
+                </td>
+                <td>
+                    <p>
+                        <span>
+                            <img src="../assets/Images/Logo/${partido.logoLocal}">
+                        </span>
+                        <span>vs</span>
+                        <span>
+                            <img src="../assets/Images/Logo/${partido.logoVisitante}">
+                        </span>
+                    </p>
+                </td>
+                <td>
+                    <p>${partido.equipoVisitante}</p>
+                </td>
+            </tr>
+        `;
+
+    });
+
+};
+
+botonesMes.forEach(boton=>{
+
+    boton.addEventListener("click",()=>{
+
+        const mes = boton.dataset.month;
+
+        mostrarPartidos(mes);
+
+    });
+
+});
+
+mostrarPartidos("enero");
