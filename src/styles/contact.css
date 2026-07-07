@@ -76,9 +76,17 @@ section{
 .number-field .number,
 .motivo-field .cars,
 .motivo-field .motivo,
+.motivo,
 .field-description label,
 .field-description .message1,
 .button1 span,
+.cluster h3,
+.cluster span,
+.cluster p,
+.cluster .email,
+.cluster .whatsapp,
+.cluster .telefono,
+.cluster .title-cluster,
 .form button{
     font-family: "Lato", sans-serif;
     
@@ -95,26 +103,24 @@ section{
     flex-direction: column;
     padding: 20px;
 }
-.name{
+
+
+
+
+
+.name,
+.email,
+.number{
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #000000;
-}
-
-
-
-
-
-.email{
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #000000;
+    transition: .3s;
 }
 
 .name:hover,
 .email:hover,
 .number:hover,
-.message:hover{
+.message1:hover{
     border: 1px solid #ffbb00;
 }
 .motivo:hover{
@@ -127,11 +133,6 @@ section{
     padding: 20px;
 }
 
-.number{
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #000000;
-}
 
 .motivo-field{
     display: flex;
@@ -164,7 +165,100 @@ section{
     border: 1px solid #000000;
     height: 40px;
     font-size: 15px;
+    transition: .3s;
 }
+
+.cluster{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.options{
+
+    display:flex;
+    gap:10px;
+
+}
+
+input[type="radio"]{
+
+    display:none;
+
+}
+
+.card{
+
+    width:120px;
+    height:80px;
+
+    border:2px solid #ddd;
+    border-radius:10px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.icono{
+
+    font-size:25px;
+    margin-bottom:8px;
+
+}
+
+.card:hover{
+
+    border-color:#0d6efd;
+
+}
+
+input[type="radio"]:checked + .card{
+
+    border-color:#0d6efd;
+    background:#eef5ff;
+    color:#0d6efd;
+
+}
+
+select{
+
+    height:45px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    padding:0 10px;
+
+    font-size:15px;
+    transition: .3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .button-container {
@@ -187,6 +281,7 @@ section{
     height: 50px;
     width: 200px;
     background: #ffffff;
+    transition: .3s;
 }
 
 .button1:hover{

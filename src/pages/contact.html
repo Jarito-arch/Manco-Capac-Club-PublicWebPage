@@ -63,8 +63,8 @@
         <h2 class="contact-title">Contactános</h2>
         <p class="message">📩 Estamos aqui para atender tu petición</p>
         <p id="paragraph" class="paragraph1"> Si tienes alguna consulta, deseas invitarnos a un partido,
-            proponer una colaboración <br>o cualquier
-            otra inquietud, completa el formulario y nos comunicaremos contigo.
+            proponer una colaboración o cualquier
+            otra inquietud, completa el formulario <br> y nos comunicaremos contigo.
         </p>
     </div>
 
@@ -93,7 +93,7 @@
             <label for="cars" class="cars">Motivo del contacto: </label>
 
             <select name="cars" id="cars" class="motivo">
-                <option class="motivo" value="select">===Seleciona cualquiera de los seleccionado===</option>
+                <option class="motivo" value="select" selected disabled>Selecciona cualquiera de los seleccionado</option>
                 <option class="motivo" value="consulta">Consulta General</option>
                 <option class="motivo" value="inscripcion">Inscripción/ Unirme al club Deportivo Manco Capac</option>
                 <option class="motivo" value="tecnica">Consulta Técnica</option>
@@ -105,9 +105,67 @@
             <label for="message">Mensaje:</label>
             <textarea class="message1" id="message" name="message" rows="4" required placeholder="💬 Escribe tu mensaje aquí..."></textarea>
             </div>
-            <div class="button-container">
-            <button type="submit" class="button1"><span>Enviar</span></button>
+            
+
+        <div class="cluster">
+
+            <h3>
+                ¿Cómo prefieres que nos comuniquemos contigo?
+                <span>*</span>
+            </h3>
+
+            <div class="options">
+
+                <input type="radio" class="email" id="Email" name="contacto" value="correo">
+
+                <label for="Email" class="card">
+                    <span class="icono">✉️</span>
+                    <p>Correo</p>
+                </label>
+
+
+                <input type="radio" class="whatsapp" id="whatsapp" name="contacto" value="whatsapp">
+
+                <label for="whatsapp" class="card">
+                    <span class="icono">🟢</span>
+                    <p>WhatsApp</p>
+                </label>
+
+
+                <input type="radio" id="telefono" name="contacto" value="telefono">
+
+                <label for="telefono" class="card">
+                    <span class="icono">📞</span>
+                    <p>Teléfono</p>
+                </label>
+
             </div>
+
+        </div>
+
+
+    <div class="cluster">
+
+        <h3 class="title-cluster">¿Cómo conociste al club?</h3>
+
+        <select class="motivo" name="conociste" id="conociste">
+
+            <option class="motivo" selected disabled>
+                Selecciona una opción
+            </option>
+
+            <option class="motivo" value="facebook">Facebook</option>
+            <option class="motivo" value="instagram">Instagram</option>
+            <option class="motivo" value="tiktok">TikTok</option>
+            <option class="motivo" value="amigos">Amigos</option>
+
+        </select>
+
+    </div>
+
+        <div class="button-container">
+            <button type="submit" class="button1"><span>Enviar</span></button>
+        </div>
         </form>
     </section>
 
