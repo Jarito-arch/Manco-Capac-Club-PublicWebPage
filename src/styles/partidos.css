@@ -43,7 +43,7 @@ h3 {
 
 
 
-.meses #month {
+.meses .month {
     background-color: white;
 
     padding: clamp(30px, 1vw, 12px);
@@ -96,7 +96,7 @@ h3 {
     color: white;
 }
 
-.meses #month:hover {
+.meses .month:hover {
 
     background-color: #e0a500;
 
@@ -368,7 +368,7 @@ html {
         justify-content: space-between;
     }
 
-    .meses #month {
+    .meses .month {
         background-color: white;
 
         padding: 19px;

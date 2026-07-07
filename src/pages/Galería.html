@@ -1,169 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Deportivo Manco Cápac</title>
-    <link rel="icon" type="image/x-icon" href="../assets/Images/Logo/logoMancoCapac.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="../styles/global.css">
-        <link rel="stylesheet" href="../styles/album.css">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/Images/Logo/logoMancoCapac.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/Galería.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="Topheader">
+      <div class="Topheader">
         <div class="headerContent">
-            <a href="Inicio.html">
+          <a href="Inicio.html">
             <img
-                src="../assets/Images/Logo/logoMancoCapac.png"
-                class="floatingLogo"
+              src="../assets/Images/Logo/logoMancoCapac.png"
+              class="floatingLogo"
             />
-            </a>
-            <div class="brandText">
+          </a>
+          <div class="brandText">
             <h1>CLUB DEPORTIVO MANCO CÁPAC</h1>
             <p>SITIO WEB OFICIAL</p>
-            </div>
+          </div>
         </div>
-        <button class="hamburger-btn" id="hamburger-menu" aria-label="hamburger menu">
-                ☰
-            </button>
-        </div>
-        <nav class="navPrincipal">
+        <button
+          class="hamburger-btn"
+          id="hamburger-menu"
+          aria-label="hamburger menu"
+        >
+          ☰
+        </button>
+      </div>
+      <nav class="navPrincipal">
         <ul>
-            <li><a href="Inicio.html" >INICIO</a></li>
-            <li><a href="noticias.html">NOTICIAS</a></li>
-            <li><a href="partidos.html">PARTIDOS</a></li>
-            <li><a href="equipos.html">EQUIPO</a></li>
-            <li><a href="el-club.html">EL CLUB</a></li>
-            <li><a href="album.html"class="active">ÁLBUM</a></li>
-            <li><a href="contact.html">CONTACTO</a></li>
+          <li><a href="Inicio.html">INICIO</a></li>
+          <li><a href="noticias.html">NOTICIAS</a></li>
+          <li><a href="partidos.html">PARTIDOS</a></li>
+          <li><a href="equipos.html">EQUIPO</a></li>
+          <li><a href="el-club.html">EL CLUB</a></li>
+          <li><a href="contact.html">CONTACTO</a></li>
+          <li><a href="Galería.html" class="active">GALERÍA</a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
 
-
     <section class="banner">
-        <div class="overlay">
-            <h2>ÁLBUM</h2>
-        </div>
+      <div class="overlay">
+        <h2>GALERÍA</h2>
+      </div>
     </section>
     <main class="section">
-        <div class="container -grid">
+      <div class="container -grid">
+        <!-- card 01 -->
+        <article
+          class="card"
+          data-date="15/03/2024"
+          data-desc="Partido inaugural de la temporada 2024"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://files.merca20.com/uploads/2024/10/NBA.jpg"
+              alt="Partido inaugural"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">15/03/2024</p>
+            <p class="description">Partido inaugural de la temporada 2024</p>
+          </div>
+        </article>
 
+        <!-- card 02 -->
+        <article
+          class="card"
+          data-date="22/03/2024"
+          data-desc="Celebración del aniversario del club"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRCRxFBjCVU_n6BaFuBquyc78Lol1zvBz5vK-SJnr7k6CVILBwhrKbYRa_bNxXTWA3ZCwAS43v_Y-qbZ7KziCp99Nbut3PYbP3cq9hZQncwfW_FUDoCQXQJN07YeWybWxaCOH9QD9xtdRu/s1600/La+continuidad+del+club+est%25C3%25A1+m%25C3%25A1s+que+asegurada...jpeg"
+              alt="Aniversario del club"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">22/03/2024</p>
+            <p class="description">Celebración del aniversario del club</p>
+          </div>
+        </article>
 
+        <!-- card 03 -->
+        <article
+          class="card"
+          data-date="05/04/2024"
+          data-desc="Entrenamiento matutino del equipo principal"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmdbqP2sTvmUXYfjWanYJti5FPkuDTdDwVF98ZmFBMYGmLN-zLMoCY92o&s=10"
+              alt="Entrenamiento equipo"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">05/04/2024</p>
+            <p class="description">
+              Entrenamiento matutino del equipo principal
+            </p>
+          </div>
+        </article>
 
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-image-placeholder"></div>
-                <div class="card-info">
-                    <p class="date">DD/MM/YYYY</p>
-                    <p class="description">Descripción de la imagen.</p>
-                </div>
-            </article>
+        <!-- card 04 -->
+        <article
+          class="card"
+          data-date="12/04/2024"
+          data-desc="Partido amistoso contra el equipo visitante"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://imgmedia.larepublica.pe/1000x590/larepublica/original/2023/08/07/64d156a0909a66658b014b47.webp"
+              alt="Partido amistoso"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">12/04/2024</p>
+            <p class="description">
+              Partido amistoso contra el equipo visitante
+            </p>
+          </div>
+        </article>
 
+        <!-- card 05 -->
+        <article
+          class="card"
+          data-date="20/04/2024"
+          data-desc="Presentación de nuevos jugadores"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSab1PSEYf56C497eUNGc0_CcwJqSrjXsHvKB1RQmk3wVH5fJCLIPy0l0JE&s=10"
+              alt="Presentación jugadores"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">20/04/2024</p>
+            <p class="description">Presentación de nuevos jugadores</p>
+          </div>
+        </article>
 
+        <!-- card 06 -->
+        <article
+          class="card"
+          data-date="28/04/2024"
+          data-desc="Cena de gala del club deportivo"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHaEo_ee36oR40feO7tR01Da-5blSd1qEKwnqjm5RbBnH0lX22BrzJU8&s=10"
+              alt="Cena de gala"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">28/04/2024</p>
+            <p class="description">Cena de gala del club deportivo</p>
+          </div>
+        </article>
 
+        <!-- card 07 -->
+        <article
+          class="card"
+          data-date="05/05/2024"
+          data-desc="Campeonato regional de Basketball"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUpHNUWjejqSGuUUTicORtoaS_ScCU2j-PddO_1lergyjpNRoyi5VL7EJ&s=10"
+              alt="Campeonato regional"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">05/05/2024</p>
+            <p class="description">Campeonato regional de Basketball</p>
+          </div>
+        </article>
+
+        <!-- card 08 -->
+        <article
+          class="card"
+          data-date="12/05/2024"
+          data-desc="Visita de exjugadores del club"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4jD4upJQF5c7hP_WrB-UZfd6aOYlo5oM6LvUTX_gfvVK8LdUh3HF_HZxiwuMdOZalWiiTNZlZm88RNpdwzO_cpUbORfL627oEBzjFX28yCUmBiiQmSbil5IzYIHLvNXWQPvq2qVzqZJfo/s1600/EX-NBA-VISITAN-A-MINISTRO-DE-DEPORTES-LICENCIADO-DANILO-DIAZ.jpg"
+              alt="Visita exjugadores"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">12/05/2024</p>
+            <p class="description">Visita de exjugadores del club</p>
+          </div>
+        </article>
+
+        <!-- card 09 -->
+        <article
+          class="card"
+          data-date="18/05/2024"
+          data-desc="Voluntariado en actividades deportivas"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://deportesdigital.com.ve/public/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-30-at-7.49.43-PM.jpeg"
+              alt="Clínica deportiva"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">18/05/2024</p>
+            <p class="description">Voluntariado en actividades deportivas</p>
+          </div>
+        </article>
+
+        <!-- card 10 -->
+        <article
+          class="card"
+          data-date="25/05/2024"
+          data-desc="Partido de despedida del capitán"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe5zJBc3mY1VxjnJZEUYpBstq55fsxixB5a9Zhaq9u7VpFiC54I6Go19n-&s=10"
+              alt="Despedida capitán"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">25/05/2024</p>
+            <p class="description">Partido de despedida del capitán</p>
+          </div>
+        </article>
+
+        <!-- card 11 -->
+        <article
+          class="card"
+          data-date="02/06/2024"
+          data-desc="Inauguración de nuevas instalaciones"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSPdw5YEJvMGkUPzI82cOTwX0mR-YIt5Sf80pIqOeTuINICKlxqr1Ob1Kx&s=10"
+              alt="Nuevas instalaciones"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">02/06/2024</p>
+            <p class="description">Inauguración de nuevas instalaciones</p>
+          </div>
+        </article>
+
+        <!-- card 12 -->
+        <article
+          class="card"
+          data-date="10/06/2024"
+          data-desc="Conferencia de prensa del entrenador"
+        >
+          <div class="card-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQremu7nKbhWgonZvCLKNJcC307bY9RT674BGOAUGaiVrQo1ZY8xrYol3ra&s=10"
+              alt="Conferencia de prensa"
+            />
+          </div>
+          <div class="card-info">
+            <p class="date">10/06/2024</p>
+            <p class="description">Conferencia de prensa del entrenador</p>
+          </div>
+        </article>
+      </div>
     </main>
-    <footer class="custom-footer">
-        <div class="footer-container">
-            <div class="footer-logo-wrapper">
-                <img src="../assets/Images/Logo/logoMancoCapac.png" alt="Logo del Club Deportivo Manco Cápac"
-                    class="footer-logo">
-            </div>
-            <div class="footer-info">
-                <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
-                <p class="founded">Fundado el 21 de Octubre de 1961</p>
-                <p class="footer-copyright">
-                    Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos reservados
-                </p>
-            </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <img id="modal-image" src="" alt="Increased Image" />
+        <div class="modal-info">
+          <p class="modal-date" id="modal-date">DD/MM/YYYY</p>
+          <p class="modal-description" id="modal-description">
+            Descripción de la imagen
+          </p>
+          <button class="btn-close-modal" id="close-modal">Cerrar</button>
         </div>
+      </div>
+    </div>
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-logo-wrapper">
+          <img
+            src="../assets/Images/Logo/logoMancoCapac.png"
+            alt="Logo del Club Deportivo Manco Cápac"
+            class="footer-logo"
+          />
+        </div>
+        <div class="footer-info">
+          <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
+          <p class="founded">Fundado el 21 de Octubre de 1961</p>
+          <p class="footer-copyright">
+            Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los
+            derechos reservados
+          </p>
+        </div>
+      </div>
     </footer>
-
-
-    <script src="../js/album.js"></script>
+    <script src="../js/Galería.js"></script>
     <script src="../js/global.js"></script>
-</body>
-
+  </body>
 </html>
