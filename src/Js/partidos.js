@@ -23,3 +23,13 @@ export class Partido {
         this.logoVisitante = logoVisitante;
     }
 }
+
+export class MesPartidos {
+    mes;
+    data;
+
+    constructor({mes, data}){
+        this.mes = mes;
+        this.data = data.map(p => new Partido(p));
+    }
+}
