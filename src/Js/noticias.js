@@ -4,7 +4,7 @@ const noticias = [
         id: 1,
         titulo: "El Club Deportivo Manco Cápac recuerda el legado de José Augusto Fernández 'Taka Taka'",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia1.jpg",
+        imagen: "../assets/news/News-1.png",
         contenido: `
             <p>El Club Deportivo Manco Cápac rindió homenaje a uno de sus personajes más emblemáticos: José Augusto Fernández Carlos, conocido cariñosamente como <strong>"Taka Taka"</strong>.</p>
 
@@ -18,7 +18,7 @@ const noticias = [
         id: 2,
         titulo: "Doña Dominga Carlos, una madre que apoyó al Manco Cápac dentro y fuera de la cancha",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia2.jpg",
+        imagen: "../assets/news/News-2.png",
         contenido: `
             <p>La historia del Club Deportivo Manco Cápac también reconoce a quienes, sin jugar en la cancha, contribuyeron al crecimiento del equipo.</p>
 
@@ -206,5 +206,17 @@ function closeNews() {
 
     document.body.style.overflow = "auto";
 }
+
+
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+        closeNews();
+    }
+});
+
+
+document.querySelector(".modal-content").addEventListener("click", function (e) {
+    e.stopPropagation();
+});
 
 
