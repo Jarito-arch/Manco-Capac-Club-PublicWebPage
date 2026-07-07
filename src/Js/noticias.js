@@ -34,7 +34,7 @@ const noticias = [
         id: 3,
         titulo: "Rosa Tello de Rivero también dejó huella en la historia del Manco Cápac",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia3.jpg",
+        imagen: "../assets/news/News-3.png.jpg",
         contenido: `
             <p>Otra de las personas recordadas por el Club Deportivo Manco Cápac es Rosa Tello de Rivero, madre de Víctor e Ismael Rivero.</p>
 
@@ -50,7 +50,7 @@ const noticias = [
         id: 4,
         titulo: "El 'Trío de Oro' marcó una época en el básquet chiclayano",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia4.jpg",
+        imagen: "../assets/news/News-4.png.jpg",
         contenido: `
             <p>El Club Deportivo Manco Cápac destacó la trayectoria de tres de sus más importantes jugadores, conocidos como <strong>"El Trío de Oro"</strong>.</p>
 
@@ -66,7 +66,7 @@ const noticias = [
         id: 5,
         titulo: "Félix Mendoza Bazán fue uno de los grandes referentes del Manco Cápac",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia5.jpg",
+        imagen: "../assets/news/News-5.png.jpg",
         contenido: `
             <p>Félix Mendoza Bazán inició su historia con el Club Deportivo Manco Cápac en 1962.</p>
 
@@ -82,7 +82,7 @@ const noticias = [
         id: 6,
         titulo: "Alberto Ramírez 'Capringa' impulsó el desarrollo del básquet desde las canchas y la enseñanza",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia6.jpg",
+        imagen: "../assets/news/News-6.png.jpg",
         contenido: `
             <p>Alberto Ramírez Delgado, conocido como <strong>"Capringa"</strong>, fue uno de los jugadores más destacados surgidos de las canteras del Club Deportivo Manco Cápac.</p>
 
