@@ -33,3 +33,25 @@ export class MesPartidos {
         this.data = data.map(p => new Partido(p));
     }
 }
+
+export class Calendario {
+    partidos;
+
+    constructor(dataPartidos) {
+        this.partidos = dataPartidos.map(
+            mes => new MesPartidos(mes)
+        );
+    }
+
+    getPartidos() {
+        return this.partidos;
+    }
+
+    getPartidosxMes(mes) {
+        return this.partidos.find(p => p.mes == mes);
+    }
+
+    obtenerDataMes(mes) {
+        return this.getPartidosxMes(mes)?.data || [];
+    }
+}
