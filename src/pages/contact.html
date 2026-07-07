@@ -102,8 +102,8 @@
             </select>
             </div>
             <div class="field-description">
-            <label for="message">Mensaje:</label>
-            <textarea class="message1" id="message" name="message" rows="4" required placeholder="💬 Escribe tu mensaje aquí..."></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea class="message1" id="message" name="message" rows="4" minlength="0" maxlength="100" placeholder="💬 Escribe tu mensaje aquí..."></textarea>
             </div>
             
 
@@ -160,11 +160,20 @@
             <option class="motivo" value="amigos">Amigos</option>
 
         </select>
+        
 
+    </div>
+    <div class="privacy">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">
+                <span class="icon">🛡️</span>
+                Acepto que mis datos sean utilizados únicamente para responder mi consulta.
+            </label>
     </div>
 
         <div class="button-container">
-            <button type="submit" class="button1"><span>Enviar</span></button>
+            <button type="submit" class="button2"><span class="spans">Cancelar</span></button>
+            <button type="submit" class="button1"><span class="spans">Enviar</span></button>
         </div>
         </form>
     </section>
@@ -202,6 +211,7 @@
 
     </footer>
 <script src="../js/global.js"></script>
+<script src="../Js/contact.js"></script>
 </body>
 
 </html>
