@@ -294,20 +294,6 @@ select{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .button-container {
     display: flex;
     justify-content: right;
@@ -384,19 +370,6 @@ select{
     position: relative;
     z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .information {
