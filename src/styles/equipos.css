@@ -51,7 +51,17 @@ main{
     border: none;
 }
 
+.jugador-informacion h2,
+.jugador-informacion span,
+.jugador-detalles p,
+.jugador-detalles strong,
+.click button{
+    font-family: "Lato", sans-serif !important;
+}
 
+.click button{
+    font-weight: 700;
+}
 .categories{
     display: flex;
     justify-content: center;
@@ -403,6 +413,9 @@ button:hover{
 }
 
 .cerrar-modal-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position:absolute;
     top:10px;
     right:10px;
@@ -411,7 +424,6 @@ button:hover{
     border-radius:50%;
     background:#e0b218;
     cursor:pointer;
-
 }
 
 
