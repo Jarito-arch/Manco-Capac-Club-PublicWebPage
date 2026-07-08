@@ -116,7 +116,10 @@ section{
 .social h3,
 .social .social-icons,
 .social-icons a,
-.quote p{
+.quote p,
+.modal .check,
+.modal h2,
+.modal p{
     font-family: "Lato", sans-serif;
     
 }
@@ -132,9 +135,6 @@ section{
     flex-direction: column;
     padding: 20px;
 }
-
-
-
 
 
 .name,
@@ -523,6 +523,90 @@ select{
     color:#141414;
     font-style:italic;
     line-height:1.6;
+}
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    visibility:hidden;
+    opacity:0;
+    transition:.3s;
+    z-index:9999;
+}
+
+.modal.show{
+    visibility:visible;
+    opacity:1;
+}
+
+.modal-content{
+    width:340px;
+    background:white;
+    border-radius:15px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.loader{
+    width:80px;
+    height:80px;
+    border:7px solid #ddd;
+    border-top:7px solid #153574;
+    border-radius:50%;
+    margin:auto;
+    animation:girar 1s linear infinite;
+}
+
+@keyframes girar{
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+.success{
+
+    display:none;
+
+}
+
+.check{
+
+    width:90px;
+    height:90px;
+
+    background:#28a745;
+
+    color:white;
+
+    font-size:45px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0 auto 20px;
+
+}
+
+.success h2{
+
+    color:#153574;
+    margin-bottom:10px;
+
+}
+
+.success p{
+
+    color:#666;
+
 }
 
 
