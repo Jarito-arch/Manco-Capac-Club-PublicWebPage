@@ -1,42 +1,16 @@
 const radios = document.querySelectorAll("input[name='contacto']");
 
 radios.forEach(radio => {
-
     radio.addEventListener("change", () => {
-
         console.log("Seleccionó:", radio.value);
-
     });
-
 });
-
 
 const formulario = document.getElementById("ContentForm");
-
-const modal = document.getElementById("modal");
-
+const modal = document.getElementById("modal-form");
 const loader = document.getElementById("loader");
-
 const success = document.getElementById("success");
-
-
-formulario.addEventListener("submit", function(e){
-    e.preventDefault();
-    modal.classList.add("show");
-    loader.style.display="block";
-    success.style.display="none";
-
-    setTimeout(()=>{
-        loader.style.display="none";
-        success.style.display="block";
-    },1000);
-
-    setTimeout(()=>{
-        modal.classList.remove("show");
-        formulario.reset();
-        localStorage.removeItem("contacto");
-    },2500);
-});
+const btnCancelar = document.getElementById("btnCancelar");
 
 window.addEventListener("DOMContentLoaded", () => {
     const datos = JSON.parse(localStorage.getItem("contacto"));
@@ -72,3 +46,26 @@ function guardarFormulario() {
 
 formulario.addEventListener("input", guardarFormulario);
 formulario.addEventListener("change", guardarFormulario);
+
+btnCancelar.addEventListener("click", function () {
+    formulario.reset();
+    localStorage.removeItem("contacto");
+});
+
+formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+    modal.classList.add("show");
+    loader.style.display = "block";
+    success.style.display = "none";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+        success.style.display = "block";
+    }, 1000);
+
+    setTimeout(() => {
+        modal.classList.remove("show");
+        formulario.reset();
+        localStorage.removeItem("contacto");
+    }, 2500);
+});

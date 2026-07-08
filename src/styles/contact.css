@@ -117,9 +117,9 @@ section{
 .social .social-icons,
 .social-icons a,
 .quote p,
-.modal .check,
-.modal h2,
-.modal p{
+.modal-form .check,
+.modal-form h2,
+.modal-form p{
     font-family: "Lato", sans-serif;
     
 }
@@ -525,7 +525,7 @@ select{
     line-height:1.6;
 }
 
-.modal{
+.modal-form{
     position:fixed;
     inset:0;
     background:rgba(0,0,0,.55);
@@ -538,7 +538,7 @@ select{
     z-index:9999;
 }
 
-.modal.show{
+.modal-form.show{
     visibility:visible;
     opacity:1;
 }
