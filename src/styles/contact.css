@@ -106,7 +106,17 @@ section{
 .cluster .telefono,
 .cluster .title-cluster,
 .privacy label,
-.button-container .spans{
+.button-container .spans,
+.club-card h2,
+.club-card h1,
+.club-card .slogan,
+.info-box h3,
+.info-box p,
+.info-box span,
+.social h3,
+.social .social-icons,
+.social-icons a,
+.quote p{
     font-family: "Lato", sans-serif;
     
 }
@@ -251,18 +261,12 @@ input[type="radio"]:checked + .card{
 }
 
 select{
-
     height:45px;
-
     border-radius:8px;
-
     border:1px solid #ccc;
-
     padding:0 10px;
-
     font-size:15px;
     transition: .3s;
-
 }
 
 
@@ -325,24 +329,24 @@ select{
     border-radius: 5px;
     border: 1px solid #949191;
     color: #111111;
-    background: #949191 !important;
+    background: #949191;
     font-size: 17px;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.4s ease, color 0.5s ease;
     height: 50px;
     width: 200px;
-    background: #ffffff;
     transition: .3s;
 }
 
 
 .button1:hover{
     transform: scale(1.02);
-    color:#ffffff;
+    color:#000000;
 }
 .button2:hover{
     transform: scale(1.02);
-    color: #000000;
+    color: #ffffff;
+    background: #000000;
 }
 
 .button1::before{
@@ -372,10 +376,153 @@ select{
 }
 
 
-.information {
-    margin-top: 24px;
-    background: #ffffff;
+.information{
+    background:#ffffff;
+    border-radius:12px;
+    margin:10px;
+    padding:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    height:max-content;
+}
 
+.club-card{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.club-card h2{
+    font-size:15px;
+    color:#d62828;
+    letter-spacing:1px;
+    margin-bottom:2px;
+}
+
+.club-card h1{
+    font-size:45px;
+    font-weight: 700;
+    color:#153574;
+    margin-bottom:8px;
+}
+
+.slogan{
+    color:#d62828;
+    font-size:18px;
+    font-style:italic;
+}
+
+.info-box{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    background:#fafafa;
+    box-shadow:0 2px 8px rgba(10, 10, 10, 0.08);
+}
+
+.icon2{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e63946;
+    color:#d3d3d3;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+
+.icon.whatsapp{
+    background:#25D366;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.icon.email1{
+    background:#1565C0;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.icon.clock{
+    background:#f4a100;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.info-box h3{
+    font-size:14px;
+    color:#d62828;
+    margin-bottom:4px;
+}
+
+.info-box p{
+    font-size:15px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:3px;
+}
+
+.info-box span{
+    font-size:13px;
+    color:#302d2d;
+}
+
+.social{
+    margin-top:10px;
+}
+
+.social h3{
+    color:#153574;
+    margin-bottom:15px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.social-icons a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+    cursor: pointer;
+}
+
+
+.quote{
+    margin-top:20px;
+    padding:18px;
+    background:#e2dede;
+    border-radius:10px;
+    text-align:center;
+    color:#141414;
+    font-style:italic;
+    line-height:1.6;
 }
 
 
