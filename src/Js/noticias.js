@@ -34,7 +34,7 @@ const noticias = [
         id: 3,
         titulo: "Rosa Tello de Rivero también dejó huella en la historia del Manco Cápac",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/news/News-3.png.jpg",
+        imagen: "../assets/news/News-3.png",
         contenido: `
             <p>Otra de las personas recordadas por el Club Deportivo Manco Cápac es Rosa Tello de Rivero, madre de Víctor e Ismael Rivero.</p>
 
@@ -50,7 +50,7 @@ const noticias = [
         id: 4,
         titulo: "El 'Trío de Oro' marcó una época en el básquet chiclayano",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/news/News-4.png.jpg",
+        imagen: "../assets/news/News-4.png",
         contenido: `
             <p>El Club Deportivo Manco Cápac destacó la trayectoria de tres de sus más importantes jugadores, conocidos como <strong>"El Trío de Oro"</strong>.</p>
 
@@ -66,7 +66,7 @@ const noticias = [
         id: 5,
         titulo: "Félix Mendoza Bazán fue uno de los grandes referentes del Manco Cápac",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/news/News-5.png.jpg",
+        imagen: "../assets/news/News-5.png",
         contenido: `
             <p>Félix Mendoza Bazán inició su historia con el Club Deportivo Manco Cápac en 1962.</p>
 
@@ -82,7 +82,7 @@ const noticias = [
         id: 6,
         titulo: "Alberto Ramírez 'Capringa' impulsó el desarrollo del básquet desde las canchas y la enseñanza",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/news/News-6.png.jpg",
+        imagen: "../assets/news/News-6.png",
         contenido: `
             <p>Alberto Ramírez Delgado, conocido como <strong>"Capringa"</strong>, fue uno de los jugadores más destacados surgidos de las canteras del Club Deportivo Manco Cápac.</p>
 
@@ -174,6 +174,20 @@ const noticias = [
 
             <p>Gracias a su esfuerzo y compromiso, el espíritu deportivo del Club Deportivo Manco Cápac continúa vivo y sigue siendo motivo de orgullo para toda la comunidad.</p>
         `
+    },
+
+    {
+        id: 12,
+        titulo: "Del barrio a la historia: el Manco Cápac mantiene vivo su legado",
+        fecha: "26 de junio de 2026",
+        imagen: "../assets/Images/noticias/noticia11.jpg",
+        contenido: `
+            <p>Las biografías, fotografías y campeonatos recopilados por el Club Deportivo Manco Cápac muestran la importancia de la institución en la historia deportiva del barrio.</p>
+
+            <p>Jugadores, entrenadores, dirigentes, madres de familia e hinchas aparecen como protagonistas de un legado construido durante décadas.</p>
+
+            <p>Gracias a su esfuerzo y compromiso, el espíritu deportivo del Club Deportivo Manco Cápac continúa vivo y sigue siendo motivo de orgullo para toda la comunidad.</p>
+        `
     }
 ];
 const modal = document.getElementById("modal");
@@ -219,4 +233,36 @@ document.querySelector(".modal-content").addEventListener("click", function (e) 
     e.stopPropagation();
 });
 
+//js para el boton de ver mas solo va desplegar 3 noticias mas 
+const boton = document.getElementById("btnMasNoticias");
+let mostrandoMas = false;
 
+boton.addEventListener("click", () => {
+
+    const extras = document.querySelectorAll(".extra");
+
+    if (!mostrandoMas) {
+
+        extras.forEach(card => {
+            card.style.display = "block";
+        });
+
+        boton.textContent = "VER MENOS";
+        mostrandoMas = true;
+
+    } else {
+
+        extras.forEach(card => {
+            card.style.display = "none";
+        });
+
+        boton.textContent = "VER MÁS NOTICIAS";
+        mostrandoMas = false;
+
+        // Regresa automáticamente a las primeras noticias
+        document.querySelector(".news-section").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
+});
