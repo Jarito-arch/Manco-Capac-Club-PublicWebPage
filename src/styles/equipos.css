@@ -91,6 +91,7 @@ text-decoration: none;
     background: white;
     color: #000000;
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 
@@ -250,7 +251,7 @@ button:hover{
     position: fixed;
     inset: 0;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #00000099;
     backdrop-filter: blur(4px);
     z-index: 999;
     justify-content: center;
@@ -468,7 +469,9 @@ button:hover{
     gap: 10x;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
+    
 
 
     .categories .category-button {
@@ -478,6 +481,7 @@ button:hover{
     background: white;
     color: #000000;
     transition: 0.4s ease;
+    
     }
 
     .teamContainer2 {
@@ -574,7 +578,7 @@ button:hover{
     
 
 }
-@media(min-width:769px){
+@media(min-width:779px){
     #modal{
         display:none !important;
     }
