@@ -1,4 +1,4 @@
-import { dataPartidos } from "./datosPartidos.js";
+import { dataPartidos, equipos } from "./datosPartidos.js";
 
 export class Partido {
     dia;
@@ -122,3 +122,64 @@ botonesMes.forEach(boton=>{
 });
 
 mostrarPartidos("enero");
+
+/*--------------------------------------------------------------------*/
+
+const tablaPosiciones = document.getElementById("tablaPosiciones");
+
+function crearCelda(texto) {
+    let td = document.createElement("td");
+    td.textContent = texto;
+    return td;
+};
+
+function crearCeldaEquipo(nombre, logo) {
+    let td = document.createElement("td");
+    let span = document.createElement("span");
+    let img = document.createElement("img");
+    img.src = `../assets/Images/Logo/${logo}`;
+    span.appendChild(img);
+    td.appendChild(span);
+    td.append(`${nombre}`);
+    return td;
+
+};
+
+function crearFila(equipo, posicion) {
+
+    let tr = document.createElement("tr");
+
+    if (equipo.nombre === "Manco Cápac") {
+        tr.classList.add("select_MancoCapac");
+    }
+
+    tr.appendChild(crearCelda(posicion + "°"));
+    tr.appendChild(crearCeldaEquipo(equipo.nombre, equipo.logo));
+    tr.appendChild(crearCelda(equipo.pj));
+    tr.appendChild(crearCelda(equipo.pg));
+    tr.appendChild(crearCelda(equipo.pp));
+    tr.appendChild(crearCelda(equipo.wo));
+    tr.appendChild(crearCelda(equipo.pf));
+    tr.appendChild(crearCelda(equipo.pc));
+    tr.appendChild(crearCelda(equipo.dp));
+    tr.appendChild(crearCelda(equipo.puntaje));
+
+    return tr;
+
+};
+
+function mostrarTabla(equipos) {
+
+    tablaPosiciones.innerHTML = "";
+
+    equipos.forEach((equipo, index) => {
+
+        tablaPosiciones.appendChild(
+            crearFila(equipo, index + 1)
+        );
+
+    });
+
+};
+
+mostrarTabla(equipos);

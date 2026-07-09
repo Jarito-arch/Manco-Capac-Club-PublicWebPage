@@ -267,3 +267,44 @@ export const dataPartidos = [
     }
 
 ];
+
+export const equipos = [
+    {
+        nombre: "Manco Cápac",
+        logo: "logoMancoCapac.png",
+        pj: 7,
+        pg: 7,
+        pp: 0,
+        wo: 0,
+        pf: 393,
+        pc: 189,
+        dp: 204,
+        puntaje: 14
+    },
+
+    {
+        nombre: "Union Chiclayo",
+        logo: "logoUnionChiclayo.png",
+        pj: "7",
+        pg: "6",
+        pp: "1",
+        wo: "0",
+        pf: "364",
+        pc: "170",
+        dp: "194",
+        puntaje: "13"
+    },
+
+    {
+        nombre: "Triple Doble A",
+        logo: "logoTripleDoble.png",
+        pj: "7",
+        pg: "5",
+        pp: "2",
+        wo: "0",
+        pf: "358",
+        pc: "104",
+        dp: "254",
+        puntaje: "12"
+    }
+];
