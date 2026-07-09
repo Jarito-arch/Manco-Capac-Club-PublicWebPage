@@ -4,51 +4,33 @@ const jugadores = [
     { id: 2, categoria: "SUPERIOR", nombre: "Ørjan Nyland", numero: "#15", posicion: "Portero", edad: "30 años", estatura: "1.92 m", peso: "85 kg", mano: "Derecha", desc: "Nacido en Noruega. Excelente portero con gran reflejo y liderazgo en el área.", img: "../assets/equipo/Norwegian-goalkeeper.webp" },
     { id: 3, categoria: "SUPERIOR", nombre: "Matias Dyngeland", numero: "#08", posicion: "Defensa", edad: "24 años", estatura: "1.85 m", peso: "78 kg", mano: "Derecha", desc: "Joven defensor noruego con gran proyección y solidez defensiva.", img: "../assets/equipo/player3-noruega.jfif" },
     { id: 4, categoria: "SUPERIOR", nombre: "Kristoffer Ajer", numero: "#12", posicion: "Delantero", edad: "30 años", estatura: "1.88 m", peso: "82 kg", mano: "Derecha", desc: "Veterano delantero noruego. Experiencia y gol garantizado.", img: "../assets/equipo/player4-noruega.jfif" },
-    { id: 5, categoria: "SUPERIOR", nombre: "Martin Ødegaard", numero: "#10", posicion: "Mediocampista", edad: "25 años", estatura: "1.78 m", peso: "68 kg", mano: "Derecha", desc: "Capitán del equipo. Visionario en el mediocampo con pases precisos.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 6, categoria: "SUPERIOR", nombre: "Sander Berge", numero: "#06", posicion: "Mediocampista", edad: "26 años", estatura: "1.95 m", peso: "90 kg", mano: "Derecha", desc: "Mediocampista físico con gran capacidad de recuperación.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 5, categoria: "SUPERIOR", nombre: "Martin Ødegaard", numero: "#10", posicion: "Mediocampista", edad: "25 años", estatura: "1.78 m", peso: "68 kg", mano: "Derecha", desc: "Capitán del equipo. Visionario en el mediocampo con pases precisos.", img: "../assets/equipo/player5-noruega.jfif" },
+    { id: 6, categoria: "SUPERIOR", nombre: "Sander Berge", numero: "#06", posicion: "Mediocampista", edad: "26 años", estatura: "1.95 m", peso: "90 kg", mano: "Derecha", desc: "Mediocampista físico con gran capacidad de recuperación.", img: "../assets/equipo/player6-noruega.jfif" },
     { id: 7, categoria: "SUPERIOR", nombre: "Leo Skiri Østigård", numero: "#04", posicion: "Defensa", edad: "25 años", estatura: "1.82 m", peso: "76 kg", mano: "Derecha", desc: "Defensa central sólido y con buen juego aéreo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 8, categoria: "SUPERIOR", nombre: "Patrick Berg", numero: "#14", posicion: "Mediocampista", edad: "27 años", estatura: "1.80 m", peso: "75 kg", mano: "Derecha", desc: "Mediocampista creativo con gran técnica individual.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 9, categoria: "SUPERIOR", nombre: "Jørgen Strand Larsen", numero: "#09", posicion: "Delantero", edad: "24 años", estatura: "1.93 m", peso: "87 kg", mano: "Derecha", desc: "Delantero joven con gran capacidad goleadora.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 10, categoria: "SUPERIOR", nombre: "Morten Thorsby", numero: "#11", posicion: "Mediocampista", edad: "28 años", estatura: "1.88 m", peso: "80 kg", mano: "Derecha", desc: "Mediocampista versátil con gran capacidad de trabajo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 11, categoria: "SUPERIOR", nombre: "Stian Rode Gregersen", numero: "#03", posicion: "Defensa", edad: "29 años", estatura: "1.90 m", peso: "84 kg", mano: "Derecha", desc: "Defensa experimentado con buen posicionamiento.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 12, categoria: "SUPERIOR", nombre: "Alexander Sørloth", numero: "#19", posicion: "Delantero", edad: "28 años", estatura: "1.94 m", peso: "89 kg", mano: "Derecha", desc: "Delantero potente con gran presencia en el área.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 8, categoria: "SUPERIOR", nombre: "Patrick Berg", numero: "#14", posicion: "Mediocampista", edad: "27 años", estatura: "1.80 m", peso: "75 kg", mano: "Derecha", desc: "Mediocampista creativo con gran técnica individual.", img: "../assets/equipo/player7-noruega.jfif" },
+    { id: 9, categoria: "SUPERIOR", nombre: "Jørgen Strand Larsen", numero: "#09", posicion: "Delantero", edad: "24 años", estatura: "1.93 m", peso: "87 kg", mano: "Derecha", desc: "Delantero joven con gran capacidad goleadora.", img: "../assets/equipo/player8-noruega.jfif" },
+    
 
-
-    { id: 13, categoria: "SUB 19", nombre: "Antonio Nusa", numero: "#17", posicion: "Extremo", edad: "19 años", estatura: "1.80 m", peso: "72 kg", mano: "Derecha", desc: "Joven extremo con gran velocidad y dribbling.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 13, categoria: "SUB 19", nombre: "Antonio Nusa", numero: "#17", posicion: "Extremo", edad: "19 años", estatura: "1.80 m", peso: "72 kg", mano: "Derecha", desc: "Joven extremo con gran velocidad y dribbling.", img: "../assets/equipo/sub19-1.jfif" },
     { id: 14, categoria: "SUB 19", nombre: "Sverre Nypan", numero: "#21", posicion: "Mediocampista", edad: "18 años", estatura: "1.78 m", peso: "70 kg", mano: "Derecha", desc: "Promesa del mediocampo con visión de juego.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 15, categoria: "SUB 19", nombre: "Isak Hansen-Aarøen", numero: "#22", posicion: "Mediocampista", edad: "19 años", estatura: "1.75 m", peso: "68 kg", mano: "Derecha", desc: "Mediocampista técnico con gran control de balón.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 15, categoria: "SUB 19", nombre: "Isak Hansen-Aarøen", numero: "#22", posicion: "Mediocampista", edad: "19 años", estatura: "1.75 m", peso: "68 kg", mano: "Derecha", desc: "Mediocampista técnico con gran control de balón.", img: "../assets/equipo/sub19-2.jpg" },
     { id: 16, categoria: "SUB 19", nombre: "Oscar Bobb", numero: "#16", posicion: "Extremo", edad: "19 años", estatura: "1.74 m", peso: "67 kg", mano: "Izquierda", desc: "Extremo habilidoso con gran capacidad de desborde.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 17, categoria: "SUB 19", nombre: "Tobias Gulliksen", numero: "#20", posicion: "Delantero", edad: "19 años", estatura: "1.82 m", peso: "75 kg", mano: "Derecha", desc: "Delantero juvenil con buena definición.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 18, categoria: "SUB 19", nombre: "Jesper Daland", numero: "#05", posicion: "Defensa", edad: "19 años", estatura: "1.88 m", peso: "80 kg", mano: "Derecha", desc: "Defensa juvenil con gran proyección.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 19, categoria: "SUB 19", nombre: "Markus Solbakken", numero: "#23", posicion: "Mediocampista", edad: "19 años", estatura: "1.76 m", peso: "69 kg", mano: "Derecha", desc: "Mediocampista con gran capacidad de pase.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 17, categoria: "SUB 19", nombre: "Tobias Gulliksen", numero: "#20", posicion: "Delantero", edad: "19 años", estatura: "1.82 m", peso: "75 kg", mano: "Derecha", desc: "Delantero juvenil con buena definición.", img: "../assets/equipo/sub19-3.jfif" },
+    { id: 18, categoria: "SUB 19", nombre: "Jesper Daland", numero: "#05", posicion: "Defensa", edad: "19 años", estatura: "1.88 m", peso: "80 kg", mano: "Derecha", desc: "Defensa juvenil con gran proyección.", img: "../assets/equipo/sub19-4.jfif" },
+    { id: 19, categoria: "SUB 19", nombre: "Markus Solbakken", numero: "#23", posicion: "Mediocampista", edad: "19 años", estatura: "1.76 m", peso: "69 kg", mano: "Derecha", desc: "Mediocampista con gran capacidad de pase.", img: "../assets/equipo/sub19-5.jfif" },
     { id: 20, categoria: "SUB 19", nombre: "Erik Botheim", numero: "#18", posicion: "Delantero", edad: "19 años", estatura: "1.86 m", peso: "78 kg", mano: "Derecha", desc: "Delantero con movilidad y olfato goleador.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 21, categoria: "SUB 19", nombre: "Kristian Arnstad", numero: "#24", posicion: "Mediocampista", edad: "19 años", estatura: "1.77 m", peso: "70 kg", mano: "Derecha", desc: "Mediocampista polivalente con gran físico.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 22, categoria: "SUB 19", nombre: "Henrik Bjørdal", numero: "#02", posicion: "Defensa", edad: "19 años", estatura: "1.83 m", peso: "76 kg", mano: "Derecha", desc: "Lateral derecho con capacidad ofensiva.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 23, categoria: "SUB 19", nombre: "Sivert Mannsverk", numero: "#25", posicion: "Mediocampista", edad: "19 años", estatura: "1.85 m", peso: "79 kg", mano: "Derecha", desc: "Mediocampista defensivo con gran recuperación.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 24, categoria: "SUB 19", nombre: "Mikael Tengesdal", numero: "#01", posicion: "Portero", edad: "19 años", estatura: "1.90 m", peso: "82 kg", mano: "Derecha", desc: "Portero juvenil con grandes reflejos.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 21, categoria: "SUB 19", nombre: "Kristian Arnstad", numero: "#24", posicion: "Mediocampista", edad: "19 años", estatura: "1.77 m", peso: "70 kg", mano: "Derecha", desc: "Mediocampista polivalente con gran físico.", img: "../assets/equipo/sub19-6.jfif" },
 
-
-    { id: 25, categoria: "SUB 18", nombre: "Andreas Schjelderup", numero: "#07", posicion: "Extremo", edad: "18 años", estatura: "1.76 m", peso: "68 kg", mano: "Derecha", desc: "Extremo con gran técnica y velocidad.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 25, categoria: "SUB 18", nombre: "Andreas Schjelderup", numero: "#07", posicion: "Extremo", edad: "18 años", estatura: "1.76 m", peso: "68 kg", mano: "Derecha", desc: "Extremo con gran técnica y velocidad.", img: "../assets/equipo/sub18.jfif" },
     { id: 26, categoria: "SUB 18", nombre: "Isak Aalberg", numero: "#08", posicion: "Mediocampista", edad: "18 años", estatura: "1.80 m", peso: "73 kg", mano: "Derecha", desc: "Mediocampista con buena visión de juego.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 27, categoria: "SUB 18", nombre: "Elias Solberg", numero: "#10", posicion: "Mediocampista", edad: "18 años", estatura: "1.78 m", peso: "71 kg", mano: "Izquierda", desc: "Mediocampista creativo con gran regate.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 27, categoria: "SUB 18", nombre: "Elias Solberg", numero: "#10", posicion: "Mediocampista", edad: "18 años", estatura: "1.78 m", peso: "71 kg", mano: "Izquierda", desc: "Mediocampista creativo con gran regate.", img: "../assets/equipo/sub18-2.jfif" },
     { id: 28, categoria: "SUB 18", nombre: "Noah Holm", numero: "#09", posicion: "Delantero", edad: "18 años", estatura: "1.88 m", peso: "81 kg", mano: "Derecha", desc: "Delantero con gran presencia física.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 29, categoria: "SUB 18", nombre: "Sebastian Tounekti", numero: "#11", posicion: "Extremo", edad: "18 años", estatura: "1.75 m", peso: "69 kg", mano: "Derecha", desc: "Extremo rápido con buen uno contra uno.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 30, categoria: "SUB 18", nombre: "Emil Konradsen Ceide", numero: "#14", posicion: "Extremo", edad: "18 años", estatura: "1.81 m", peso: "74 kg", mano: "Derecha", desc: "Extremo con gran capacidad de centros.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 29, categoria: "SUB 18", nombre: "Sebastian Tounekti", numero: "#11", posicion: "Extremo", edad: "18 años", estatura: "1.75 m", peso: "69 kg", mano: "Derecha", desc: "Extremo rápido con buen uno contra uno.", img: "../assets/equipo/sub18-3.jfif" },
+    { id: 30, categoria: "SUB 18", nombre: "Emil Konradsen Ceide", numero: "#14", posicion: "Extremo", edad: "18 años", estatura: "1.81 m", peso: "74 kg", mano: "Derecha", desc: "Extremo con gran capacidad de centros.", img: "../assets/equipo/sub18-4.jfif" },
     { id: 31, categoria: "SUB 18", nombre: "Tobias Børkeeiet", numero: "#06", posicion: "Defensa", edad: "18 años", estatura: "1.89 m", peso: "83 kg", mano: "Derecha", desc: "Defensa central fuerte en el juego aéreo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 32, categoria: "SUB 18", nombre: "Ulrik Yttergård Jenssen", numero: "#04", posicion: "Defensa", edad: "18 años", estatura: "1.86 m", peso: "80 kg", mano: "Derecha", desc: "Defensa con buen posicionamiento táctico.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 32, categoria: "SUB 18", nombre: "Ulrik Yttergård Jenssen", numero: "#04", posicion: "Defensa", edad: "18 años", estatura: "1.86 m", peso: "80 kg", mano: "Derecha", desc: "Defensa con buen posicionamiento táctico.", img: "../assets/equipo/sub18-5.jpg" },
     { id: 33, categoria: "SUB 18", nombre: "Marius Lode", numero: "#02", posicion: "Defensa", edad: "18 años", estatura: "1.84 m", peso: "78 kg", mano: "Derecha", desc: "Lateral con gran capacidad de recuperación.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 34, categoria: "SUB 18", nombre: "Vetle Dragsnes", numero: "#03", posicion: "Defensa", edad: "18 años", estatura: "1.87 m", peso: "81 kg", mano: "Derecha", desc: "Defensa versátil que puede jugar en varias posiciones.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 35, categoria: "SUB 18", nombre: "Eirik Haugan", numero: "#05", posicion: "Defensa", edad: "18 años", estatura: "1.83 m", peso: "77 kg", mano: "Derecha", desc: "Lateral izquierdo con buen pie zurdo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 36, categoria: "SUB 18", nombre: "Runar Espejord", numero: "#19", posicion: "Delantero", edad: "18 años", estatura: "1.90 m", peso: "85 kg", mano: "Derecha", desc: "Delantero con gran juego aéreo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 37, categoria: "SUB 18", nombre: "Gjermund Åsen", numero: "#15", posicion: "Mediocampista", edad: "18 años", estatura: "1.79 m", peso: "72 kg", mano: "Derecha", desc: "Mediocampista con gran capacidad de pase largo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 38, categoria: "SUB 18", nombre: "Kent-Are Antonsen", numero: "#12", posicion: "Defensa", edad: "18 años", estatura: "1.82 m", peso: "76 kg", mano: "Derecha", desc: "Lateral con capacidad ofensiva y defensiva.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 39, categoria: "SUB 18", nombre: "Fredrik André Bjørkan", numero: "#13", posicion: "Defensa", edad: "18 años", estatura: "1.80 m", peso: "75 kg", mano: "Izquierda", desc: "Lateral zurdo con gran capacidad de centros.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 40, categoria: "SUB 18", nombre: "Lasse Selvåg Nordås", numero: "#16", posicion: "Delantero", edad: "18 años", estatura: "1.92 m", peso: "86 kg", mano: "Derecha", desc: "Delantero con gran definición de cara a portería.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 41, categoria: "SUB 18", nombre: "Mats Møller Dæhli", numero: "#20", posicion: "Mediocampista", edad: "18 años", estatura: "1.77 m", peso: "70 kg", mano: "Derecha", desc: "Mediocampista con gran técnica y visión.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 42, categoria: "SUB 18", nombre: "Ola Solbakken", numero: "#17", posicion: "Extremo", edad: "18 años", estatura: "1.89 m", peso: "82 kg", mano: "Derecha", desc: "Extremo con gran potencia física.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 43, categoria: "SUB 18", nombre: "Jens Petter Hauge", numero: "#18", posicion: "Extremo", edad: "18 años", estatura: "1.84 m", peso: "78 kg", mano: "Derecha", desc: "Extremo con gran capacidad goleadora.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 44, categoria: "SUB 18", nombre: "Kristoffer Zachariassen", numero: "#22", posicion: "Mediocampista", edad: "18 años", estatura: "1.80 m", peso: "74 kg", mano: "Derecha", desc: "Mediocampista con gran capacidad de llegada.", img: "../assets/equipo/imgJugadorMC.png" },
-
+    
 
     { id: 45, categoria: "SUB 17", nombre: "Sander Tangvik", numero: "#01", posicion: "Portero", edad: "17 años", estatura: "1.88 m", peso: "80 kg", mano: "Derecha", desc: "Portero juvenil con grandes reflejos y seguridad.", img: "../assets/equipo/imgJugadorMC.png" },
     { id: 46, categoria: "SUB 17", nombre: "Leo Cornic", numero: "#02", posicion: "Defensa", edad: "17 años", estatura: "1.82 m", peso: "76 kg", mano: "Derecha", desc: "Defensa con gran capacidad de anticipación.", img: "../assets/equipo/imgJugadorMC.png" },
@@ -80,11 +62,11 @@ const jugadores = [
 ];
 
 const staff = [
-    { id: 101, categoria: "SUPERIOR", nombre: "Ståle Solbakken", cargo: "Director Técnico", edad: "56 años", estatura: "1.90 m", peso: "85 kg", mano: "Derecha", desc: "Experimentado entrenador noruego. Ha dirigido selecciones y clubes de primer nivel.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 101, categoria: "SUPERIOR", nombre: "Ståle Solbakken", cargo: "Director Técnico", edad: "56 años", estatura: "1.90 m", peso: "85 kg", mano: "Derecha", desc: "Experimentado entrenador noruego. Ha dirigido selecciones y clubes de primer nivel.", img: "../assets/equipo/entrenador-noruega.jfif" },
     { id: 102, categoria: "SUPERIOR", nombre: "Per-Mathias Høgmo", cargo: "Asistente Técnico", edad: "54 años", estatura: "1.85 m", peso: "80 kg", mano: "Derecha", desc: "Asistente con vasta experiencia en fútbol escandinavo.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 103, categoria: "SUB 19", nombre: "Lars Lagerbäck", cargo: "Entrenador Sub 19", edad: "75 años", estatura: "1.78 m", peso: "75 kg", mano: "Derecha", desc: "Leyenda del entrenamiento nórdico. Gran formador de talentos.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 103, categoria: "SUB 19", nombre: "Lars Lagerbäck", cargo: "Entrenador", edad: "75 años", estatura: "1.78 m", peso: "75 kg", mano: "Derecha", desc: "Leyenda del entrenamiento nórdico. Gran formador de talentos.", img: "../assets/equipo/intructorsub19.jfif" },
     { id: 104, categoria: "SUB 19", nombre: "Hege Riise", cargo: "Preparadora Física", edad: "54 años", estatura: "1.70 m", peso: "62 kg", mano: "Derecha", desc: "Exjugadora de élite. Especialista en preparación física juvenil.", img: "../assets/equipo/imgJugadorMC.png" },
-    { id: 105, categoria: "SUB 18", nombre: "Nils Johan Semb", cargo: "Entrenador Sub 18", edad: "68 años", estatura: "1.82 m", peso: "78 kg", mano: "Derecha", desc: "Entrenador con gran experiencia en categorías inferiores.", img: "../assets/equipo/imgJugadorMC.png" },
+    { id: 105, categoria: "SUB 18", nombre: "Nils Johan Semb", cargo: "Entrenador Sub 18", edad: "68 años", estatura: "1.82 m", peso: "78 kg", mano: "Derecha", desc: "Entrenador con gran experiencia en categorías inferiores.", img: "../assets/equipo/sub18-entrenador.jfif" },
     { id: 106, categoria: "SUB 18", nombre: "Egil Olsen", cargo: "Analista Táctico", edad: "82 años", estatura: "1.80 m", peso: "76 kg", mano: "Derecha", desc: "Analista táctico legendario del fútbol noruego.", img: "../assets/equipo/imgJugadorMC.png" },
     { id: 107, categoria: "SUB 17", nombre: "Gunnar Halle", cargo: "Entrenador Sub 17", edad: "55 años", estatura: "1.83 m", peso: "77 kg", mano: "Derecha", desc: "Entrenador dedicado al desarrollo de jóvenes talentos.", img: "../assets/equipo/imgJugadorMC.png" },
     { id: 108, categoria: "SUB 17", nombre: "Mini Jakobsen", cargo: "Preparador de Porteros", edad: "57 años", estatura: "1.75 m", peso: "72 kg", mano: "Derecha", desc: "Especialista en entrenamiento de porteros juveniles.", img: "../assets/equipo/imgJugadorMC.png" },
@@ -147,13 +129,20 @@ function abrirModal(id) {
         document.getElementById("jugadorDesktopEstatura").textContent = jugador.estatura;
         document.getElementById("jugadorDesktopPeso").textContent = jugador.peso;
         document.getElementById("jugadorDesktopMano").textContent = jugador.mano;
+        document.getElementById("jugadorDesktopDescripcion").textContent = jugador.desc;
         document.getElementById("modalJugadorDesktop").style.display = "flex";
     } else {
         document.getElementById('modal-img').src = jugador.img;
         document.getElementById('modal-img').onerror = function() { this.src = '../assets/equipo/imgJugadorMC.png'; };
-        document.getElementById('modal-nombre').textContent = jugador.nombre;
-        document.getElementById('modal-info').textContent = `${jugador.numero} · ${jugador.posicion} · ${jugador.edad}`;
-        document.getElementById('modal-desc').textContent = jugador.desc;
+        document.getElementById("modal-nombre").textContent = jugador.nombre;
+        document.getElementById("modal-numero").textContent = jugador.numero;
+        document.getElementById("modal-posicion").textContent = jugador.posicion;
+        document.getElementById("modal-categoria").textContent = jugador.categoria;
+        document.getElementById("modal-edad").textContent = jugador.edad;
+        document.getElementById("modal-estatura").textContent = jugador.estatura;
+        document.getElementById("modal-peso").textContent = jugador.peso;
+        document.getElementById("modal-mano").textContent = jugador.mano;
+        document.getElementById("modal-desc").textContent = jugador.desc;
         document.getElementById('modal').classList.add('activo');
     }
 }
@@ -173,13 +162,20 @@ function abrirModalStaff(id) {
         document.getElementById("jugadorDesktopEstatura").textContent = miembro.estatura;
         document.getElementById("jugadorDesktopPeso").textContent = miembro.peso;
         document.getElementById("jugadorDesktopMano").textContent = miembro.mano;
+        document.getElementById("jugadorDesktopDescripcion").textContent = miembro.desc;
         document.getElementById("modalJugadorDesktop").style.display = "flex";
     } else {
         document.getElementById('modal-img').src = miembro.img;
         document.getElementById('modal-img').onerror = function() { this.src = '../assets/equipo/imgJugadorMC.png'; };
-        document.getElementById('modal-nombre').textContent = miembro.nombre;
-        document.getElementById('modal-info').textContent = `${miembro.cargo} · ${miembro.categoria}`;
-        document.getElementById('modal-desc').textContent = miembro.desc;
+        document.getElementById("modal-nombre").textContent = miembro.nombre;
+        document.getElementById("modal-numero").textContent = miembro.cargo;
+        document.getElementById("modal-posicion").textContent = "Comando Técnico";
+        document.getElementById("modal-categoria").textContent = miembro.categoria;
+        document.getElementById("modal-edad").textContent = miembro.edad;
+        document.getElementById("modal-estatura").textContent = miembro.estatura;
+        document.getElementById("modal-peso").textContent = miembro.peso;
+        document.getElementById("modal-mano").textContent = miembro.mano;
+        document.getElementById("modal-desc").textContent = miembro.desc;
         document.getElementById('modal').classList.add('activo');
     }
 }

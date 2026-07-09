@@ -26,6 +26,10 @@ main{
 
 }
 
+.categories .category-button.active{
+    background: #e0b218;
+    color: white;
+}
 
 
 .teamContainer{
@@ -55,7 +59,16 @@ main{
 .jugador-informacion span,
 .jugador-detalles p,
 .jugador-detalles strong,
-.click button{
+.click button,
+.modal-fondo .modal-cerrar,
+.modal-info-box .modal-nombre,
+.modal-info-box .modal-info,
+.modal-info-box .modal-desc,
+.jugador-modal-container h3,
+.modal-info-box h4,
+.modal-info-box p,
+.modal-info-box strong,
+.modal-info-box span{
     font-family: "Lato", sans-serif !important;
 }
 
@@ -177,7 +190,7 @@ text-decoration: none;
 .playercard img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: auto;
     display: block;
 }
 
@@ -278,16 +291,34 @@ button:hover{
     
 }
 
-.modal-contenido {
+.modal-contenido{
     background: white;
     border-radius: 8px;
-    overflow: hidden;
     width: min(400px, 100%);
-    max-height: 90vh;
+    max-height: 65vh;
+
+    overflow-x: hidden;
     overflow-y: auto;
-    position: relative;
-    
+
     box-shadow: 0 0 0 10px white, 0 0 0 12px #e0b218;
+}
+
+.modal-contenido::-webkit-scrollbar{
+    width:6px;
+}
+
+.modal-contenido::-webkit-scrollbar-thumb{
+    background:#c9c9c9;
+    border-radius:20px;
+}
+
+.modal-contenido::-webkit-scrollbar-thumb:hover{
+    background:#999;
+}
+
+.modal-contenido{
+    scrollbar-width:thin;
+    scrollbar-color:#c9c9c9 transparent;
 }
 .modal-info-box {
     padding: 24px;
@@ -299,6 +330,7 @@ button:hover{
     font-size: 1.4rem;
     color: #01015c;
     margin: 0 0 6px;
+    padding-top: 10px;
 }
 
 .modal-info-box p {
@@ -358,17 +390,85 @@ button:hover{
 
 
 .jugador-modal-container{
-    width:700px;
+    width:760px;
+    max-width:95%;
+    height:auto;
+    max-height:85vh;
     background:white;
     border-radius:15px;
     padding:30px;
-    display:flex;
-    gap:30px;
+    display:grid;
+    grid-template-columns:220px 1fr;
+    grid-template-rows:auto auto;
+    grid-template-areas:
+        "foto info"
+        "desc desc";
+    align-content:start;
+    gap:25px;
     position:relative;
+    overflow-y:auto;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    border: 2px solid #e0b218;
+}
+
+.jugador-modal-container::-webkit-scrollbar{
+    width:6px;
+}
+
+.jugador-modal-container::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.jugador-modal-container::-webkit-scrollbar-thumb{
+    background:#c7c7c7;
+    border-radius:20px;
+}
+
+.jugador-modal-container::-webkit-scrollbar-thumb:hover{
+    background:#999;
 }
 
 
+.jugador-modal-container{
+    scrollbar-width:thin;
+    scrollbar-color:#c7c7c7 transparent;
+}
+
+.jugador-informacion{
+    grid-area:info;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-self:start;
+}
+
+.jugador-descripcion{
+    font-family: "Lato", sans-serif;
+    grid-area:desc;
+    margin-top:0;
+    padding-top:14px;
+    border-top:1px solid #d6d6d6;
+    margin-top:5px;
+    align-self:start;
+}
+
+.jugador-descripcion h3{
+    margin:0 0 10px;
+    font-size:22px;
+    color:#153574;
+}
+
+.jugador-descripcion p{
+    font-family:"Montserrat", sans-serif;
+    font-size:16px;
+    line-height:1.7;
+    color:#444;
+    text-align:justify;
+}
+
 .jugador-foto{
+    grid-area:foto;
     width:220px;
     height:260px;
 }
@@ -500,6 +600,23 @@ button:hover{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         padding: 0 40px;
+    }
+    .jugador-modal-container{
+        width:680px;
+        max-height:85vh;
+    }
+    .jugador-superior{
+    display:flex;
+    gap:30px;
+}
+
+    .jugador-foto{
+        width:190px;
+        height:240px;
+    }
+
+    .jugador-informacion h2{
+        font-size:34px;
     }
 
     .container1 {
