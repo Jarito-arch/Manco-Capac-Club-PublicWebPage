@@ -550,13 +550,11 @@ button:hover{
     .modal-wrapper {
     position: relative;
     width: 370px;
-}
+    }
 
-.modal-info-box {
+    .modal-info-box {
     padding: 20px;
-}
-
-    
+    }
 
     .navPrincipal ul{
         gap:20px;
@@ -575,17 +573,13 @@ button:hover{
 
     .categories{
         padding: 15px 0;
-
     }
     .categories ul{
     gap: 10x;
     justify-content: center;
     flex-wrap: wrap;
+    }
     
-}
-    
-
-
     .categories .category-button {
     font-size: 1.5rem;
     padding: 14px 0;
@@ -593,7 +587,6 @@ button:hover{
     background: white;
     color: #000000;
     transition: 0.4s ease;
-    
     }
 
     .teamContainer2 {
@@ -608,7 +601,7 @@ button:hover{
     .jugador-superior{
     display:flex;
     gap:30px;
-}
+    }
 
     .jugador-foto{
         width:190px;
@@ -632,6 +625,7 @@ button:hover{
 
 }
 
+
 @media (max-width: 950px) {
     .categories .category-button {
         font-size: 1.4rem;
@@ -641,13 +635,10 @@ button:hover{
     .categories ul {
         gap: 8px;
     }
-    
-    
 }
 
 
 @media (max-width: 900px) {
-
     .floatingLogo{
         width:130px;
     }
