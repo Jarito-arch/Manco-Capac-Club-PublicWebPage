@@ -218,7 +218,7 @@ export const dataPartidos = [
                 nombreLiga: "Torneo Nacional de Ascenso - Serie B",
                 lugar: "Coliseo Gran Chimú - Trujillo",
 
-                equipoLocal: "Liga Claretiana (Lima)",
+                equipoLocal: "Liga Claretiana (Huancayo)",
                 logoLocal: "logoLigaClaretiana.png",
 
                 equipoVisitante: "Manco Cápac (Chiclayo)",

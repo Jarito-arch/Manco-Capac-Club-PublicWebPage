@@ -121,7 +121,21 @@ botonesMes.forEach(boton=>{
 
 });
 
-mostrarPartidos("enero");
+window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('[data-month="julio"]').classList.add("active");
+    mostrarPartidos("julio");
+});
+
+botonesMes.forEach(boton => {
+    boton.addEventListener("click", () => {
+
+        document.querySelector(".month.active")?.classList.remove("active");
+
+        boton.classList.add("active");
+
+        mostrarPartidos(boton.dataset.month);
+    });
+});
 
 /*--------------------------------------------------------------------*/
 
