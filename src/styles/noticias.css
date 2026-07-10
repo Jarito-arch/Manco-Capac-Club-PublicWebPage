@@ -115,7 +115,7 @@
     
 }
 .card-image7-placeholder {
-     background-image: url(../assets/news/News-2.png);
+     background-image: url(../assets/news/News-7.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -125,7 +125,7 @@
     
 }
 .card-image8-placeholder {
-     background-image: url(../assets/news/News-2.png);
+     background-image: url(../assets/news/News-8.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -259,12 +259,14 @@
     align-items: center;
     z-index: 9999;
     padding: 20px;
+    flex: 1;
+    min-height: 0;
 }
 
 .modal-content{
     width: 90%;
     max-width: 900px;
-    max-height: 90vh;
+    height: 90vh;
     overflow-y: auto;
 
     background: #fff;
@@ -509,7 +511,7 @@
         flex-direction: column;
         gap: 15px;
         padding: 20px;
-        max-height: 90vh;
+        height: 90vh;
        
         overflow-y: auto;
         
