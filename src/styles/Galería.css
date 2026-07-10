@@ -317,13 +317,6 @@
         position: relative;
     }
 
-    header .headerContent a.logoLink {
-        display: block;
-        position: static;
-        left: 0;
-        margin: 0 auto;
-    }
-
     header .floatingLogo {
         position: static;
         top: 0;

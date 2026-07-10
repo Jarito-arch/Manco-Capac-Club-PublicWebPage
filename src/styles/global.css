@@ -1,22 +1,26 @@
-header{
+header {
     width: 100%;
     position: relative;
     z-index: 1000;
-    
+
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
-img{
+
+img {
     width: 100%;
 }
-.Topheader{
+
+.Topheader {
     background-color: #153574;
     height: 120px;
     display: flex;
@@ -25,32 +29,35 @@ img{
     position: relative;
     z-index: 100;
 }
-.headerContent{
+
+.headerContent {
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
 }
-.floatingLogo{
+
+.floatingLogo {
     width: 194px;
-   position: relative;
+    position: relative;
     top: 30px;
-   left: -150px;
-   z-index: 100;
- 
+    left: -150px;
+    z-index: 100;
+
 
 }
 
 
-.brandText h1{
+.brandText h1 {
     color: #d8b13f;
     font-size: 48px;
     line-height: 1;
     position: relative;
-    left: -129px;  
+    left: -129px;
     margin-top: 25px;
 }
-.brandText p{
+
+.brandText p {
     color: white;
     margin-top: 5px;
     font-size: 26px;
@@ -59,40 +66,45 @@ img{
     margin-bottom: 15px;
 }
 
-.hamburger-btn{
-    
-    background:white;
-    display:none;
+.hamburger-btn {
+
+    background: white;
+    display: none;
     width: 60px;
     height: 40px;
     border-radius: 10px;
     z-index: 1000;
     flex-shrink: 0;
-    
+
 }
 
-.navPrincipal{
+.navPrincipal {
     background-color: #112758;
     border-top: 3px solid #d8b13f;
     border-bottom: 3px solid #d8b13f;
     display: flex;
     justify-content: center;
 }
-.navPrincipal ul{
+
+.navPrincipal ul {
     display: flex;
     gap: 40px;
     list-style: none;
     padding: 15px 0;
 }
-.navPrincipal a{
+
+.navPrincipal a {
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
 }
-.active, .navPrincipal a:hover{
+
+.active,
+.navPrincipal a:hover {
     color: #d8b13f;
 }
-a.active{
+
+a.active {
     color: #d8b13f;
 }
 
@@ -147,19 +159,19 @@ main {
     letter-spacing: 1.5px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .hamburger-btn{
+    .hamburger-btn {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    
-    .navPrincipal{
+
+    .navPrincipal {
         display: none;
         position: absolute;
-        top: 120px;     
+        top: 120px;
         left: 0;
         width: 100%;
         background: #153574;
@@ -167,20 +179,21 @@ main {
         z-index: 9999;
     }
 
-    .navPrincipal.active{
+    .navPrincipal.active {
         display: block;
     }
 
-    .navPrincipal ul{
+    .navPrincipal ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
         padding: 30px 0;
     }
 }
+
 @media (max-width: 480px) {
-    .hamburger-btn{
+    .hamburger-btn {
         width: 44px;
         height: 36px;
     }
