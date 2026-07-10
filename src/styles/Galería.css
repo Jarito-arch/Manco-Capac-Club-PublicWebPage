@@ -246,6 +246,16 @@
         font-size: 20px;
     }
 
+    .navPrincipal ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
     .container.-grid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
@@ -342,6 +352,27 @@
         display: none;
     }
 
+    header .headerContent .hamburger {
+        display: block !important;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.3rem;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .navPrincipal ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .bannerPartidos h2 {
+        font-size: 45px;
+    }
+
     main .container.-grid {
         grid-template-columns: 1fr;
         row-gap: 35px;
@@ -433,6 +464,10 @@
 
     header .brandText p {
         display: none;
+    }
+
+    .navPrincipal a {
+        font-size: 1rem;
     }
 
     main .container.-grid {
