@@ -11,6 +11,7 @@ const noticias = [
             <p>Nacido el 27 de noviembre de 1934, Fernández dedicó gran parte de su vida al club, donde desempeñó diferentes funciones como jugador, entrenador y presidente. Antes de vestir la camiseta del Manco Cápac, inició su trayectoria deportiva en el Club Deportivo Municipal.</p>
 
             <p>Además de su talento en el básquet, fue reconocido por su disciplina y por sus aficiones a la pintura, la pesca y el canto. Su legado continúa siendo recordado por la familia del club y por quienes compartieron con él importantes momentos deportivos.</p>
+            
         `
     },
 
@@ -98,7 +99,7 @@ const noticias = [
         id: 7,
         titulo: "Luis Sirlopú Huamán promovió el básquet desde la educación",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia7.jpg",
+        imagen: "../assets/news/News-7.png",
         contenido: `
             <p>Luis F. Sirlopú Huamán inició su carrera deportiva en el Club Deportivo Manco Cápac en 1962.</p>
 
@@ -114,7 +115,7 @@ const noticias = [
         id: 8,
         titulo: "Canción recuerda una difícil etapa del Club Manco Cápac",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia8.jpg",
+        imagen: "../assets/news/News-8.png",
         contenido: `
             <p>Una composición titulada <strong>"Cuando se perdió la categoría Año 1969"</strong> recuerda uno de los momentos más complicados del Club Deportivo Manco Cápac.</p>
 
@@ -146,7 +147,7 @@ const noticias = [
         id: 10,
         titulo: "El Manco Cápac celebra décadas de campeonatos",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia10.jpg",
+        imagen: "../assets/news/News-10.png",
         contenido: `
             <p>El Club Deportivo Manco Cápac destacó algunos de los principales títulos obtenidos a lo largo de su historia.</p>
 
@@ -166,7 +167,7 @@ const noticias = [
         id: 11,
         titulo: "Del barrio a la historia: el Manco Cápac mantiene vivo su legado",
         fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia11.jpg",
+        imagen: "../assets/news/News-11.png",
         contenido: `
             <p>Las biografías, fotografías y campeonatos recopilados por el Club Deportivo Manco Cápac muestran la importancia de la institución en la historia deportiva del barrio.</p>
 
@@ -176,19 +177,50 @@ const noticias = [
         `
     },
 
-    {
-        id: 12,
-        titulo: "Del barrio a la historia: el Manco Cápac mantiene vivo su legado",
-        fecha: "26 de junio de 2026",
-        imagen: "../assets/Images/noticias/noticia11.jpg",
-        contenido: `
-            <p>Las biografías, fotografías y campeonatos recopilados por el Club Deportivo Manco Cápac muestran la importancia de la institución en la historia deportiva del barrio.</p>
-
-            <p>Jugadores, entrenadores, dirigentes, madres de familia e hinchas aparecen como protagonistas de un legado construido durante décadas.</p>
-
-            <p>Gracias a su esfuerzo y compromiso, el espíritu deportivo del Club Deportivo Manco Cápac continúa vivo y sigue siendo motivo de orgullo para toda la comunidad.</p>
-        `
-    }
+   {
+    id: 12,
+    titulo: "Reunión de campeones: El reencuentro de las leyendas",
+    fecha: "26 de junio de 2026",
+    imagen: "../assets/news/News-12.png",
+    contenido: `
+        <p>En una jornada llena de nostalgia y alegría, los exintegrantes de distintas épocas se reunieron para compartir anécdotas y revisar el archivo histórico del club.</p>
+        <p>El encuentro sirvió para que las antiguas glorias del equipo rememoraran las jugadas que los llevaron a la gloria en las décadas de los 70 y 80, fortaleciendo los lazos de amistad que el deporte formó hace años.</p>
+        <p>La reunión culminó con el compromiso de seguir apoyando a las categorías inferiores para que el nombre del Manco Cápac siga brillando.</p>
+    `
+},
+{
+    id: 13,
+    titulo: "Mujeres de corazón: El pilar silencioso detrás del éxito",
+    fecha: "26 de junio de 2026",
+    imagen: "../assets/news/News-13.png",
+    contenido: `
+        <p>El club rinde homenaje a las madres y mujeres del barrio que fueron el motor invisible de la institución. Desde la organización de colectas para uniformes hasta la atención constante en los días de partido.</p>
+        <p>Estas mujeres, siguiendo el ejemplo de figuras como Doña Dominga, han demostrado que el club es una gran familia. Su labor de apoyo logístico y moral ha sido, en muchas ocasiones, el factor decisivo para mantener al equipo unido en momentos difíciles.</p>
+        <p>Hoy, las nuevas generaciones reconocen este esfuerzo como parte fundamental de su identidad.</p>
+    `
+},
+{
+    id: 14,
+    titulo: "La nueva guardia: Los jóvenes que abrazan la tradición",
+    fecha: "26 de junio de 2026",
+    imagen: "../assets/news/News-14.png",
+    contenido: `
+        <p>El Manco Cápac sigue renovándose. La actual plantilla de jugadores ha mostrado un compromiso excepcional, entendiendo que no solo representan un color, sino una historia de décadas.</p>
+        <p>Bajo la guía de los entrenadores veteranos, los jóvenes talentos están trabajando duro para honrar el legado del "Trío de Oro" y alcanzar nuevos títulos.</p>
+        <p>La conexión entre la experiencia de los mayores y la energía de los jóvenes es la garantía de que el club tiene futuro para rato.</p>
+    `
+},
+{
+    id: 15,
+    titulo: "Formando valores: La escuela de básquet del Manco Cápac",
+    fecha: "26 de junio de 2026",
+    imagen: "../assets/news/News-15.png",
+    contenido: `
+        <p>La enseñanza del básquet en el barrio ha pasado de generación en generación. Siguiendo la filosofía del "aprender para enseñar", el club mantiene activas sus clínicas deportivas para niños.</p>
+        <p>El objetivo no es solo formar atletas, sino buenos ciudadanos con disciplina, respeto y trabajo en equipo. La cancha del barrio sigue siendo el centro donde se forja el carácter de los futuros campeones.</p>
+        <p>El Manco Cápac se consolida así como una escuela de vida para toda la comunidad.</p>
+    `
+}
 ];
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modal-image");
@@ -233,36 +265,53 @@ document.querySelector(".modal-content").addEventListener("click", function (e) 
     e.stopPropagation();
 });
 
-//js para el boton de ver mas solo va desplegar 3 noticias mas 
-const boton = document.getElementById("btnMasNoticias");
-let mostrandoMas = false;
 
-boton.addEventListener("click", () => {
+//sirve para generar noticas de forma dinamica 
+const container = document.getElementById("container");
+const btnMasNoticias = document.getElementById("btnMasNoticias");
 
-    const extras = document.querySelectorAll(".extra");
+const idsExtra = [10, 11, 12, 13, 14, 15];
+let extrasVisibles = false;
 
-    if (!mostrandoMas) {
+function crearTarjeta(noticia) {
+    const article = document.createElement("article");
+    article.className = "news-card extra";
+    article.onclick = () => openNews(noticia.id);
 
-        extras.forEach(card => {
-            card.style.display = "block";
-        });
+    article.innerHTML = `
+        <div class="card-image-dinamica" style="background-image: url('${noticia.imagen}')"></div>
+        <div class="card-info">
+            <p class="date">${noticia.fecha}</p>
+            <p class="description">${noticia.titulo}</p>
+        </div>
+    `;
 
-        boton.textContent = "VER MENOS";
-        mostrandoMas = true;
+    return article;
+}
 
+function mostrarMasNoticias() {
+    idsExtra.forEach(id => {
+        const noticia = noticias.find(n => n.id === id);
+        if (noticia) {
+            container.appendChild(crearTarjeta(noticia));
+        }
+    });
+
+    extrasVisibles = true;
+    btnMasNoticias.textContent = "VER MENOS NOTICIAS";
+}
+
+function ocultarMasNoticias() {
+    document.querySelectorAll(".news-card.extra").forEach(card => card.remove());
+
+    extrasVisibles = false;
+    btnMasNoticias.textContent = "VER MÁS NOTICIAS";
+}
+
+btnMasNoticias.addEventListener("click", function () {
+    if (extrasVisibles) {
+        ocultarMasNoticias();
     } else {
-
-        extras.forEach(card => {
-            card.style.display = "none";
-        });
-
-        boton.textContent = "VER MÁS NOTICIAS";
-        mostrandoMas = false;
-
-        // Regresa automáticamente a las primeras noticias
-        document.querySelector(".news-section").scrollIntoView({
-            behavior: "smooth"
-        });
+        mostrarMasNoticias();
     }
-
 });
