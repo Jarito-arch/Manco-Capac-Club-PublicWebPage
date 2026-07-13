@@ -154,6 +154,8 @@ text-decoration: none;
 .container1{
     border: solid 1px #0a0a0a;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 
 }
 
@@ -174,6 +176,7 @@ text-decoration: none;
 .playercard{
     background: rgb(180, 180, 180);
     height: 250px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,6 +186,7 @@ text-decoration: none;
 .playercard {
     position: relative;
     height: 250px;
+    width: 100%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -190,7 +194,8 @@ text-decoration: none;
 .playercard img {
     width: 100%;
     height: 100%;
-    object-fit: auto;
+    object-fit: cover;
+    object-position: top center;
     display: block;
 }
 
@@ -227,11 +232,12 @@ button:hover{
 
 .grid-command{
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 190px;
-    margin-top: 40px;
-    padding-bottom: 20px;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 0 40px 20px;
 }
 .custom-footer {
     background-color: #2853A8;
@@ -368,7 +374,7 @@ button:hover{
 }
 
 .modal-imagen img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
 }

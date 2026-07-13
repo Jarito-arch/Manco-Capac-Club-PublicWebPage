@@ -9,14 +9,23 @@ html, body {
     overflow-x: hidden;
     max-width: 100%;
 }
+
 .main-content{
     background: linear-gradient(to bottom, #153574, #2764da);
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 0px 20px 180px 0px !important;
     min-width: 0;
     justify-content:center;
     align-items:start;
 }
+
+.contact-section,
+.information{
+    min-width: 0;
+}
+
 
 .contact-header,
 .contact-title,
@@ -77,13 +86,14 @@ html, body {
 
 
 section{
-    padding: 20px;
+
+    padding: 20px 20px;
 }
 
 .form{
     background: #ffffff;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     border-radius: 10px;
 }
 .form{
@@ -404,7 +414,6 @@ select{
 .information{
     background:#ffffff;
     border-radius:12px;
-    margin:10px;
     padding:20px;
     box-shadow:0 8px 18px rgba(0,0,0,.12);
     height:max-content;
@@ -672,41 +681,31 @@ select{
 }
 
 @media (max-width: 1024px) {
-    
-    .contact-title {
-        font-size: 30px;
+    .contact-title { font-size: 30px; }
+    .message      { font-size: 16px; }
+
+    .card {
+        width: 100px;
+        height: 70px;
     }
-    .message {
-        font-size: 16px;
+    .icono{
+        font-size: 22px;
     }
-    .content-title {
-        font-size: 30px;
+
+    select {
+        height: 40px; font-size: 14px;
     }
-    .club-card h1 {
-        font-size: 38px;
-    }
-    .button-container {
-        padding: 50px;
-    }
+
     .form::before {
-        background-size: 450px;
+        background-size: 400px;
     }
 }
 
 @media (max-width: 950px) {
-    .main-content {
-        grid-template-columns: 1fr;
-        
-    }
-    .contact-header {
-        grid-column: 1 / 2;
-    }
-    .information {
-        margin: 10px 20px 20px;
-    }
     .form::before {
         background-size: 400px;
     }
+
 }
 
 
@@ -772,12 +771,21 @@ select{
     }
 }
 
-
 @media (max-width: 768px) {
     section {
         border-top: 3px solid #ffbb00;
         padding: 15px;
     }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .contact-header {
+        grid-column: 1 / 2;
+        padding: 20px 25px;
+    }
+
     .form {
         grid-template-columns: 1fr;
     }
@@ -792,22 +800,100 @@ select{
     .button-container {
         grid-column: 1/2;
     }
-    .field,
-    .number-field,
-    .motivo-field,
-    .field-description,
-    .cluster,
-    .privacy {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .contact-header {
-        padding: 20px 25px;
-    }
     .content {
         padding-left: 20px;
         padding-top: 20px;
     }
+    .content-title { font-size: 28px; }
+
+    .field, .number-field, .motivo-field,
+    .field-description, .cluster, .privacy {
+        padding: 15px 20px;
+    }
+
+    .name, .email, .number, .motivo {
+        height: 34px;
+        font-size: 14px;
+    }
+    .message1 {
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .cluster {
+        padding: 15px 20px;
+    }
+
+    .privacy {
+        margin: 15px 20px;
+    }
+    .privacy label{
+        font-size: 13px;
+    }
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 12px;
+    }
+    .button1, .button2 {
+        width: 100%;
+        max-width: 280px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .information {
+        margin: 10px 20px 20px;
+        padding: 15px;
+    }
+    .club-card h1 {
+        font-size: 32px;
+    }
+    .club-card h2 {
+        font-size: 13px;
+    }
+    .slogan {
+        font-size: 16px;
+    }
+
+    .info-box {
+        padding: 12px;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .info-box h3 {
+        font-size: 13px;
+    }
+    .info-box p  {
+        font-size: 14px;
+    }
+    .info-box span {
+        font-size: 12px;
+    }
+
+    .icon2, .icon.whatsapp,
+    .icon.email1, .icon.clock {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .social h3{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+
+    .quote {
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
     .form::before {
         background-size: 320px;
     }
@@ -823,29 +909,11 @@ select{
         font-size: 13px;
         padding: 0 25px;
     }
-    .button-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-    }
-    .button1,
-    .button2 {
-        width: 100%;
-        max-width: 280px;
-    }
-    .information {
-        margin: 10px 15px 20px;
-        padding: 15px;
-    }
-    .club-card h1 {
-        font-size: 32px;
-    }
     .modal-content {
         width: 300px;
         padding: 30px 20px;
     }
 }
-
 @media (max-width: 560px) {
     .contact-header {
         padding: 15px 20px;
