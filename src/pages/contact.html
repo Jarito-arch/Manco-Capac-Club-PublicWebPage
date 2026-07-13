@@ -1,300 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Deportivo Manco Cápac</title>
 
-    <link rel="icon" href="../assets/Images/Logo/logoMancoCapac.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=GFS+Didot&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+      rel="icon"
+      href="../assets/Images/Logo/logoMancoCapac.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=GFS+Didot&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/equipos.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
 
-
-
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/equipos.css">
-    <link rel="stylesheet" href="../styles/contact.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="Topheader">
-            <div class="headerContent">
-                <a href="Inicio.html">
-                    <img src="../assets/Images/Logo/logoMancoCapac.png" class="floatingLogo" />
-                </a>
+      <div class="Topheader">
+        <div class="headerContent">
+          <a href="Inicio.html">
+            <img
+              src="../assets/Images/Logo/logoMancoCapac.png"
+              class="floatingLogo"
+            />
+          </a>
 
-                <div class="brandText">
-                    <h1>CLUB DEPORTIVO MANCO CÁPAC</h1>
-                    <p>SITIO WEB OFICIAL</p>
-                </div>
+          <div class="brandText">
+            <h1>CLUB DEPORTIVO MANCO CÁPAC</h1>
+            <p>SITIO WEB OFICIAL</p>
+          </div>
 
-                <button class="hamburger-btn" id="hamburger-menu" aria-label="hamburger menu">
-                    ☰
-                </button>
-            </div>
+          <button
+            class="hamburger-btn"
+            id="hamburger-menu"
+            aria-label="hamburger menu"
+          >
+            ☰
+          </button>
         </div>
+      </div>
 
-        <nav class="navPrincipal">
-
-            <ul>
-                <li><a href="Inicio.html">INICIO</a></li>
-                <li><a href="noticias.html">NOTICIAS</a></li>
-                <li><a href="partidos.html">PARTIDOS</a></li>
-                <li><a href="equipos.html">EQUIPO</a></li>
-                <li><a href="el-club.html">EL CLUB</a></li>
-                <li><a href="Galería.html">GALERÍA</a></li>
-                <li><a href="contact.html" class="active">CONTACTO</a></li>
-            </ul>
-        </nav>
+      <nav class="navPrincipal">
+        <ul>
+          <li><a href="Inicio.html">INICIO</a></li>
+          <li><a href="noticias.html">NOTICIAS</a></li>
+          <li><a href="partidos.html">PARTIDOS</a></li>
+          <li><a href="equipos.html">EQUIPO</a></li>
+          <li><a href="el-club.html">EL CLUB</a></li>
+          <li><a href="Galería.html">GALERÍA</a></li>
+          <li><a href="contact.html" class="active">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main-content">
-        <div class="contact-header">
-            <h2 class="contact-title">Contactános</h2>
-            <p class="message">📩 Estamos aqui para atender tu petición</p>
-            <p id="paragraph" class="paragraph1"> Si tienes alguna consulta, deseas invitarnos a un partido,
-                proponer una colaboración o cualquier
-                otra inquietud, completa el formulario y nos comunicaremos contigo.
-            </p>
+      <div class="contact-header">
+        <h2 class="contact-title">Contáctanos</h2>
+        <p class="message">📩 Estamos aqui para atender tu petición</p>
+        <p id="paragraph" class="paragraph1">
+          Si tienes alguna consulta, deseas invitarnos a un partido, proponer
+          una colaboración o cualquier otra inquietud, completa el formulario y
+          nos comunicaremos contigo.
+        </p>
+      </div>
+
+      <section class="contact-section">
+        <form class="form" id="ContentForm">
+          <div class="content">
+            <h1 class="content-title">Contáctanos</h1>
+          </div>
+          <div class="field">
+            <label for="name" class="teamName">Nombre:</label>
+            <input
+              type="text"
+              class="name"
+              id="name"
+              name="name"
+              required
+              placeholder="👤 Ejemplo: Juan Pérez"
+            />
+          </div>
+
+          <div class="field">
+            <label for="email" class="teamName">Correo Electrónico:</label>
+            <input
+              type="email"
+              class="email"
+              id="email"
+              name="email"
+              required
+              placeholder="✉️ Ejemplo: juanperez@example.com"
+            />
+          </div>
+
+          <div class="number-field">
+            <label for="number" class="teamName">Número de Teléfono:</label>
+            <input
+              type="tel"
+              class="number"
+              id="number"
+              name="number"
+              required
+              placeholder="📞 Ejemplo: +51 987 654 321"
+            />
+          </div>
+
+          <div class="motivo-field">
+            <label for="cars" class="cars">Motivo del contacto: </label>
+
+            <select name="cars" id="cars" class="motivo">
+              <option class="motivo" value="select" selected disabled>
+                Selecciona cualquiera de los seleccionado
+              </option>
+              <option class="motivo" value="consulta">Consulta General</option>
+              <option class="motivo" value="inscripcion">
+                Inscripción/ Unirme al club Deportivo Manco Capac
+              </option>
+              <option class="motivo" value="tecnica">Consulta Técnica</option>
+              <option class="motivo" value="sugerencia">Sugerencia</option>
+              <option class="motivo" value="reclamo">Reclamo</option>
+            </select>
+          </div>
+          <div class="field-description">
+            <label for="message">Mensaje:</label>
+            <textarea
+              class="message1"
+              id="message"
+              name="message"
+              rows="4"
+              minlength="0"
+              maxlength="100"
+              placeholder="💬 Escribe tu mensaje aquí..."
+            ></textarea>
+          </div>
+
+          <div class="cluster">
+            <h3>
+              ¿Cómo prefieres que nos comuniquemos contigo?
+              <span>*</span>
+            </h3>
+
+            <div class="options">
+              <input
+                type="radio"
+                class="email"
+                id="Email"
+                name="contacto"
+                value="correo"
+              />
+
+              <label for="Email" class="card">
+                <span class="icono">✉️</span>
+                <p>Correo</p>
+              </label>
+
+              <input
+                type="radio"
+                class="whatsapp"
+                id="whatsapp"
+                name="contacto"
+                value="whatsapp"
+              />
+
+              <label for="whatsapp" class="card">
+                <span class="icono">🟢</span>
+                <p>WhatsApp</p>
+              </label>
+
+              <input
+                type="radio"
+                id="telefono"
+                name="contacto"
+                value="telefono"
+              />
+
+              <label for="telefono" class="card">
+                <span class="icono">📞</span>
+                <p>Teléfono</p>
+              </label>
+            </div>
+          </div>
+
+          <div class="cluster">
+            <h3 class="title-cluster">¿Cómo conociste al club?</h3>
+
+            <select class="motivo" name="conociste" id="conociste">
+              <option class="motivo" selected disabled>
+                Selecciona una opción
+              </option>
+
+              <option class="motivo" value="facebook">Facebook</option>
+              <option class="motivo" value="instagram">Instagram</option>
+              <option class="motivo" value="tiktok">TikTok</option>
+              <option class="motivo" value="amigos">Amigos</option>
+            </select>
+          </div>
+          <div class="privacy">
+            <input type="checkbox" id="privacy" required />
+            <label for="privacy">
+              <span class="icon">🛡️</span>
+              Acepto que mis datos sean utilizados únicamente para responder mi
+              consulta.
+            </label>
+          </div>
+
+          <div class="button-container">
+            <button type="button" class="button2" id="btnCancelar">
+              <span class="spans">Cancelar</span>
+            </button>
+            <button type="submit" class="button1">
+              <span class="spans">Enviar</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="information">
+        <div class="club-card">
+          <h2>CLUB DEPORTIVO</h2>
+          <h1>MANCO CÁPAC</h1>
+          <p class="slogan">Pasión por el básquet</p>
         </div>
 
-        <section class="contact-section">
+        <div class="info-box">
+          <div class="icon2">📍</div>
+          <div>
+            <h3>¿DÓNDE ESTAMOS?</h3>
+            <p>Chiclayo, Lambayeque</p>
+            <span>No contamos con sede fija.</span>
+          </div>
+        </div>
 
-            <form class="form" id="ContentForm">
-                <div class="content">
-                    <h1 class="content-title">Contáctanos</h1>
-                </div>
-                <div class="field">
-                    <label for="name" class="teamName">Nombre:</label>
-                    <input type="text" class="name" id="name" name="name" required placeholder="👤 Ejemplo: Juan Pérez">
-                </div>
+        <div class="info-box">
+          <div class="icon whatsapp">🟢</div>
+          <div>
+            <h3>WHATSAPP</h3>
+            <p>979 057 515</p>
+            <span>Atención inmediata</span>
+          </div>
+        </div>
 
-                <div class="field">
-                    <label for="email" class="teamName">Correo Electrónico:</label>
-                    <input type="email" class="email" id="email" name="email" required
-                        placeholder="✉️ Ejemplo: juanperez@example.com">
-                </div>
+        <div class="info-box">
+          <div class="icon email1">✉️</div>
+          <div>
+            <h3>CORREO</h3>
+            <p>luchito184@gmail.com</p>
+            <span>Responderemos lo antes posible.</span>
+          </div>
+        </div>
 
-                <div class="number-field">
-                    <label for="number" class="teamName">Número de Teléfono:</label>
-                    <input type="tel" class="number" id="number" name="number" required
-                        placeholder="📞 Ejemplo: +51 987 654 321">
-                </div>
+        <div class="info-box">
+          <div class="icon clock">🕒</div>
+          <div>
+            <h3>HORARIO</h3>
+            <p>Lunes a Sabado</p>
+            <span>8:00 am - 6:00 pm</span>
+          </div>
+        </div>
 
-                <div class="motivo-field">
-                    <label for="cars" class="cars">Motivo del contacto: </label>
+        <div class="social">
+          <h3>SÍGUENOS</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/181oYdutNk/" target="_blank"
+              >Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/gerenciagestiondeportiva?igsh=b3FnM2duMGRxaDIy"
+              target="_blank"
+              >Instagram</a
+            >
+            <a href="https://vt.tiktok.com/ZSCTdkNTh/" target="_blank"
+              >Tiktok</a
+            >
+          </div>
+        </div>
 
-                    <select name="cars" id="cars" class="motivo">
-                        <option class="motivo" value="select" selected disabled>Selecciona cualquiera de los
-                            seleccionado</option>
-                        <option class="motivo" value="consulta">Consulta General</option>
-                        <option class="motivo" value="inscripcion">Inscripción/ Unirme al club Deportivo Manco Capac
-                        </option>
-                        <option class="motivo" value="tecnica">Consulta Técnica</option>
-                        <option class="motivo" value="sugerencia">Sugerencia</option>
-                        <option class="motivo" value="reclamo">Reclamo</option>
-                    </select>
-                </div>
-                <div class="field-description">
-                    <label for="message">Mensaje:</label>
-                    <textarea class="message1" id="message" name="message" rows="4" minlength="0" maxlength="100"
-                        placeholder="💬 Escribe tu mensaje aquí..."></textarea>
-                </div>
-
-
-                <div class="cluster">
-
-                    <h3>
-                        ¿Cómo prefieres que nos comuniquemos contigo?
-                        <span>*</span>
-                    </h3>
-
-                    <div class="options">
-
-                        <input type="radio" class="email" id="Email" name="contacto" value="correo">
-
-                        <label for="Email" class="card">
-                            <span class="icono">✉️</span>
-                            <p>Correo</p>
-                        </label>
-
-
-                        <input type="radio" class="whatsapp" id="whatsapp" name="contacto" value="whatsapp">
-
-                        <label for="whatsapp" class="card">
-                            <span class="icono">🟢</span>
-                            <p>WhatsApp</p>
-                        </label>
-
-
-                        <input type="radio" id="telefono" name="contacto" value="telefono">
-
-                        <label for="telefono" class="card">
-                            <span class="icono">📞</span>
-                            <p>Teléfono</p>
-                        </label>
-
-                    </div>
-
-                </div>
-
-
-                <div class="cluster">
-
-                    <h3 class="title-cluster">¿Cómo conociste al club?</h3>
-
-                    <select class="motivo" name="conociste" id="conociste">
-
-                        <option class="motivo" selected disabled>
-                            Selecciona una opción
-                        </option>
-
-                        <option class="motivo" value="facebook">Facebook</option>
-                        <option class="motivo" value="instagram">Instagram</option>
-                        <option class="motivo" value="tiktok">TikTok</option>
-                        <option class="motivo" value="amigos">Amigos</option>
-
-                    </select>
-
-
-                </div>
-                <div class="privacy">
-                    <input type="checkbox" id="privacy" required>
-                    <label for="privacy">
-                        <span class="icon">🛡️</span>
-                        Acepto que mis datos sean utilizados únicamente para responder mi consulta.
-                    </label>
-                </div>
-
-                <div class="button-container">
-                    <button type="button" class="button2" id="btnCancelar"><span class="spans">Cancelar</span></button>
-                    <button type="submit" class="button1"><span class="spans">Enviar</span></button>
-                </div>
-            </form>
-        </section>
-
-
-        <aside class="information">
-            <div class="club-card">
-                <h2>CLUB DEPORTIVO</h2>
-                <h1>MANCO CÁPAC</h1>
-                <p class="slogan">
-                    Pasión por el básquet
-                </p>
-
-            </div>
-
-
-            <div class="info-box">
-                <div class="icon2">📍</div>
-                <div>
-                    <h3>¿DÓNDE ESTAMOS?</h3>
-                    <p>Chiclayo, Lambayeque</p>
-                    <span>No contamos con sede fija.</span>
-                </div>
-            </div>
-
-
-            <div class="info-box">
-                <div class="icon whatsapp">🟢</div>
-                <div>
-                    <h3>WHATSAPP</h3>
-                    <p>979 057 515</p>
-                    <span>Atención inmediata</span>
-                </div>
-            </div>
-
-
-            <div class="info-box">
-                <div class="icon email1">✉️</div>
-                <div>
-                    <h3>CORREO</h3>
-                    <p>luchito184@gmail.com</p>
-                    <span>Responderemos lo antes posible.</span>
-                </div>
-            </div>
-
-
-            <div class="info-box">
-                <div class="icon clock">🕒</div>
-                <div>
-                    <h3>HORARIO</h3>
-                    <p>Lunes a Sabado</p>
-                    <span>8:00 am - 6:00 pm</span>
-                </div>
-            </div>
-
-
-
-            <div class="social">
-                <h3>SÍGUENOS</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/share/181oYdutNk/" target="_blank">Facebook</a>
-                    <a href="https://www.instagram.com/gerenciagestiondeportiva?igsh=b3FnM2duMGRxaDIy"
-                        target="_blank">Instagran</a>
-                    <a href="https://vt.tiktok.com/ZSCTdkNTh/" target="_blank">Tiktok</a>
-                </div>
-            </div>
-
-
-            <div class="quote">
-                <p>
-                    "Más que un equipo,
-                    somos una familia que juega con el corazón."
-                </p>
-            </div>
-        </aside>
-
+        <div class="quote">
+          <p>
+            "Más que un equipo, somos una familia que juega con el corazón."
+          </p>
+        </div>
+      </aside>
     </main>
     <footer class="custom-footer">
+      <div class="footer-logo-wrapper">
+        <img
+          src="../assets/Images/Logo/logoMancoCapac.png"
+          class="footer-logo"
+        />
+      </div>
 
-        <div class="footer-logo-wrapper">
+      <div class="footer-info">
+        <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
 
-            <img src="../assets/Images/Logo/logoMancoCapac.png" class="footer-logo">
+        <p class="fundado">Fundado el 21 de Octubre de 1961</p>
 
-        </div>
-
-        <div class="footer-info">
-
-            <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
-
-            <p class="fundado">
-                Fundado el 21 de Octubre de 1961
-            </p>
-
-            <p class="footer-copyright">
-                Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos reservados
-            </p>
-
-        </div>
-
+        <p class="footer-copyright">
+          Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos
+          reservados
+        </p>
+      </div>
     </footer>
 
-
     <div class="modal-form" id="modal-form">
-        <div class="modal-content">
-            <div class="loader" id="loader"></div>
-            <div class="success" id="success">
-                <div class="check">✔</div>
-                <h2>¡Mensaje enviado!</h2>
-                <p>Gracias por comunicarte con nosotros.</p>
-            </div>
+      <div class="modal-content">
+        <div class="loader" id="loader"></div>
+        <div class="success" id="success">
+          <div class="check">✔</div>
+          <h2>¡Mensaje enviado!</h2>
+          <p>Gracias por comunicarte con nosotros.</p>
         </div>
-
+      </div>
     </div>
     <script src="../Js/global.js"></script>
     <script src="../Js/contact.js"></script>
-</body>
-
+  </body>
 </html>
