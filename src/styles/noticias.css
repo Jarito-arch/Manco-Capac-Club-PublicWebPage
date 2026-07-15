@@ -53,6 +53,9 @@
     flex-direction: column;
 }
 
+.news-card{
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" font-size="28"><text y="24">🏀</text></svg>') 16 16, pointer;
+}
 .card-image1-placeholder {
      background-image: url(../assets/news/News-1.png);
     background-size: cover;
