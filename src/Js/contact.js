@@ -1,3 +1,56 @@
+const camposDinamicos = document.querySelectorAll(".extra-fields");
+const selectMotivo = document.getElementById("cars");
+
+function mostrarCamposSegunMotivo() {
+    const motivoSeleccionado = selectMotivo.value;
+    const mensajeField = document.getElementById("mensajeField");
+
+    if (motivoSeleccionado === "consulta" || motivoSeleccionado === "sugerencia") {
+        mensajeField.classList.add("visible");
+    } else {
+        mensajeField.classList.remove("visible");
+        document.getElementById("message").value = "";
+    }
+
+    camposDinamicos.forEach(bloque => {
+        const camposDelBloque = bloque.querySelectorAll("input, select");
+
+        if (bloque.dataset.motivo === motivoSeleccionado) {
+            bloque.classList.add("visible");
+            camposDelBloque.forEach(campo => campo.setAttribute("required", ""));
+        } else {
+            bloque.classList.remove("visible");
+            camposDelBloque.forEach(campo => {
+                campo.removeAttribute("required");
+                campo.value = "";
+            });
+        }
+    });
+}
+
+selectMotivo.addEventListener("change", mostrarCamposSegunMotivo);
+const campoEdad = document.getElementById("edad");
+const errorEdad = document.getElementById("errorEdad");
+
+campoEdad.addEventListener("input", () => {
+    const valor = parseInt(campoEdad.value);
+
+    if (campoEdad.value === "") {
+        errorEdad.classList.remove("visible");
+        return;
+    }
+
+    if (valor < 14) {
+        errorEdad.textContent = "La edad debe ser superior a 14 años.";
+        errorEdad.classList.add("visible");
+    } else if (valor > 45) {
+        errorEdad.textContent = "La edad no puede ser mayor a 45 años.";
+        errorEdad.classList.add("visible");
+    } else {
+        errorEdad.classList.remove("visible");
+    }
+});
+
 const radios = document.querySelectorAll("input[name='contacto']");
 
 radios.forEach(radio => {
@@ -28,6 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
         if (radio) radio.checked = true;
     }
     document.getElementById("privacy").checked = datos.privacidad || false;
+    mostrarCamposSegunMotivo();
 });
 
 function guardarFormulario() {

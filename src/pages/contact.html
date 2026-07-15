@@ -136,7 +136,65 @@
               <option class="motivo" value="reclamo">Reclamo</option>
             </select>
           </div>
-          <div class="field-description">
+
+
+          <div class="extra-fields" data-motivo="inscripcion">
+            <div class="field1 campoEdadWrapper">
+              <label for="edad" class="teamName">Edad:</label>
+              <input type="number" class="campoEdad" id="edad" name="edad" min="14" max="45" placeholder="Ej: 15" />
+              <span class="errorEdad" id="errorEdad"></span>
+            </div>
+            <div class="field1">
+              <label for="categoria" class="teamName">Categoría:</label>
+              <select id="categoria" name="categoria" class="motivo">
+                <option value="" selected disabled>Selecciona una categoría</option>
+                <option value="superior">Superior (20 años a más)</option>
+                <option value="sub19">Sub19 (18-19 años)</option>
+                <option value="sub18">Sub18 (17-18 años)</option>
+                <option value="sub17">Sub17 (16-17 años)</option>
+                <option value="sub16">Sub16 (15-16 años)</option>
+                <option value="sub15">Sub15 (14-15 años)</option>
+              </select>
+            </div>
+            <div class="field1">
+              <label for="experiencia" class="teamName">¿Tienes experiencia jugando básquet?</label>
+              <select id="experiencia" name="experiencia" class="motivo">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="extra-fields" data-motivo="tecnica">
+            <div class="field">
+              <label for="seccion" class="teamName">¿En qué sección tuviste el problema?</label>
+              <select id="seccion" name="seccion" class="motivo">
+                <option value="" selected disabled>Selecciona una sección</option>
+                <option value="inicio">Inicio</option>
+                <option value="noticias">Noticias</option>
+                <option value="partidos">Partidos</option>
+                <option value="equipo">Equipo</option>
+                <option value="el-club">El Club</option>
+                <option value="galeria">Galería</option>
+                <option value="contacto">Contacto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="extra-fields" data-motivo="reclamo">
+            <div class="field">
+              <label for="fechaIncidente" class="teamName">Fecha del incidente:</label>
+              <input type="date" id="fechaIncidente" name="fechaIncidente" />
+            </div>
+            <div class="field">
+              <label for="contraQuien" class="teamName">¿Contra quién o qué es el reclamo?</label>
+              <input type="text" id="contraQuien" name="contraQuien" placeholder="Ej: Un jugador, un partido, la web..." />
+            </div>
+          </div>
+
+
+          <div class="field-description" id="mensajeField">
             <label for="message">Mensaje:</label>
             <textarea
               class="message1"
