@@ -119,7 +119,7 @@ section{
 .content{
     padding-left: 22px;
     padding-top: 22px;
-    grid-column: 1/3;
+    grid-column: 1/-1;
 }
 
 .content h1,
@@ -129,6 +129,8 @@ section{
 .number-field .teamName,
 .number-field .number,
 .motivo-field .cars,
+.extra-fields input,
+.extra-fields #contraQuien,
 .motivo-field .motivo,
 .motivo,
 .field-description label,
@@ -252,8 +254,12 @@ section{
 
 .extra-fields{
     display: none;
-    grid-column: 1/3;
+    grid-column: 1/-1;
     flex-wrap: wrap;
+}
+.extra-fields input{
+    padding: 10px;
+    font-size: 15px;
 }
 
 .extra-fields.visible{
@@ -276,7 +282,7 @@ section{
     display: none;
     flex-direction: column;
     padding: 20px;
-    grid-column: 1/3;
+    grid-column: 1/ -1;
 }
 .field-description.visible{
     display: flex;
@@ -404,7 +410,7 @@ select{
     display: flex;
     justify-content: right;
     padding: 70px;
-    grid-column: 1/3;
+    grid-column: 1/-1;
     gap: 15px;
 
 }
@@ -738,6 +744,10 @@ select{
 .motivo-field { grid-column: 2; }
 
 
+select {
+    max-width: 100%;
+}
+
 @media (max-width: 1400px) {
     .form::before {
         background-size: 550px;
@@ -824,7 +834,7 @@ select{
         font-size: 34px;
     }
     .cluster {
-        grid-column: 1/3;
+        grid-column: 1/-1;
     }
     .options {
         flex-wrap: wrap;
@@ -863,7 +873,7 @@ select{
     }
 
     .form {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
     .content,
     .field:nth-child(2),

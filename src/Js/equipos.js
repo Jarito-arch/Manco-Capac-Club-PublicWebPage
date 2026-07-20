@@ -109,6 +109,8 @@ function abrirModal(id) {
     const jugador = jugadores.find(j => j.id === id);
     if (!jugador) return;
 
+    document.body.classList.add('modal-activo');
+
     if (window.innerWidth >= 780) {
         document.getElementById("jugadorDesktopImagen").src = jugador.img;
         document.getElementById("jugadorDesktopImagen").onerror = function() { this.src = '../assets/equipo/imgJugadorMC.png'; };
@@ -142,17 +144,19 @@ function abrirModalStaff(id) {
     const miembro = staff.find(s => s.id === id);
     if (!miembro) return;
 
+    document.body.classList.add('modal-activo');
+
     if (window.innerWidth >= 780) {
         document.getElementById("jugadorDesktopImagen").src = miembro.img;
         document.getElementById("jugadorDesktopImagen").onerror = function() { this.src = '../assets/equipo/imgJugadorMC.png'; };
         document.getElementById("jugadorDesktopNombre").textContent = miembro.nombre;
         document.getElementById("jugadorDesktopNumero").textContent = miembro.cargo;
-        document.getElementById("jugadorDesktopPosicion").textContent = miembro.categoria;
-        document.getElementById("jugadorDesktopCategoria").textContent = miembro.categoria;
+        document.getElementById("jugadorDesktopPosicion").textContent = miembro.experiencia;
+        document.getElementById("jugadorDesktopCategoria").textContent = miembro.nacionalidad;
         document.getElementById("jugadorDesktopEdad").textContent = miembro.edad;
-        document.getElementById("jugadorDesktopEstatura").textContent = miembro.estatura;
-        document.getElementById("jugadorDesktopPeso").textContent = miembro.peso;
-        document.getElementById("jugadorDesktopMano").textContent = miembro.mano;
+        document.getElementById("jugadorDesktopEstatura").textContent = "-";
+        document.getElementById("jugadorDesktopPeso").textContent = "-";
+        document.getElementById("jugadorDesktopMano").textContent = "-";
         document.getElementById("jugadorDesktopDescripcion").textContent = miembro.desc;
         document.getElementById("modalJugadorDesktop").style.display = "flex";
     } else {
@@ -160,12 +164,12 @@ function abrirModalStaff(id) {
         document.getElementById('modal-img').onerror = function() { this.src = '../assets/equipo/imgJugadorMC.png'; };
         document.getElementById("modal-nombre").textContent = miembro.nombre;
         document.getElementById("modal-numero").textContent = miembro.cargo;
-        document.getElementById("modal-posicion").textContent = "Comando Técnico";
-        document.getElementById("modal-categoria").textContent = miembro.categoria;
+        document.getElementById("modal-posicion").textContent = miembro.experiencia;
+        document.getElementById("modal-categoria").textContent = miembro.nacionalidad;
         document.getElementById("modal-edad").textContent = miembro.edad;
-        document.getElementById("modal-estatura").textContent = miembro.estatura;
-        document.getElementById("modal-peso").textContent = miembro.peso;
-        document.getElementById("modal-mano").textContent = miembro.mano;
+        document.getElementById("modal-estatura").textContent = "-";
+        document.getElementById("modal-peso").textContent = "-";
+        document.getElementById("modal-mano").textContent = "-";
         document.getElementById("modal-desc").textContent = miembro.desc;
         document.getElementById('modal').classList.add('activo');
     }
@@ -173,10 +177,12 @@ function abrirModalStaff(id) {
 
 
 function cerrarModal() {
+    document.body.classList.remove('modal-activo');
     document.getElementById('modal').classList.remove('activo');
 }
 
 function cerrarModalDesktop() {
+    document.body.classList.remove('modal-activo');
     document.getElementById("modalJugadorDesktop").style.display = "none";
 }
 

@@ -14,6 +14,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 3px solid #d8b13f;
     border-bottom: 3px solid #d8b13f;
 }
 
@@ -139,7 +140,6 @@ text-decoration: none;
 
 
 
-
 .teamContainer2{
     margin-top: 60px;
     display: grid;
@@ -148,8 +148,25 @@ text-decoration: none;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding:  0 40px;
+    padding: 0 40px;
+    will-change: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
+
+.grid-command{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 0 40px 20px;
+    will-change: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
 
 .container1{
     border: solid 1px #0a0a0a;
@@ -220,15 +237,7 @@ text-decoration: none;
     margin-top: 90px;
 }
 
-.grid-command{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto 0;
-    padding: 0 40px 20px;
-}
+
 .custom-footer {
     background-color: #2853A8;
     padding-bottom: 40px;
@@ -263,6 +272,10 @@ text-decoration: none;
     transition: color 0.3s;
 }
 
+body.modal-activo {
+    overflow: hidden;
+
+}
 
 
 .modal-fondo {
@@ -403,10 +416,10 @@ text-decoration: none;
     align-content:start;
     gap:25px;
     position:relative;
-    overflow-y:auto;
-    overflow-x:hidden;
+    overflow: auto;
     scroll-behavior:smooth;
     border: 2px solid #e0b218;
+    scrollbar-gutter: stable;
 }
 
 .jugador-modal-container::-webkit-scrollbar{
