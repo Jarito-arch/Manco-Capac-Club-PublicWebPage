@@ -30,6 +30,7 @@
     padding: 60px 0;
     width: 100%;
     border-left: 3px solid #d8b13f;
+    border-right: 3px solid #d8b13f;
     padding-bottom: 300px;
 }
 
@@ -108,6 +109,7 @@
     color: white;
     position: relative;
     border-left: 3px solid #d8b13f;
+    border-right: 3px solid #d8b13f;
     border-bottom: 3px solid #d8b13f;
 }
 
@@ -130,6 +132,12 @@
     height: auto;
 }
 
+/* NAV PRINCIPAL - LÍNEA INFERIOR MÁS GRUESA */
+.navPrincipal {
+    border-bottom: 5px solid #d8b13f;
+    /* Línea inferior más gruesa */
+}
+
 /*what i changedd*/
 .card {
     background-color: white;
@@ -140,6 +148,9 @@
     flex-direction: column;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid #d8b13f;
+    /* Borde más grueso de 5px */
+    border-radius: 12px;
 }
 
 .card:hover {
@@ -159,8 +170,10 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 7px 7px 0 0;
 }
 
+/* MODAL MEJORADO */
 .modal {
     display: none;
     position: fixed;
@@ -168,57 +181,63 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     animation: fadeIn 0.3s ease;
 }
 
 .modal-content {
     background: white;
-    max-width: 600px;
-    width: 90%;
-    border-radius: 16px;
+    max-width: 650px;
+    width: 92%;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
     animation: scaleUp 0.3s ease;
+    border: 3px solid #d8b13f;
 }
 
 .modal-content img {
     width: 100%;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
+    border-bottom: 3px solid #d8b13f;
+    border-radius: 17px 17px 0 0;
 }
 
 .modal-info {
-    padding: 25px;
+    padding: 30px 25px 25px;
     text-align: center;
 }
 
 .modal-info .modal-date {
     color: #f1c40f;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .modal-info .modal-description {
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    color: #1a1a1a;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 
 .modal-info .btn-close-modal {
     background: #1a3a8a;
     color: white;
-    padding: 12px 40px;
-    font-size: 15px;
+    padding: 14px 50px;
+    font-size: 16px;
     font-weight: 600;
-    border: none;
-    border-radius: 4px;
+    border: 2px solid #d8b13f;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -226,6 +245,30 @@
 .modal-info .btn-close-modal:hover {
     background: #0d265c;
     transform: scale(1.05);
+    border-color: #f1c40f;
+}
+
+/* Animaciones del modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -398,6 +441,23 @@
     .footer-info {
         font-size: 18px;
     }
+
+    .modal-content {
+        max-width: 95%;
+    }
+
+    .modal-content img {
+        height: 250px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .modal-info .modal-date {
+        font-size: 20px;
+    }
+
+    .modal-info .modal-description {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:560px) {
@@ -482,5 +542,28 @@
 
     .footer-info h2 {
         font-size: 18px;
+    }
+
+    .modal-content {
+        max-width: 98%;
+        border-radius: 14px;
+    }
+
+    .modal-content img {
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .modal-info .modal-date {
+        font-size: 18px;
+    }
+
+    .modal-info .modal-description {
+        font-size: 15px;
+    }
+
+    .modal-info .btn-close-modal {
+        padding: 12px 35px;
+        font-size: 14px;
     }
 }
