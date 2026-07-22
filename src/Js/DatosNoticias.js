@@ -2,7 +2,7 @@
     {
         id: 1,
         titulo: "El Club Deportivo Manco Cápac recuerda el legado de José Augusto Fernández 'Taka Taka'",
-        fecha: "26 de junio de 2026",
+        fecha: "6 de junio 2021",
         imagen: "../assets/news/News-1.png",
         contenido: `
             <p>El Club Deportivo Manco Cápac rindió homenaje a uno de sus personajes más emblemáticos: José Augusto Fernández Carlos, conocido cariñosamente como <strong>"Taka Taka"</strong>.</p>
@@ -17,7 +17,7 @@
     {
         id: 2,
         titulo: "Doña Dominga Carlos, una madre que apoyó al Manco Cápac dentro y fuera de la cancha",
-        fecha: "26 de junio de 2026",
+        fecha: "2 de junio 2019",
         imagen: "../assets/news/News-2.png",
         contenido: `
             <p>La historia del Club Deportivo Manco Cápac también reconoce a quienes, sin jugar en la cancha, contribuyeron al crecimiento del equipo.</p>
@@ -33,7 +33,7 @@
     {
         id: 3,
         titulo: "Rosa Tello de Rivero también dejó huella en la historia del Manco Cápac",
-        fecha: "26 de junio de 2026",
+        fecha: "26 de julio 2025",
         imagen: "../assets/news/News-3.png",
         contenido: `
             <p>Otra de las personas recordadas por el Club Deportivo Manco Cápac es Rosa Tello de Rivero, madre de Víctor e Ismael Rivero.</p>
@@ -49,7 +49,7 @@
     {
         id: 4,
         titulo: "El 'Trío de Oro' marcó una época en el básquet chiclayano",
-        fecha: "26 de junio de 2026",
+        fecha: "26 de junio 2024",
         imagen: "../assets/news/News-4.png",
         contenido: `
             <p>El Club Deportivo Manco Cápac destacó la trayectoria de tres de sus más importantes jugadores, conocidos como <strong>"El Trío de Oro"</strong>.</p>
@@ -65,7 +65,7 @@
     {
         id: 5,
         titulo: "Félix Mendoza Bazán fue uno de los grandes referentes del Manco Cápac",
-        fecha: "26 de junio de 2026",
+        fecha: "2 de julio 2021",
         imagen: "../assets/news/News-5.png",
         contenido: `
             <p>Félix Mendoza Bazán inició su historia con el Club Deportivo Manco Cápac en 1962.</p>
@@ -81,7 +81,7 @@
     {
         id: 6,
         titulo: "Alberto Ramírez 'Capringa' impulsó el desarrollo del básquet desde las canchas y la enseñanza",
-        fecha: "26 de junio de 2026",
+        fecha: "2 de mayo 2020",
         imagen: "../assets/news/News-6.png",
         contenido: `
             <p>Alberto Ramírez Delgado, conocido como <strong>"Capringa"</strong>, fue uno de los jugadores más destacados surgidos de las canteras del Club Deportivo Manco Cápac.</p>
@@ -97,7 +97,7 @@
     {
         id: 7,
         titulo: "Luis Sirlopú Huamán promovió el básquet desde la educación",
-        fecha: "26 de junio de 2026",
+        fecha: "12 de junio 2026",
         imagen: "../assets/news/News-7.png",
         contenido: `
             <p>Luis F. Sirlopú Huamán inició su carrera deportiva en el Club Deportivo Manco Cápac en 1962.</p>
@@ -113,7 +113,7 @@
     {
         id: 8,
         titulo: "Canción recuerda una difícil etapa del Club Manco Cápac",
-        fecha: "26 de junio de 2026",
+        fecha: "2 de junio 2015",
         imagen: "../assets/news/News-8.png",
         contenido: `
             <p>Una composición titulada <strong>"Cuando se perdió la categoría Año 1969"</strong> recuerda uno de los momentos más complicados del Club Deportivo Manco Cápac.</p>
@@ -129,7 +129,7 @@
     {
         id: 9,
         titulo: "Fotografías conservan la memoria del Club Deportivo Manco Cápac",
-        fecha: "26 de junio de 2026",
+        fecha: "23 de junio 2025",
         imagen: "../assets/equipo/imgCollageFotosMC.jpeg",
         contenido: `
             <p>Una colección de fotografías antiguas muestra diferentes momentos de la historia del Club Deportivo Manco Cápac.</p>
@@ -145,7 +145,7 @@
     {
         id: 10,
         titulo: "El Manco Cápac celebra décadas de campeonatos",
-        fecha: "26 de junio de 2026",
+        fecha: "22 de junio de 2021",
         imagen: "../assets/news/News-10.png",
         contenido: `
             <p>El Club Deportivo Manco Cápac destacó algunos de los principales títulos obtenidos a lo largo de su historia.</p>
@@ -165,7 +165,7 @@
     {
         id: 11,
         titulo: "Del barrio a la historia: el Manco Cápac mantiene vivo su legado",
-        fecha: "26 de junio de 2026",
+        fecha: "2 de enero de 2026",
         imagen: "../assets/news/News-11.png",
         contenido: `
             <p>Las biografías, fotografías y campeonatos recopilados por el Club Deportivo Manco Cápac muestran la importancia de la institución en la historia deportiva del barrio.</p>
@@ -179,7 +179,7 @@
    {
     id: 12,
     titulo: "Reunión de campeones: El reencuentro de las leyendas",
-    fecha: "26 de junio de 2026",
+    fecha: "26 de abril  de 2026",
     imagen: "../assets/news/News-12.png",
     contenido: `
         <p>En una jornada llena de nostalgia y alegría, los exintegrantes de distintas épocas se reunieron para compartir anécdotas y revisar el archivo histórico del club.</p>
@@ -190,7 +190,7 @@
 {
     id: 13,
     titulo: "Mujeres de corazón: El pilar silencioso detrás del éxito",
-    fecha: "26 de junio de 2026",
+    fecha: "2 de junio de 2024",
     imagen: "../assets/news/News-13.png",
     contenido: `
         <p>El club rinde homenaje a las madres y mujeres del barrio que fueron el motor invisible de la institución. Desde la organización de colectas para uniformes hasta la atención constante en los días de partido.</p>
@@ -201,7 +201,7 @@
 {
     id: 14,
     titulo: "La nueva guardia: Los jóvenes que abrazan la tradición",
-    fecha: "26 de junio de 2026",
+    fecha: "26 de diciembre de 2025",
     imagen: "../assets/news/News-14.png",
     contenido: `
         <p>El Manco Cápac sigue renovándose. La actual plantilla de jugadores ha mostrado un compromiso excepcional, entendiendo que no solo representan un color, sino una historia de décadas.</p>
@@ -212,7 +212,7 @@
 {
     id: 15,
     titulo: "Formando valores: La escuela de básquet del Manco Cápac",
-    fecha: "26 de junio de 2026",
+    fecha: "6 de mayo de 2019",
     imagen: "../assets/news/News-15.png",
     contenido: `
         <p>La enseñanza del básquet en el barrio ha pasado de generación en generación. Siguiendo la filosofía del "aprender para enseñar", el club mantiene activas sus clínicas deportivas para niños.</p>
@@ -220,4 +220,5 @@
         <p>El Manco Cápac se consolida así como una escuela de vida para toda la comunidad.</p>
     `
 }
+
 ];
