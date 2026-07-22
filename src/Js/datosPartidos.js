@@ -259,27 +259,107 @@ export const dataPartidos = [
                 equipoVisitante: "Manco Cápac",
                 logoVisitante: "logoMancoCapac.png"
             }
-        ],
+        ]
     },
     {
         mes: "agosto",
-        data: [],
+        data: [
+            {
+                dia: "SAB 07 AGO",
+                hora: "12:00 HRS",
+
+                logoLiga: "logoLiga.png",
+
+                nombreLiga: "Liga Deportiva Mixta de Basketball de Chiclayo - Rama A Varones",
+                lugar: "Coliseo Cerrado de Chiclayo",
+
+                equipoLocal: "Algarrobos",
+                logoLocal: "logoAlgarrobos.png",
+
+                equipoVisitante: "Manco Cápac",
+                logoVisitante: "logoMancoCapac.png"
+            }
+        ]
     },
     {
         mes: "septiembre",
-        data: [],
+        data: [
+            {
+                dia: "VIE 18 SEP",
+                hora: "21:00 HRS",
+
+                logoLiga: "logoLiga.png",
+
+                nombreLiga: "Liga Deportiva Mixta de Basketball de Chiclayo - Rama A Varones",
+                lugar: "Coliseo Cerrado de Chiclayo",
+
+                equipoLocal: "Manco Cápac",
+                logoLocal: "logoMancoCapac.png",
+
+                equipoVisitante: "Manuel Pardo",
+                logoVisitante: "logoManuelPardo.png"
+            }
+        ]
     },
     {
         mes: "octubre",
-        data: [],
+        data: [
+            {
+                dia: "DOM 25 OCT",
+                hora: "08:00 HRS",
+
+                logoLiga: "logoLiga.png",
+
+                nombreLiga: "Liga Deportiva Mixta de Basketball de Chiclayo - Rama A Varones",
+                lugar: "Coliseo Cerrado de Chiclayo",
+
+                equipoLocal: "Manco Cápac",
+                logoLocal: "logoMancoCapac.png",
+
+                equipoVisitante: "Triple Doble",
+                logoVisitante: "logoTripleDoble.png"
+            }
+        ]
     },
     {
         mes: "noviembre",
-        data: [],
+        data: [
+            {
+                dia: "SAB 21 NOV",
+                hora: "19:00 HRS",
+
+                logoLiga: "logoLiga.png",
+
+                nombreLiga: "Liga Deportiva Mixta de Basketball de Chiclayo - Rama A Varones",
+                lugar: "Coliseo Cerrado de Chiclayo",
+
+                equipoLocal: "Manco Cápac",
+                logoLocal: "logoMancoCapac.png",
+
+                equipoVisitante: "Ferreyros A",
+                logoVisitante: "logoFerreyros.png"
+            }
+        ]
     },
     {
         mes: "diciembre",
-        data: [],
+        data: [
+            {
+                dia: "DOM 06 DIC",
+                hora: "21:00 HRS",
+
+                logoLiga: "logoLiga.png",
+
+                nombreLiga: "Liga Deportiva Mixta de Basketball de Chiclayo - Rama A Varones",
+                lugar: "Coliseo Cerrado de Chiclayo",
+
+                equipoLocal: "Triple Doble",
+                logoLocal: "logoTripleDoble.png",
+
+                equipoVisitante: "Manco Cápac",
+                logoVisitante: "logoMancoCapac.png"
+            }
+        ]
     }
 
 ];
