@@ -19,8 +19,9 @@
 }
 
 .overlay h2 {
-    color: white;
-    font-size: 64px;
+    color: #FFFFFF;
+    font-size: 45px;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -132,10 +133,10 @@
     height: auto;
 }
 
-/* NAV PRINCIPAL - LÍNEA INFERIOR MÁS GRUESA */
+
 .navPrincipal {
     border-bottom: 5px solid #d8b13f;
-    /* Línea inferior más gruesa */
+
 }
 
 /*what i changedd*/
@@ -423,7 +424,7 @@
     }
 
     .overlay h2 {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     header .headerContent .hamburger-btn {
@@ -526,6 +527,12 @@
     main .container.-grid {
         grid-template-columns: 1fr;
         width: 92%;
+    }
+
+    .overlay h2 {
+        font-size: 45px;
+        font-family: "Bebas Neue", sans-serif;
+        color: #FFFFFF;
     }
 
     .footer-logo-wrapper {
