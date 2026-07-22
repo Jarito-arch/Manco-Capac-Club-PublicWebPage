@@ -20,7 +20,7 @@ export const noticias = [
     titulo:
       "Doña Dominga Carlos, una madre que apoyó al Manco Cápac dentro y fuera de la cancha",
     fecha: "2 de junio 2019",
-    imagen: "../assets/news/news-2.png",
+    imagen: "../assets/news/newsdos.png",
     contenido: `
             <p>La historia del Club Deportivo Manco Cápac también reconoce a quienes, sin jugar en la cancha, contribuyeron al crecimiento del equipo.</p>
 
@@ -37,7 +37,7 @@ export const noticias = [
     titulo:
       "Rosa Tello de Rivero también dejó huella en la historia del Manco Cápac",
     fecha: "26 de julio 2025",
-    imagen: "../assets/news/news-3.png",
+    imagen: "../assets/news/newstres.png",
     contenido: `
             <p>Otra de las personas recordadas por el Club Deportivo Manco Cápac es Rosa Tello de Rivero, madre de Víctor e Ismael Rivero.</p>
 
@@ -53,7 +53,7 @@ export const noticias = [
     id: 4,
     titulo: "El 'Trío de Oro' marcó una época en el básquet chiclayano",
     fecha: "26 de junio 2024",
-    imagen: "../assets/news/news-4.png",
+    imagen: "../assets/news/newscuatro.png",
     contenido: `
             <p>El Club Deportivo Manco Cápac destacó la trayectoria de tres de sus más importantes jugadores, conocidos como <strong>"El Trío de Oro"</strong>.</p>
 
@@ -70,7 +70,7 @@ export const noticias = [
     titulo:
       "Félix Mendoza Bazán fue uno de los grandes referentes del Manco Cápac",
     fecha: "2 de julio 2021",
-    imagen: "../assets/news/news-5.png",
+    imagen: "../assets/news/newscinco.png",
     contenido: `
             <p>Félix Mendoza Bazán inició su historia con el Club Deportivo Manco Cápac en 1962.</p>
 
@@ -87,7 +87,7 @@ export const noticias = [
     titulo:
       "Alberto Ramírez 'Capringa' impulsó el desarrollo del básquet desde las canchas y la enseñanza",
     fecha: "2 de mayo 2020",
-    imagen: "../assets/news/news-6.png",
+    imagen: "../assets/news/newsseis.png",
     contenido: `
             <p>Alberto Ramírez Delgado, conocido como <strong>"Capringa"</strong>, fue uno de los jugadores más destacados surgidos de las canteras del Club Deportivo Manco Cápac.</p>
 
@@ -103,7 +103,7 @@ export const noticias = [
     id: 7,
     titulo: "Luis Sirlopú Huamán promovió el básquet desde la educación",
     fecha: "12 de junio 2026",
-    imagen: "../assets/news/news-7.png",
+    imagen: "../assets/news/newssiete.png",
     contenido: `
             <p>Luis F. Sirlopú Huamán inició su carrera deportiva en el Club Deportivo Manco Cápac en 1962.</p>
 
@@ -119,7 +119,7 @@ export const noticias = [
     id: 8,
     titulo: "Canción recuerda una difícil etapa del Club Manco Cápac",
     fecha: "2 de junio 2015",
-    imagen: "../assets/news/news-8.png",
+    imagen: "../assets/news/newsocho.png",
     contenido: `
             <p>Una composición titulada <strong>"Cuando se perdió la categoría Año 1969"</strong> recuerda uno de los momentos más complicados del Club Deportivo Manco Cápac.</p>
 
