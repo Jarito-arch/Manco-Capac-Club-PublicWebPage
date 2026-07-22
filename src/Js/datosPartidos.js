@@ -228,7 +228,7 @@ export const dataPartidos = [
                 dia: "DOM 21 JUN",
                 hora: "12:00 HRS",
 
-                logoLiga: "logoLiga.png",
+                logoLiga: "logoTNA.png",
 
                 nombreLiga: "Torneo Nacional de Ascenso - Serie B",
                 lugar: "Coliseo Gran Chimú - Trujillo",
