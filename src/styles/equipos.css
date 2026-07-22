@@ -6,7 +6,7 @@
 main{
     font-family:"Bebas Neue", sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #01015c, #4983ce);
+    background: linear-gradient(to bottom, #153574, #2764DA);
     padding: 0 0 180px 0 !important;
     overflow-x: hidden;
 }
