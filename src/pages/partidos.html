@@ -82,15 +82,15 @@
         <table>
           <thead>
             <tr>
-              <th width="10">POS</th>
+              <th class="tooltip pos" width="10">POS<span class="tooltip-box">Posición</span></th>
               <th width="240">EQUIPOS</th>
-              <th width="20">PJ</th>
-              <th width="20">PG</th>
-              <th width="20">PP</th>
-              <th width="20">WO</th>
-              <th width="20">PF</th>
-              <th width="20">PC</th>
-              <th width="20">DP</th>
+              <th class="tooltip pj" width="20">PJ<span class="tooltip-box">Partidos Jugados</span></th>
+              <th class="tooltip pg" width="20">PG<span class="tooltip-box">Partidos Ganados</span></th>
+              <th class="tooltip pp" width="20">PP<span class="tooltip-box">Partidos Perdidos</span></th>
+              <th class="tooltip wo" width="20">WO<span class="tooltip-box">Walkovers</span></th>
+              <th class="tooltip pf" width="20">PF<span class="tooltip-box">Puntos a Favor</span></th>
+              <th class="tooltip pc" width="20">PC<span class="tooltip-box">Puntos en Contra</span></th>
+              <th class="tooltip dp" width="20">DP<span class="tooltip-box">Diferencia de Puntos</span></th>
               <th width="50">PUNTAJE</th>
             </tr>
           </thead>
@@ -118,6 +118,23 @@
   </footer>
   <script type="module" src="../js/partidos.js"></script>
   <script src="../js/global.js"></script>
+  <script>
+
+    let tooltip = document.getElementsById('pg')[0];
+
+    pg.addEventListener('mouseenter', function () {
+
+      document.getElementsByClassName('tippg')[0].style.display = 'block';
+
+    });
+
+    pg.addEventListener('mouseleave', function () {
+
+      document.getElementsByClassName('tippg')[0].style.display = 'none';
+
+    });
+
+  </script>
 </body>
 
 </html>
