@@ -151,7 +151,7 @@ export const noticias = [
     id: 10,
     titulo: "El Manco Cápac celebra décadas de campeonatos",
     fecha: "22 de junio de 2021",
-    imagen: "../assets/news/news-10.png",
+    imagen: "../assets/news/newsdiez",
     contenido: `
             <p>El Club Deportivo Manco Cápac destacó algunos de los principales títulos obtenidos a lo largo de su historia.</p>
 
@@ -171,7 +171,7 @@ export const noticias = [
     id: 11,
     titulo: "Del barrio a la historia: el Manco Cápac mantiene vivo su legado",
     fecha: "2 de enero de 2026",
-    imagen: "../assets/news/news-11.png",
+    imagen: "../assets/news/newsonce.png",
     contenido: `
             <p>Las biografías, fotografías y campeonatos recopilados por el Club Deportivo Manco Cápac muestran la importancia de la institución en la historia deportiva del barrio.</p>
 
@@ -185,7 +185,7 @@ export const noticias = [
     id: 12,
     titulo: "Reunión de campeones: El reencuentro de las leyendas",
     fecha: "26 de abril  de 2026",
-    imagen: "../assets/news/news-12.png",
+    imagen: "../assets/news/newsdoce.png",
     contenido: `
         <p>En una jornada llena de nostalgia y alegría, los exintegrantes de distintas épocas se reunieron para compartir anécdotas y revisar el archivo histórico del club.</p>
         <p>El encuentro sirvió para que las antiguas glorias del equipo rememoraran las jugadas que los llevaron a la gloria en las décadas de los 70 y 80, fortaleciendo los lazos de amistad que el deporte formó hace años.</p>
@@ -196,7 +196,7 @@ export const noticias = [
     id: 13,
     titulo: "Mujeres de corazón: El pilar silencioso detrás del éxito",
     fecha: "2 de junio de 2024",
-    imagen: "../assets/news/news-13.png",
+    imagen: "../assets/news/newstrece.png",
     contenido: `
         <p>El club rinde homenaje a las madres y mujeres del barrio que fueron el motor invisible de la institución. Desde la organización de colectas para uniformes hasta la atención constante en los días de partido.</p>
         <p>Estas mujeres, siguiendo el ejemplo de figuras como Doña Dominga, han demostrado que el club es una gran familia. Su labor de apoyo logístico y moral ha sido, en muchas ocasiones, el factor decisivo para mantener al equipo unido en momentos difíciles.</p>
@@ -207,7 +207,7 @@ export const noticias = [
     id: 14,
     titulo: "La nueva guardia: Los jóvenes que abrazan la tradición",
     fecha: "26 de diciembre de 2025",
-    imagen: "../assets/news/news-14.png",
+    imagen: "../assets/news/newscatorce.png",
     contenido: `
         <p>El Manco Cápac sigue renovándose. La actual plantilla de jugadores ha mostrado un compromiso excepcional, entendiendo que no solo representan un color, sino una historia de décadas.</p>
         <p>Bajo la guía de los entrenadores veteranos, los jóvenes talentos están trabajando duro para honrar el legado del "Trío de Oro" y alcanzar nuevos títulos.</p>
@@ -218,7 +218,7 @@ export const noticias = [
     id: 15,
     titulo: "Formando valores: La escuela de básquet del Manco Cápac",
     fecha: "6 de mayo de 2019",
-    imagen: "../assets/news/news-15.png",
+    imagen: "../assets/news/newsquince.png",
     contenido: `
         <p>La enseñanza del básquet en el barrio ha pasado de generación en generación. Siguiendo la filosofía del "aprender para enseñar", el club mantiene activas sus clínicas deportivas para niños.</p>
         <p>El objetivo no es solo formar atletas, sino buenos ciudadanos con disciplina, respeto y trabajo en equipo. La cancha del barrio sigue siendo el centro donde se forja el carácter de los futuros campeones.</p>
