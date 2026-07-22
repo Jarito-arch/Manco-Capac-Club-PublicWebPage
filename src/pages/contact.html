@@ -33,7 +33,7 @@
     <header>
       <div class="Topheader">
         <div class="headerContent">
-          <a href="Inicio.html">
+          <a href="/Manco-Capac-Club-PublicWebPage/index.html">
             <img
               src="../assets/Images/Logo/logoMancoCapac.png"
               class="floatingLogo"
@@ -57,7 +57,9 @@
 
       <nav class="navPrincipal">
         <ul>
-          <li><a href="Inicio.html">INICIO</a></li>
+          <li>
+            <a href="/Manco-Capac-Club-PublicWebPage/index.html">INICIO</a>
+          </li>
           <li><a href="noticias.html">NOTICIAS</a></li>
           <li><a href="partidos.html">PARTIDOS</a></li>
           <li><a href="equipos.html">EQUIPO</a></li>
@@ -77,291 +79,320 @@
 
       <section class="description-section">
         <div class="description-content">
-            <p class="message">📩 Estamos aqui para atender tu petición</p>
-            <p class="paragraph1">
-              Si tienes alguna consulta, deseas invitarnos a un partido, proponer
-              una colaboración o cualquier otra inquietud, completa el formulario y
-              nos comunicaremos contigo.
-            </p>
-          </div>
-      </section>
-    
-    <div class="main-content">
-      <section class="contact-section">
-        <form class="form" id="ContentForm">
-          <div class="content">
-            <h1 class="content-title">Contáctanos</h1>
-          </div>
-          <div class="field">
-            <label for="name" class="teamName">Nombre:</label>
-            <input
-              type="text"
-              class="name"
-              id="name"
-              name="name"
-              required
-              placeholder="👤 Ejemplo: Juan Pérez"
-            />
-          </div>
-
-          <div class="field">
-            <label for="email" class="teamName">Correo Electrónico:</label>
-            <input
-              type="email"
-              class="email"
-              id="email"
-              name="email"
-              required
-              placeholder="✉️ Ejemplo: juanperez@example.com"
-            />
-          </div>
-
-          <div class="number-field">
-            <label for="number" class="teamName">Número de Teléfono:</label>
-            <input
-              type="tel"
-              class="number"
-              id="number"
-              name="number"
-              required
-              placeholder="📞 Ejemplo: +51 987 654 321"
-            />
-          </div>
-
-          <div class="motivo-field">
-            <label for="cars" class="cars">Motivo del contacto: </label>
-
-            <select name="cars" id="cars" class="motivo">
-              <option class="motivo" value="select" selected disabled>
-                Selecciona cualquiera de los seleccionado
-              </option>
-              <option class="motivo" value="consulta">Consulta General</option>
-              <option class="motivo" value="inscripcion">
-                Inscripción/ Unirme al club Deportivo Manco Capac
-              </option>
-              <option class="motivo" value="tecnica">Consulta Técnica</option>
-              <option class="motivo" value="sugerencia">Sugerencia</option>
-              <option class="motivo" value="reclamo">Reclamo</option>
-            </select>
-          </div>
-
-
-          <div class="extra-fields" data-motivo="inscripcion">
-            <div class="field1 campoEdadWrapper">
-              <label for="edad" class="teamName">Edad:</label>
-              <input type="number" class="campoEdad" id="edad" name="edad" min="14" max="45" placeholder="Ej: 15" />
-              <span class="errorEdad" id="errorEdad"></span>
-            </div>
-            <div class="field1">
-              <label for="categoria" class="teamName">Categoría:</label>
-              <select id="categoria" name="categoria" class="motivo">
-                <option value="" selected disabled>Selecciona una categoría</option>
-                <option value="superior">Superior (20 años a más)</option>
-                <option value="sub19">Sub19 (18-19 años)</option>
-                <option value="sub18">Sub18 (17-18 años)</option>
-                <option value="sub17">Sub17 (16-17 años)</option>
-                <option value="sub16">Sub16 (15-16 años)</option>
-                <option value="sub15">Sub15 (14-15 años)</option>
-              </select>
-            </div>
-            <div class="field1">
-              <label for="experiencia" class="teamName">¿Tienes experiencia jugando básquet?</label>
-              <select id="experiencia" name="experiencia" class="motivo">
-                <option value="" selected disabled>Selecciona una opción</option>
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="extra-fields" data-motivo="tecnica">
-            <div class="field">
-              <label for="seccion" class="teamName">¿En qué sección tuviste el problema?</label>
-              <select id="seccion" name="seccion" class="motivo">
-                <option value="" selected disabled>Selecciona una sección</option>
-                <option value="inicio">Inicio</option>
-                <option value="noticias">Noticias</option>
-                <option value="partidos">Partidos</option>
-                <option value="equipo">Equipo</option>
-                <option value="el-club">El Club</option>
-                <option value="galeria">Galería</option>
-                <option value="contacto">Contacto</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="extra-fields" data-motivo="reclamo">
-            <div class="field">
-              <label for="fechaIncidente" class="teamName">Fecha del incidente:</label>
-              <input type="date" id="fechaIncidente" name="fechaIncidente" />
-            </div>
-            <div class="field">
-              <label for="contraQuien" class="teamName">¿Contra quién o qué es el reclamo?</label>
-              <input type="text" id="contraQuien" name="contraQuien" placeholder="Ej: Un jugador, un partido, la web..." />
-            </div>
-          </div>
-
-
-          <div class="field-description" id="mensajeField">
-            <label for="message">Mensaje:</label>
-            <textarea
-              class="message1"
-              id="message"
-              name="message"
-              rows="4"
-              minlength="0"
-              maxlength="100"
-              placeholder="💬 Escribe tu mensaje aquí..."
-            ></textarea>
-          </div>
-
-          <div class="cluster">
-            <h3>
-              ¿Cómo prefieres que nos comuniquemos contigo?
-              <span>*</span>
-            </h3>
-
-            <div class="options">
-              <input
-                type="radio"
-                class="email"
-                id="Email"
-                name="contacto"
-                value="correo"
-              />
-
-              <label for="Email" class="card">
-                <span class="icono">✉️</span>
-                <p>Correo</p>
-              </label>
-
-              <input
-                type="radio"
-                class="whatsapp"
-                id="whatsapp"
-                name="contacto"
-                value="whatsapp"
-              />
-
-              <label for="whatsapp" class="card">
-                <span class="icono">🟢</span>
-                <p>WhatsApp</p>
-              </label>
-
-              <input
-                type="radio"
-                id="telefono"
-                name="contacto"
-                value="telefono"
-              />
-
-              <label for="telefono" class="card">
-                <span class="icono">📞</span>
-                <p>Teléfono</p>
-              </label>
-            </div>
-          </div>
-
-          <div class="cluster">
-            <h3 class="title-cluster">¿Cómo conociste al club?</h3>
-
-            <select class="motivo" name="conociste" id="conociste">
-              <option class="motivo" selected disabled>
-                Selecciona una opción
-              </option>
-
-              <option class="motivo" value="facebook">Facebook</option>
-              <option class="motivo" value="instagram">Instagram</option>
-              <option class="motivo" value="tiktok">TikTok</option>
-              <option class="motivo" value="amigos">Amigos</option>
-            </select>
-          </div>
-          <div class="privacy">
-            <input type="checkbox" id="privacy" required />
-            <label for="privacy">
-              <span class="icon">🛡️</span>
-              Acepto que mis datos sean utilizados únicamente para responder mi
-              consulta.
-            </label>
-          </div>
-
-          <div class="button-container">
-            <button type="button" class="button2" id="btnCancelar">
-              <span class="spans">Cancelar</span>
-            </button>
-            <button type="submit" class="button1">
-              <span class="spans">Enviar</span>
-            </button>
-          </div>
-        </form>
-      </section>
-
-      <aside class="information">
-        <div class="club-card">
-          <h2>CLUB DEPORTIVO</h2>
-          <h1>MANCO CÁPAC</h1>
-          <p class="slogan">Pasión por el básquet</p>
-        </div>
-
-        <div class="info-box">
-          <div class="icon2">📍</div>
-          <div>
-            <h3>¿DÓNDE ESTAMOS?</h3>
-            <p>Chiclayo, Lambayeque</p>
-            <span>No contamos con sede fija.</span>
-          </div>
-        </div>
-
-        <div class="info-box">
-          <div class="icon whatsapp">🟢</div>
-          <div>
-            <h3>WHATSAPP</h3>
-            <p>979 057 515</p>
-            <span>Atención inmediata</span>
-          </div>
-        </div>
-
-        <div class="info-box">
-          <div class="icon email1">✉️</div>
-          <div>
-            <h3>CORREO</h3>
-            <p>luchito184@gmail.com</p>
-            <span>Responderemos lo antes posible.</span>
-          </div>
-        </div>
-
-        <div class="info-box">
-          <div class="icon clock">🕒</div>
-          <div>
-            <h3>HORARIO</h3>
-            <p>Lunes a Sabado</p>
-            <span>8:00 am - 6:00 pm</span>
-          </div>
-        </div>
-
-        <div class="social">
-          <h3>SÍGUENOS</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/share/181oYdutNk/" target="_blank"
-              >Facebook</a
-            >
-            <a
-              href="https://www.instagram.com/gerenciagestiondeportiva?igsh=b3FnM2duMGRxaDIy"
-              target="_blank"
-              >Instagram</a
-            >
-            <a href="https://vt.tiktok.com/ZSCTdkNTh/" target="_blank"
-              >Tiktok</a
-            >
-          </div>
-        </div>
-
-        <div class="quote">
-          <p>
-            "Más que un equipo, somos una familia que juega con el corazón."
+          <p class="message">📩 Estamos aqui para atender tu petición</p>
+          <p class="paragraph1">
+            Si tienes alguna consulta, deseas invitarnos a un partido, proponer
+            una colaboración o cualquier otra inquietud, completa el formulario
+            y nos comunicaremos contigo.
           </p>
         </div>
-      </aside>
+      </section>
+
+      <div class="main-content">
+        <section class="contact-section">
+          <form class="form" id="ContentForm">
+            <div class="content">
+              <h1 class="content-title">Contáctanos</h1>
+            </div>
+            <div class="field">
+              <label for="name" class="teamName">Nombre:</label>
+              <input
+                type="text"
+                class="name"
+                id="name"
+                name="name"
+                required
+                placeholder="👤 Ejemplo: Juan Pérez"
+              />
+            </div>
+
+            <div class="field">
+              <label for="email" class="teamName">Correo Electrónico:</label>
+              <input
+                type="email"
+                class="email"
+                id="email"
+                name="email"
+                required
+                placeholder="✉️ Ejemplo: juanperez@example.com"
+              />
+            </div>
+
+            <div class="number-field">
+              <label for="number" class="teamName">Número de Teléfono:</label>
+              <input
+                type="tel"
+                class="number"
+                id="number"
+                name="number"
+                required
+                placeholder="📞 Ejemplo: +51 987 654 321"
+              />
+            </div>
+
+            <div class="motivo-field">
+              <label for="cars" class="cars">Motivo del contacto: </label>
+
+              <select name="cars" id="cars" class="motivo">
+                <option class="motivo" value="select" selected disabled>
+                  Selecciona cualquiera de los seleccionado
+                </option>
+                <option class="motivo" value="consulta">
+                  Consulta General
+                </option>
+                <option class="motivo" value="inscripcion">
+                  Inscripción/ Unirme al club Deportivo Manco Capac
+                </option>
+                <option class="motivo" value="tecnica">Consulta Técnica</option>
+                <option class="motivo" value="sugerencia">Sugerencia</option>
+                <option class="motivo" value="reclamo">Reclamo</option>
+              </select>
+            </div>
+
+            <div class="extra-fields" data-motivo="inscripcion">
+              <div class="field1 campoEdadWrapper">
+                <label for="edad" class="teamName">Edad:</label>
+                <input
+                  type="number"
+                  class="campoEdad"
+                  id="edad"
+                  name="edad"
+                  min="14"
+                  max="45"
+                  placeholder="Ej: 15"
+                />
+                <span class="errorEdad" id="errorEdad"></span>
+              </div>
+              <div class="field1">
+                <label for="categoria" class="teamName">Categoría:</label>
+                <select id="categoria" name="categoria" class="motivo">
+                  <option value="" selected disabled>
+                    Selecciona una categoría
+                  </option>
+                  <option value="superior">Superior (20 años a más)</option>
+                  <option value="sub19">Sub19 (18-19 años)</option>
+                  <option value="sub18">Sub18 (17-18 años)</option>
+                  <option value="sub17">Sub17 (16-17 años)</option>
+                  <option value="sub16">Sub16 (15-16 años)</option>
+                  <option value="sub15">Sub15 (14-15 años)</option>
+                </select>
+              </div>
+              <div class="field1">
+                <label for="experiencia" class="teamName"
+                  >¿Tienes experiencia jugando básquet?</label
+                >
+                <select id="experiencia" name="experiencia" class="motivo">
+                  <option value="" selected disabled>
+                    Selecciona una opción
+                  </option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="extra-fields" data-motivo="tecnica">
+              <div class="field">
+                <label for="seccion" class="teamName"
+                  >¿En qué sección tuviste el problema?</label
+                >
+                <select id="seccion" name="seccion" class="motivo">
+                  <option value="" selected disabled>
+                    Selecciona una sección
+                  </option>
+                  <option value="inicio">Inicio</option>
+                  <option value="noticias">Noticias</option>
+                  <option value="partidos">Partidos</option>
+                  <option value="equipo">Equipo</option>
+                  <option value="el-club">El Club</option>
+                  <option value="galeria">Galería</option>
+                  <option value="contacto">Contacto</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="extra-fields" data-motivo="reclamo">
+              <div class="field">
+                <label for="fechaIncidente" class="teamName"
+                  >Fecha del incidente:</label
+                >
+                <input type="date" id="fechaIncidente" name="fechaIncidente" />
+              </div>
+              <div class="field">
+                <label for="contraQuien" class="teamName"
+                  >¿Contra quién o qué es el reclamo?</label
+                >
+                <input
+                  type="text"
+                  id="contraQuien"
+                  name="contraQuien"
+                  placeholder="Ej: Un jugador, un partido, la web..."
+                />
+              </div>
+            </div>
+
+            <div class="field-description" id="mensajeField">
+              <label for="message">Mensaje:</label>
+              <textarea
+                class="message1"
+                id="message"
+                name="message"
+                rows="4"
+                minlength="0"
+                maxlength="100"
+                placeholder="💬 Escribe tu mensaje aquí..."
+              ></textarea>
+            </div>
+
+            <div class="cluster">
+              <h3>
+                ¿Cómo prefieres que nos comuniquemos contigo?
+                <span>*</span>
+              </h3>
+
+              <div class="options">
+                <input
+                  type="radio"
+                  class="email"
+                  id="Email"
+                  name="contacto"
+                  value="correo"
+                />
+
+                <label for="Email" class="card">
+                  <span class="icono">✉️</span>
+                  <p>Correo</p>
+                </label>
+
+                <input
+                  type="radio"
+                  class="whatsapp"
+                  id="whatsapp"
+                  name="contacto"
+                  value="whatsapp"
+                />
+
+                <label for="whatsapp" class="card">
+                  <span class="icono">🟢</span>
+                  <p>WhatsApp</p>
+                </label>
+
+                <input
+                  type="radio"
+                  id="telefono"
+                  name="contacto"
+                  value="telefono"
+                />
+
+                <label for="telefono" class="card">
+                  <span class="icono">📞</span>
+                  <p>Teléfono</p>
+                </label>
+              </div>
+            </div>
+
+            <div class="cluster">
+              <h3 class="title-cluster">¿Cómo conociste al club?</h3>
+
+              <select class="motivo" name="conociste" id="conociste">
+                <option class="motivo" selected disabled>
+                  Selecciona una opción
+                </option>
+
+                <option class="motivo" value="facebook">Facebook</option>
+                <option class="motivo" value="instagram">Instagram</option>
+                <option class="motivo" value="tiktok">TikTok</option>
+                <option class="motivo" value="amigos">Amigos</option>
+              </select>
+            </div>
+            <div class="privacy">
+              <input type="checkbox" id="privacy" required />
+              <label for="privacy">
+                <span class="icon">🛡️</span>
+                Acepto que mis datos sean utilizados únicamente para responder
+                mi consulta.
+              </label>
+            </div>
+
+            <div class="button-container">
+              <button type="button" class="button2" id="btnCancelar">
+                <span class="spans">Cancelar</span>
+              </button>
+              <button type="submit" class="button1">
+                <span class="spans">Enviar</span>
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="information">
+          <div class="club-card">
+            <h2>CLUB DEPORTIVO</h2>
+            <h1>MANCO CÁPAC</h1>
+            <p class="slogan">Pasión por el básquet</p>
+          </div>
+
+          <div class="info-box">
+            <div class="icon2">📍</div>
+            <div>
+              <h3>¿DÓNDE ESTAMOS?</h3>
+              <p>Chiclayo, Lambayeque</p>
+              <span>No contamos con sede fija.</span>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="icon whatsapp">🟢</div>
+            <div>
+              <h3>WHATSAPP</h3>
+              <p>979 057 515</p>
+              <span>Atención inmediata</span>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="icon email1">✉️</div>
+            <div>
+              <h3>CORREO</h3>
+              <p>luchito184@gmail.com</p>
+              <span>Responderemos lo antes posible.</span>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="icon clock">🕒</div>
+            <div>
+              <h3>HORARIO</h3>
+              <p>Lunes a Sabado</p>
+              <span>8:00 am - 6:00 pm</span>
+            </div>
+          </div>
+
+          <div class="social">
+            <h3>SÍGUENOS</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/share/181oYdutNk/"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                href="https://www.instagram.com/gerenciagestiondeportiva?igsh=b3FnM2duMGRxaDIy"
+                target="_blank"
+                >Instagram</a
+              >
+              <a href="https://vt.tiktok.com/ZSCTdkNTh/" target="_blank"
+                >Tiktok</a
+              >
+            </div>
+          </div>
+
+          <div class="quote">
+            <p>
+              "Más que un equipo, somos una familia que juega con el corazón."
+            </p>
+          </div>
+        </aside>
       </div>
     </main>
     <footer class="custom-footer">
