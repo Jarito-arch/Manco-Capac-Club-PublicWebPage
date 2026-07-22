@@ -228,7 +228,7 @@ export const dataPartidos = [
                 dia: "DOM 21 JUN",
                 hora: "12:00 HRS",
 
-                logoLiga: "logoTNA.png",
+                logoLiga: "logoLiga.png",
 
                 nombreLiga: "Torneo Nacional de Ascenso - Serie B",
                 lugar: "Coliseo Gran Chimú - Trujillo",
@@ -243,7 +243,23 @@ export const dataPartidos = [
     },
     {
         mes: "julio",
-        data: [],
+        data: [
+            {
+                dia: "DOM 19 JUL",
+                hora: "13:30 HRS",
+
+                logoLiga: "logoLiga.png",
+
+                nombreLiga: "Liga Deportiva Mixta de Basketball de Chiclayo - Rama A Varones",
+                lugar: "Coliseo Cerrado de Chiclayo",
+
+                equipoLocal: "Triple Doble",
+                logoLocal: "logoTripleDoble.png",
+
+                equipoVisitante: "Manco Cápac",
+                logoVisitante: "logoMancoCapac.png"
+            }
+        ],
     },
     {
         mes: "agosto",
