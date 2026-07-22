@@ -4,7 +4,7 @@ export const noticias = [
     titulo:
       "El Club Deportivo Manco Cápac recuerda el legado de José Augusto Fernández 'Taka Taka'",
     fecha: "6 de junio 2021",
-    imagen: "../assets/news/news-1.png",
+    imagen: "../assets/news/newsprimera.png",
     contenido: `
             <p>El Club Deportivo Manco Cápac rindió homenaje a uno de sus personajes más emblemáticos: José Augusto Fernández Carlos, conocido cariñosamente como <strong>"Taka Taka"</strong>.</p>
 
