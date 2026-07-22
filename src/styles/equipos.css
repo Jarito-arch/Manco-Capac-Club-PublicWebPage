@@ -1,8 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main{
     font-family:"Bebas Neue", sans-serif;
     min-height: 100vh;
     background: linear-gradient(to bottom, #01015c, #4983ce);
-    padding: 0 0px 180px 0 !important;
+    padding: 0 0 180px 0 !important;
     overflow-x: hidden;
 }
 
@@ -16,7 +21,8 @@ main{
     justify-content: center;
     border-top: 3px solid #d8b13f;
     border-bottom: 3px solid #d8b13f;
-
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 
