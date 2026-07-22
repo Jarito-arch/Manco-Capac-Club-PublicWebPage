@@ -1,140 +1,163 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Deportivo Manco Cápac</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Club Deportivo Manco Cápac</title>
+    <link
+      rel="icon"
+      href="../assets/Images/Logo/logoMancoCapac.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/partidos.css" />
+  </head>
 
-  <link rel="icon" href="../assets/Images/Logo/logoMancoCapac.png" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/global.css" />
-  <link rel="stylesheet" href="../styles/partidos.css" />
-
-</head>
-
-<body>
-  <header>
-    <div class="Topheader">
-      <div class="headerContent">
-        <a href="Inicio.html">
-          <img src="../assets/Images/Logo/logoMancoCapac.png" class="floatingLogo" />
-        </a>
-        <div class="brandText">
-          <h1>CLUB DEPORTIVO MANCO CÁPAC</h1>
-          <p>SITIO WEB OFICIAL</p>
+  <body>
+    <header>
+      <div class="Topheader">
+        <div class="headerContent">
+          <a href="index.html">
+            <img
+              src="../assets/Images/Logo/logoMancoCapac.png"
+              class="floatingLogo"
+            />
+          </a>
+          <div class="brandText">
+            <h1>CLUB DEPORTIVO MANCO CÁPAC</h1>
+            <p>SITIO WEB OFICIAL</p>
+          </div>
         </div>
+        <button
+          class="hamburger-btn"
+          id="hamburger-menu"
+          aria-label="hamburger menu"
+        >
+          ☰
+        </button>
       </div>
-      <button class="hamburger-btn" id="hamburger-menu" aria-label="hamburger menu">
-        ☰
-      </button>
-    </div>
-    <nav class="navPrincipal">
-      <ul>
-        <li><a href="Inicio.html">INICIO</a></li>
-        <li><a href="noticias.html">NOTICIAS</a></li>
-        <li><a href="partidos.html" class="active">PARTIDOS</a></li>
-        <li><a href="equipos.html">EQUIPO</a></li>
-        <li><a href="el-club.html">EL CLUB</a></li>
-        <li><a href="Galería.html">GALERÍA</a></li>
-        <li><a href="contact.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="navPrincipal">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="noticias.html">NOTICIAS</a></li>
+          <li><a href="partidos.html" class="active">PARTIDOS</a></li>
+          <li><a href="equipos.html">EQUIPO</a></li>
+          <li><a href="el-club.html">EL CLUB</a></li>
+          <li><a href="Galería.html">GALERÍA</a></li>
+          <li><a href="contact.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="bannerPartidos">
-    <h2>PARTIDOS</h2>
-  </section>
-
-  <main>
-    <h3 id="calendario">CALENDARIO</h3>
-    <section class="calendario">
-      <div class="ContenedorMeses">
-        <div class="meses">
-          <button class="month" data-month="enero">ENERO</button>
-          <button class="month" data-month="febrero">FEBRERO</button>
-          <button class="month" data-month="marzo">MARZO</button>
-          <button class="month" data-month="abril">ABRIL</button>
-          <button class="month" data-month="mayo">MAYO</button>
-          <button class="month" data-month="junio">JUNIO</button>
-          <button class="month" data-month="julio">JULIO</button>
-          <button class="month" data-month="agosto">AGOSTO</button>
-          <button class="month" data-month="septiembre">SEPTIEMBRE</button>
-          <button class="month" data-month="octubre">OCTUBRE</button>
-          <button class="month" data-month="noviembre">NOVIEMBRE</button>
-          <button class="month" data-month="diciembre">DICIEMBRE</button>
-        </div>
-      </div>
-
-      <div class="tabla">
-        <table class="tablaCalendario">
-          <tbody id="tablaPartidos"></tbody>
-        </table>
-      </div>
+    <section class="bannerPartidos">
+      <h2>PARTIDOS</h2>
     </section>
 
-    <h3 id="tabla-posiciones">Tabla de Posiciones</h3>
-    <section class="tablaDePosicionesApartado">
-      <div class="tablaDePosiciones">
-        <table>
-          <thead>
-            <tr>
-              <th class="tooltip pos" width="10">POS<span class="tooltip-box">Posición</span></th>
-              <th width="240">EQUIPOS</th>
-              <th class="tooltip pj" width="20">PJ<span class="tooltip-box">Partidos Jugados</span></th>
-              <th class="tooltip pg" width="20">PG<span class="tooltip-box">Partidos Ganados</span></th>
-              <th class="tooltip pp" width="20">PP<span class="tooltip-box">Partidos Perdidos</span></th>
-              <th class="tooltip wo" width="20">WO<span class="tooltip-box">Walkovers</span></th>
-              <th class="tooltip pf" width="20">PF<span class="tooltip-box">Puntos a Favor</span></th>
-              <th class="tooltip pc" width="20">PC<span class="tooltip-box">Puntos en Contra</span></th>
-              <th class="tooltip dp" width="20">DP<span class="tooltip-box">Diferencia de Puntos</span></th>
-              <th width="50">PUNTAJE</th>
-            </tr>
-          </thead>
-          <tbody id="tablaPosiciones"></tbody>
-        </table>
+    <main>
+      <h3 id="calendario">CALENDARIO</h3>
+      <section class="calendario">
+        <div class="ContenedorMeses">
+          <div class="meses">
+            <button class="month" data-month="enero">ENERO</button>
+            <button class="month" data-month="febrero">FEBRERO</button>
+            <button class="month" data-month="marzo">MARZO</button>
+            <button class="month" data-month="abril">ABRIL</button>
+            <button class="month" data-month="mayo">MAYO</button>
+            <button class="month" data-month="junio">JUNIO</button>
+            <button class="month" data-month="julio">JULIO</button>
+            <button class="month" data-month="agosto">AGOSTO</button>
+            <button class="month" data-month="septiembre">SEPTIEMBRE</button>
+            <button class="month" data-month="octubre">OCTUBRE</button>
+            <button class="month" data-month="noviembre">NOVIEMBRE</button>
+            <button class="month" data-month="diciembre">DICIEMBRE</button>
+          </div>
+        </div>
+
+        <div class="tabla">
+          <table class="tablaCalendario">
+            <tbody id="tablaPartidos"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <h3 id="tabla-posiciones">Tabla de Posiciones</h3>
+      <section class="tablaDePosicionesApartado">
+        <div class="tablaDePosiciones">
+          <table>
+            <thead>
+              <tr>
+                <th class="tooltip pos" width="10">
+                  POS<span class="tooltip-box">Posición</span>
+                </th>
+                <th width="240">EQUIPOS</th>
+                <th class="tooltip pj" width="20">
+                  PJ<span class="tooltip-box">Partidos Jugados</span>
+                </th>
+                <th class="tooltip pg" width="20">
+                  PG<span class="tooltip-box">Partidos Ganados</span>
+                </th>
+                <th class="tooltip pp" width="20">
+                  PP<span class="tooltip-box">Partidos Perdidos</span>
+                </th>
+                <th class="tooltip wo" width="20">
+                  WO<span class="tooltip-box">Walkovers</span>
+                </th>
+                <th class="tooltip pf" width="20">
+                  PF<span class="tooltip-box">Puntos a Favor</span>
+                </th>
+                <th class="tooltip pc" width="20">
+                  PC<span class="tooltip-box">Puntos en Contra</span>
+                </th>
+                <th class="tooltip dp" width="20">
+                  DP<span class="tooltip-box">Diferencia de Puntos</span>
+                </th>
+                <th width="50">PUNTAJE</th>
+              </tr>
+            </thead>
+            <tbody id="tablaPosiciones"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="custom-footer">
+      <div class="footer-logo-wrapper">
+        <img
+          src="../assets/Images/Logo/logoMancoCapac.png"
+          class="footer-logo"
+        />
       </div>
-    </section>
-  </main>
 
-  <footer class="custom-footer">
-    <div class="footer-logo-wrapper">
-      <img src="../assets/Images/Logo/logoMancoCapac.png" class="footer-logo" />
-    </div>
+      <div class="footer-info">
+        <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
 
-    <div class="footer-info">
-      <h2>CLUB DEPORTIVO MANCO CÁPAC</h2>
+        <p class="fundado">Fundado el 21 de Octubre de 1961</p>
 
-      <p class="fundado">Fundado el 21 de Octubre de 1961</p>
+        <p class="footer-copyright">
+          Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos
+          reservados
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="../js/partidos.js"></script>
+    <script src="../js/global.js"></script>
+    <script>
+      let tooltip = document.getElementsById("pg")[0];
 
-      <p class="footer-copyright">
-        Club Deportivo Manco Cápac &nbsp;&copy;&nbsp; 2026 Todos los derechos
-        reservados
-      </p>
-    </div>
-  </footer>
-  <script type="module" src="../js/partidos.js"></script>
-  <script src="../js/global.js"></script>
-  <script>
+      pg.addEventListener("mouseenter", function () {
+        document.getElementsByClassName("tippg")[0].style.display = "block";
+      });
 
-    let tooltip = document.getElementsById('pg')[0];
-
-    pg.addEventListener('mouseenter', function () {
-
-      document.getElementsByClassName('tippg')[0].style.display = 'block';
-
-    });
-
-    pg.addEventListener('mouseleave', function () {
-
-      document.getElementsByClassName('tippg')[0].style.display = 'none';
-
-    });
-
-  </script>
-</body>
-
+      pg.addEventListener("mouseleave", function () {
+        document.getElementsByClassName("tippg")[0].style.display = "none";
+      });
+    </script>
+  </body>
 </html>
