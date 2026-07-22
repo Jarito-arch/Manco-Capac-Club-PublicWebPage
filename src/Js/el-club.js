@@ -10,6 +10,8 @@ class Historia{
     }
 };
 
+
+
 const lineaTiempo = document.getElementById("lineaTiempo");
 
 const historia = new Historia(dataHistoria);
@@ -98,4 +100,10 @@ window.addEventListener("scroll", () => {
             img.style.opacity = opacity;
         }
     );
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.onload = function() {
+        document.body.classList.add("loaded");
+    };
 });
