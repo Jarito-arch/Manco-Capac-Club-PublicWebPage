@@ -11,7 +11,7 @@ export class Partido {
     equipoVisitante;
     logoVisitante;
 
-    constructor({dia, hora, logoLiga, nombreLiga, lugar, equipoLocal, logoLocal, equipoVisitante, logoVisitante}){
+    constructor({ dia, hora, logoLiga, nombreLiga, lugar, equipoLocal, logoLocal, equipoVisitante, logoVisitante }) {
         this.dia = dia;
         this.hora = hora;
         this.logoLiga = logoLiga;
@@ -28,7 +28,7 @@ export class MesPartidos {
     mes;
     data;
 
-    constructor({mes, data}){
+    constructor({ mes, data }) {
         this.mes = mes;
         this.data = data.map(p => new Partido(p));
     }
@@ -62,15 +62,15 @@ const tablaPartidos = document.getElementById("tablaPartidos");
 
 const botonesMes = document.querySelectorAll(".month");
 
-function mostrarPartidos(mes){
+function mostrarPartidos(mes) {
 
     const mesSeleccionado = calendario.getPartidosxMes(mes);
 
     tablaPartidos.innerHTML = "";
 
-    if(!mesSeleccionado) return;
+    if (!mesSeleccionado) return;
 
-    mesSeleccionado.data.forEach(partido=>{
+    mesSeleccionado.data.forEach(partido => {
 
         tablaPartidos.innerHTML += `
             <tr>
@@ -109,9 +109,9 @@ function mostrarPartidos(mes){
 
 };
 
-botonesMes.forEach(boton=>{
+botonesMes.forEach(boton => {
 
-    boton.addEventListener("click",()=>{
+    boton.addEventListener("click", () => {
 
         const mes = boton.dataset.month;
 
