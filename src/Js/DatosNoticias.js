@@ -151,7 +151,7 @@ export const noticias = [
     id: 10,
     titulo: "El Manco Cápac celebra décadas de campeonatos",
     fecha: "22 de junio de 2021",
-    imagen: "../assets/news/newsdiez.png",
+    imagen: "../assets/news/newsdies.png",
     contenido: `
             <p>El Club Deportivo Manco Cápac destacó algunos de los principales títulos obtenidos a lo largo de su historia.</p>
 
