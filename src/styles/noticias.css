@@ -59,7 +59,7 @@
 }
 
 .card-image1-placeholder {
-    background-image: url(../assets/news/news-1.png);
+    background-image: url(../assets/news/newsprimera.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -70,7 +70,7 @@
 }
 
 .card-image2-placeholder {
-    background-image: url(../assets/news/news-2.png);
+    background-image: url(../assets/news/newsdos.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -87,11 +87,11 @@
     height: 218px;
     display: flex;
     align-items: center;
-    background-image: url(../assets/news/news-3.png);
+    background-image: url(../assets/news/newstres.png);
 }
 
 .card-image4-placeholder {
-    background-image: url(../assets/news/news-4.png);
+    background-image: url(../assets/news/newscuatro.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -102,7 +102,7 @@
 }
 
 .card-image5-placeholder {
-    background-image: url(../assets/news/news-5.png);
+    background-image: url(../assets/news/newscinco.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -113,7 +113,7 @@
 }
 
 .card-image6-placeholder {
-    background-image: url(../assets/news/news-6.png);
+    background-image: url(../assets/news/newsseis.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -124,7 +124,7 @@
 }
 
 .card-image7-placeholder {
-    background-image: url(../assets/news/news-7.png);
+    background-image: url(../assets/news/newssiete.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -135,7 +135,7 @@
 }
 
 .card-image8-placeholder {
-    background-image: url(../assets/news/news-8.png);
+    background-image: url(../assets/news/newsocho.png);
     background-size: cover;
     background-position: center;
     width: 100%;
